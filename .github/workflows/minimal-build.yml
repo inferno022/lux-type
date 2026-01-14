@@ -22,13 +22,18 @@ jobs:
     - name: Make gradlew executable
       run: chmod +x gradlew
 
-    - name: Build Debug APK
-      run: ./gradlew assembleUnstableDebug
+    - name: Clean and Build
+      run: |
+        echo "Starting clean build..."
+        ./gradlew clean
+        echo "Building debug APK..."
+        ./gradlew assembleUnstableDebug --info --stacktrace
 
-    - name: Upload artifacts
+    - name: Upload Debug APK
       uses: actions/upload-artifact@v4
       if: always()
       with:
         name: debug-apk
         path: java/build/outputs/apk/unstable/debug/
         retention-days: 7
+        if-no-files-found: warn
