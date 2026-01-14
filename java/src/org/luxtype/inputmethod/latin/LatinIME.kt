@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin
+package org.luxtype.inputmethod.latin
 
 import android.content.BroadcastReceiver
 import android.content.Context
