@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings.pages
+package org.luxtype.inputmethod.latin.uix.settings.pages
 
 import android.icu.text.Transliterator
 import android.os.Build
@@ -33,15 +33,15 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.LocalNavController
-import org.futo.inputmethod.latin.uix.SettingsTextEdit
-import org.futo.inputmethod.latin.uix.settings.BottomSpacer
-import org.futo.inputmethod.latin.uix.settings.NavigationItem
-import org.futo.inputmethod.latin.uix.settings.NavigationItemStyle
-import org.futo.inputmethod.latin.uix.settings.SettingsMenus
-import org.futo.inputmethod.latin.uix.settings.userSettingDecorationOnly
-import org.futo.inputmethod.latin.uix.theme.Typography
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.LocalNavController
+import org.luxtype.inputmethod.latin.uix.SettingsTextEdit
+import org.luxtype.inputmethod.latin.uix.settings.BottomSpacer
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItem
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItemStyle
+import org.luxtype.inputmethod.latin.uix.settings.SettingsMenus
+import org.luxtype.inputmethod.latin.uix.settings.userSettingDecorationOnly
+import org.luxtype.inputmethod.latin.uix.theme.Typography
 
 private val LATIN_ASCII = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
     Transliterator.getInstance("Latin-ASCII")

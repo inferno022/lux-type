@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.resizing
+package org.luxtype.inputmethod.latin.uix.resizing
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
@@ -28,7 +28,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.toSize
-import org.futo.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.R
 
 
 enum class CurrentDraggingTarget {

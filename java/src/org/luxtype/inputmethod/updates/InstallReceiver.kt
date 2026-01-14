@@ -1,4 +1,4 @@
-package org.futo.inputmethod.updates
+package org.luxtype.inputmethod.updates
 
 import android.content.BroadcastReceiver
 import android.content.Context

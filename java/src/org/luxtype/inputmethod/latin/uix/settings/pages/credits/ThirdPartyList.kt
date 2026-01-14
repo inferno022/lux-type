@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings.pages.credits
+package org.luxtype.inputmethod.latin.uix.settings.pages.credits
 
 
 data class ThirdPartyItem(

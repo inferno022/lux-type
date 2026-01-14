@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin
+package org.luxtype.inputmethod.latin
 
 import android.Manifest
 import android.content.Intent
@@ -31,10 +31,10 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import kotlinx.coroutines.launch
-import org.futo.inputmethod.latin.uix.settings.DataStoreCacheProvider
-import org.futo.inputmethod.latin.uix.settings.NavigationItem
-import org.futo.inputmethod.latin.uix.settings.NavigationItemStyle
-import org.futo.inputmethod.latin.uix.theme.UixThemeAuto
+import org.luxtype.inputmethod.latin.uix.settings.DataStoreCacheProvider
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItem
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItemStyle
+import org.luxtype.inputmethod.latin.uix.theme.UixThemeAuto
 
 @Composable
 private fun MicPermissionRequester(onExit: () -> Unit) {

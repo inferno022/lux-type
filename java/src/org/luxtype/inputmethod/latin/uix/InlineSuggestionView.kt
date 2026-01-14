@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix
+package org.luxtype.inputmethod.latin.uix
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -48,9 +48,9 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.view.ViewCompat
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.settings.pages.ActionBarDisplayedSetting
-import org.futo.inputmethod.latin.uix.settings.pages.InlineAutofillSetting
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.settings.pages.ActionBarDisplayedSetting
+import org.luxtype.inputmethod.latin.uix.settings.pages.InlineAutofillSetting
 import kotlin.math.roundToInt
 
 

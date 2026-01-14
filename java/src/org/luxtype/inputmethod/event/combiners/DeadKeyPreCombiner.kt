@@ -1,7 +1,7 @@
-package org.futo.inputmethod.event.combiners
+package org.luxtype.inputmethod.event.combiners
 
-import org.futo.inputmethod.event.Combiner
-import org.futo.inputmethod.event.Event
+import org.luxtype.inputmethod.event.Combiner
+import org.luxtype.inputmethod.event.Event
 
 class DeadKeyPreCombiner : Combiner {
     override fun processEvent(previousEvents: ArrayList<Event>?, event: Event?): Event {

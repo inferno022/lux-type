@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings.pages.themes
+package org.luxtype.inputmethod.latin.uix.settings.pages.themes
 
 import android.annotation.SuppressLint
 import android.content.Context

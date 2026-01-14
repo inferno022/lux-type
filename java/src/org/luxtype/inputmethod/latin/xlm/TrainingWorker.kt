@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.xlm
+package org.luxtype.inputmethod.latin.xlm
 
 import android.content.Context
 import androidx.compose.runtime.mutableStateOf
@@ -24,10 +24,10 @@ import androidx.work.WorkManager
 import androidx.work.WorkerParameters
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.USE_TRANSFORMER_FINETUNING
-import org.futo.inputmethod.latin.uix.getSetting
-import org.futo.inputmethod.latin.uix.isDirectBootUnlocked
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.USE_TRANSFORMER_FINETUNING
+import org.luxtype.inputmethod.latin.uix.getSetting
+import org.luxtype.inputmethod.latin.uix.isDirectBootUnlocked
 import java.io.File
 import java.util.concurrent.TimeUnit
 class TrainingWorker(val context: Context, val parameters: WorkerParameters) : CoroutineWorker(context, parameters) {

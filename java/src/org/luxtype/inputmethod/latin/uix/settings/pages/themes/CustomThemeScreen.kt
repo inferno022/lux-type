@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings.pages.themes
+package org.luxtype.inputmethod.latin.uix.settings.pages.themes
 
 import android.graphics.BitmapFactory
 import androidx.compose.runtime.Composable
@@ -7,8 +7,8 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.core.net.toUri
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import org.futo.inputmethod.latin.uix.theme.ZipThemes
-import org.futo.inputmethod.latin.uix.urlDecode
+import org.luxtype.inputmethod.latin.uix.theme.ZipThemes
+import org.luxtype.inputmethod.latin.uix.urlDecode
 
 @Composable
 fun CustomThemeScreen(imgUri: String, navController: NavHostController = rememberNavController()) {

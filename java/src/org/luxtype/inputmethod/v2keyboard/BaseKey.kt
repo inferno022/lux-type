@@ -1,16 +1,16 @@
-package org.futo.inputmethod.v2keyboard
+package org.luxtype.inputmethod.v2keyboard
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.builtins.serializer
-import org.futo.inputmethod.keyboard.KeyConsts
-import org.futo.inputmethod.keyboard.KeyboardId
-import org.futo.inputmethod.keyboard.internal.KeySpecParser
-import org.futo.inputmethod.keyboard.internal.KeyboardParams
-import org.futo.inputmethod.keyboard.internal.MoreKeySpec
-import org.futo.inputmethod.latin.common.Constants
-import org.futo.inputmethod.latin.common.StringUtils
-import org.futo.inputmethod.latin.settings.LongPressKeySettings
+import org.luxtype.inputmethod.keyboard.KeyConsts
+import org.luxtype.inputmethod.keyboard.KeyboardId
+import org.luxtype.inputmethod.keyboard.internal.KeySpecParser
+import org.luxtype.inputmethod.keyboard.internal.KeyboardParams
+import org.luxtype.inputmethod.keyboard.internal.MoreKeySpec
+import org.luxtype.inputmethod.latin.common.Constants
+import org.luxtype.inputmethod.latin.common.StringUtils
+import org.luxtype.inputmethod.latin.settings.LongPressKeySettings
 
 /**
  * Width tokens for keys. Rather than explicitly specifying a width in percentage as is common in

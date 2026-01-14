@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.xlm
+package org.luxtype.inputmethod.latin.xlm
 
 import android.content.Context
 import android.util.Log
@@ -7,12 +7,12 @@ import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.newSingleThreadContext
 import kotlinx.coroutines.withContext
-import org.futo.inputmethod.latin.NgramContext
-import org.futo.inputmethod.latin.SuggestedWords
-import org.futo.inputmethod.latin.SuggestedWords.SuggestedWordInfo
-import org.futo.inputmethod.latin.common.ComposedData
-import org.futo.inputmethod.latin.settings.SettingsValuesForSuggestion
-import org.futo.inputmethod.latin.utils.JniUtils
+import org.luxtype.inputmethod.latin.NgramContext
+import org.luxtype.inputmethod.latin.SuggestedWords
+import org.luxtype.inputmethod.latin.SuggestedWords.SuggestedWordInfo
+import org.luxtype.inputmethod.latin.common.ComposedData
+import org.luxtype.inputmethod.latin.settings.SettingsValuesForSuggestion
+import org.luxtype.inputmethod.latin.utils.JniUtils
 import java.util.Arrays
 import java.util.Locale
 

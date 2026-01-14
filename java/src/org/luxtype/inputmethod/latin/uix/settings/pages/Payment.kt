@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings.pages
+package org.luxtype.inputmethod.latin.uix.settings.pages
 
 import android.app.Activity
 import android.content.Context
@@ -64,25 +64,25 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
-import org.futo.inputmethod.latin.BuildConfig
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.SettingsKey
-import org.futo.inputmethod.latin.uix.getSetting
-import org.futo.inputmethod.latin.uix.setSetting
-import org.futo.inputmethod.latin.uix.setSettingBlocking
-import org.futo.inputmethod.latin.uix.settings.DropDownPicker
-import org.futo.inputmethod.latin.uix.settings.NavigationItem
-import org.futo.inputmethod.latin.uix.settings.NavigationItemStyle
-import org.futo.inputmethod.latin.uix.settings.ScreenTitle
-import org.futo.inputmethod.latin.uix.settings.ScrollableList
-import org.futo.inputmethod.latin.uix.settings.SpacedColumn
-import org.futo.inputmethod.latin.uix.settings.useDataStore
-import org.futo.inputmethod.latin.uix.settings.useDataStoreValue
-import org.futo.inputmethod.latin.uix.theme.Typography
-import org.futo.inputmethod.latin.uix.theme.UixThemeWrapper
-import org.futo.inputmethod.latin.uix.theme.presets.DynamicDarkTheme
-import org.futo.inputmethod.updates.dismissedMigrateUpdateNotice
-import org.futo.inputmethod.updates.openURI
+import org.luxtype.inputmethod.latin.BuildConfig
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.SettingsKey
+import org.luxtype.inputmethod.latin.uix.getSetting
+import org.luxtype.inputmethod.latin.uix.setSetting
+import org.luxtype.inputmethod.latin.uix.setSettingBlocking
+import org.luxtype.inputmethod.latin.uix.settings.DropDownPicker
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItem
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItemStyle
+import org.luxtype.inputmethod.latin.uix.settings.ScreenTitle
+import org.luxtype.inputmethod.latin.uix.settings.ScrollableList
+import org.luxtype.inputmethod.latin.uix.settings.SpacedColumn
+import org.luxtype.inputmethod.latin.uix.settings.useDataStore
+import org.luxtype.inputmethod.latin.uix.settings.useDataStoreValue
+import org.luxtype.inputmethod.latin.uix.theme.Typography
+import org.luxtype.inputmethod.latin.uix.theme.UixThemeWrapper
+import org.luxtype.inputmethod.latin.uix.theme.presets.DynamicDarkTheme
+import org.luxtype.inputmethod.updates.dismissedMigrateUpdateNotice
+import org.luxtype.inputmethod.updates.openURI
 import kotlin.math.absoluteValue
 
 

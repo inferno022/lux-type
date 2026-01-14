@@ -1,16 +1,16 @@
-package org.futo.inputmethod.latin.uix.actions
+package org.luxtype.inputmethod.latin.uix.actions
 
 import android.content.Intent
 import android.widget.Toast
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.Action
-import org.futo.inputmethod.latin.uix.ActionWindow
-import org.futo.inputmethod.latin.uix.isDirectBootUnlocked
-import org.futo.inputmethod.latin.uix.settings.SettingsActivity
-import org.futo.inputmethod.latin.uix.theme.selector.ThemePicker
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.Action
+import org.luxtype.inputmethod.latin.uix.ActionWindow
+import org.luxtype.inputmethod.latin.uix.isDirectBootUnlocked
+import org.luxtype.inputmethod.latin.uix.settings.SettingsActivity
+import org.luxtype.inputmethod.latin.uix.theme.selector.ThemePicker
 
 val ThemeAction = Action(
     icon = R.drawable.themes,

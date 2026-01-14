@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.futo.inputmethod.keyboard
+package org.luxtype.inputmethod.keyboard
 
 import android.graphics.Rect
 import android.graphics.Typeface
@@ -24,19 +24,19 @@ import androidx.collection.MutableIntIntMap
 import androidx.collection.mutableIntIntMapOf
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
-import org.futo.inputmethod.keyboard.internal.KeyDrawParams
-import org.futo.inputmethod.keyboard.internal.KeySpecParser
-import org.futo.inputmethod.keyboard.internal.KeyVisualAttributes
-import org.futo.inputmethod.keyboard.internal.KeyboardIconsSet
-import org.futo.inputmethod.keyboard.internal.KeyboardParams
-import org.futo.inputmethod.keyboard.internal.MoreKeySpec
-import org.futo.inputmethod.keyboard.internal.MoreKeySpec.LettersOnBaseLayout
-import org.futo.inputmethod.latin.common.Constants
-import org.futo.inputmethod.latin.common.StringUtils
-import org.futo.inputmethod.latin.uix.DynamicThemeProvider
-import org.futo.inputmethod.v2keyboard.Direction
-import org.futo.inputmethod.v2keyboard.KeyVisualStyle
-import org.futo.inputmethod.v2keyboard.computeDirectionsFromDeltaPos
+import org.luxtype.inputmethod.keyboard.internal.KeyDrawParams
+import org.luxtype.inputmethod.keyboard.internal.KeySpecParser
+import org.luxtype.inputmethod.keyboard.internal.KeyVisualAttributes
+import org.luxtype.inputmethod.keyboard.internal.KeyboardIconsSet
+import org.luxtype.inputmethod.keyboard.internal.KeyboardParams
+import org.luxtype.inputmethod.keyboard.internal.MoreKeySpec
+import org.luxtype.inputmethod.keyboard.internal.MoreKeySpec.LettersOnBaseLayout
+import org.luxtype.inputmethod.latin.common.Constants
+import org.luxtype.inputmethod.latin.common.StringUtils
+import org.luxtype.inputmethod.latin.uix.DynamicThemeProvider
+import org.luxtype.inputmethod.v2keyboard.Direction
+import org.luxtype.inputmethod.v2keyboard.KeyVisualStyle
+import org.luxtype.inputmethod.v2keyboard.computeDirectionsFromDeltaPos
 import kotlin.math.roundToInt
 import kotlin.math.sqrt
 

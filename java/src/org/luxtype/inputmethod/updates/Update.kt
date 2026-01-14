@@ -1,4 +1,4 @@
-package org.futo.inputmethod.updates
+package org.luxtype.inputmethod.updates
 
 import android.content.ActivityNotFoundException
 import android.content.Context
@@ -29,16 +29,16 @@ import androidx.datastore.preferences.core.longPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import org.futo.inputmethod.latin.BuildConfig
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.SettingsKey
-import org.futo.inputmethod.latin.uix.getSetting
-import org.futo.inputmethod.latin.uix.setSetting
-import org.futo.inputmethod.latin.uix.settings.SettingItem
-import org.futo.inputmethod.latin.uix.settings.pages.ParagraphText
-import org.futo.inputmethod.latin.uix.settings.pages.PaymentSurface
-import org.futo.inputmethod.latin.uix.settings.pages.PaymentSurfaceHeading
-import org.futo.inputmethod.latin.uix.settings.useDataStore
+import org.luxtype.inputmethod.latin.BuildConfig
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.SettingsKey
+import org.luxtype.inputmethod.latin.uix.getSetting
+import org.luxtype.inputmethod.latin.uix.setSetting
+import org.luxtype.inputmethod.latin.uix.settings.SettingItem
+import org.luxtype.inputmethod.latin.uix.settings.pages.ParagraphText
+import org.luxtype.inputmethod.latin.uix.settings.pages.PaymentSurface
+import org.luxtype.inputmethod.latin.uix.settings.pages.PaymentSurfaceHeading
+import org.luxtype.inputmethod.latin.uix.settings.useDataStore
 
 val LAST_UPDATE_CHECK_RESULT = stringPreferencesKey("last_update_check_result")
 val LAST_UPDATE_CHECK_FAILED = booleanPreferencesKey("last_update_check_failed")

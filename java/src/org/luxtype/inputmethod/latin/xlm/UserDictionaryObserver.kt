@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.xlm
+package org.luxtype.inputmethod.latin.xlm
 
 import android.content.Context
 import android.database.ContentObserver
@@ -8,7 +8,7 @@ import android.os.Looper
 import android.provider.UserDictionary
 import android.database.Cursor
 import android.util.Log
-import org.futo.inputmethod.latin.Subtypes
+import org.luxtype.inputmethod.latin.Subtypes
 import java.util.Locale
 
 data class Word(val word: String, val frequency: Int, val locale: String?, val shortcut: String?)

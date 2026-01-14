@@ -1,12 +1,12 @@
-package org.futo.inputmethod.latin.utils
+package org.luxtype.inputmethod.latin.utils
 
 import android.content.Context
 import android.content.res.AssetFileDescriptor
 import android.content.res.Resources.NotFoundException
 import android.util.Log
-import org.futo.inputmethod.latin.AssetFileAddress
-import org.futo.inputmethod.latin.BundleHelper
-import org.futo.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.AssetFileAddress
+import org.luxtype.inputmethod.latin.BundleHelper
+import org.luxtype.inputmethod.latin.R
 import java.io.File
 import java.io.IOException
 import java.util.Locale

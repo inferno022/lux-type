@@ -1,10 +1,10 @@
-package org.futo.inputmethod.v2keyboard
+package org.luxtype.inputmethod.v2keyboard
 import android.content.Context
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.builtins.serializer
-import org.futo.inputmethod.keyboard.internal.KeyboardLayoutKind
-import org.futo.inputmethod.keyboard.internal.KeyboardParams
-import org.futo.inputmethod.latin.settings.Settings
+import org.luxtype.inputmethod.keyboard.internal.KeyboardLayoutKind
+import org.luxtype.inputmethod.keyboard.internal.KeyboardParams
+import org.luxtype.inputmethod.latin.settings.Settings
 
 object RowKeyListSerializer : SpacedListSerializer<Key>(KeyPathSerializer)
 
@@ -349,7 +349,7 @@ data class Keyboard(
         ensureRowsValid(this)
     }.toList()
 
-    fun build(context: Context, params: KeyboardParams, layoutParams: LayoutParams): org.futo.inputmethod.keyboard.Keyboard {
+    fun build(context: Context, params: KeyboardParams, layoutParams: LayoutParams): org.luxtype.inputmethod.keyboard.Keyboard {
         val engine = LayoutEngine(context, this, params, layoutParams)
         return engine.build()
     }

@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings
+package org.luxtype.inputmethod.latin.uix.settings
 
 val badWords = listOf(
     "anus",

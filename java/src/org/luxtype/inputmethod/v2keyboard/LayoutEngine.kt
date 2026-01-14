@@ -1,15 +1,15 @@
-package org.futo.inputmethod.v2keyboard
+package org.luxtype.inputmethod.v2keyboard
 
 import android.content.Context
 import android.graphics.Rect
 import android.util.Log
 import androidx.compose.ui.unit.Dp
-import org.futo.inputmethod.keyboard.KeyConsts
-import org.futo.inputmethod.keyboard.internal.KeyboardLayoutElement
-import org.futo.inputmethod.keyboard.internal.KeyboardParams
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.common.Constants
-import org.futo.inputmethod.latin.uix.DynamicThemeProvider
+import org.luxtype.inputmethod.keyboard.KeyConsts
+import org.luxtype.inputmethod.keyboard.internal.KeyboardLayoutElement
+import org.luxtype.inputmethod.keyboard.internal.KeyboardParams
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.common.Constants
+import org.luxtype.inputmethod.latin.uix.DynamicThemeProvider
 import kotlin.math.floor
 import kotlin.math.roundToInt
 
@@ -516,7 +516,7 @@ data class LayoutEngine(
     }.map { it.toString() }.toSet()
     private val showAllHintsSetting = params.mId.mLongPressKeySettings.showHints
 
-    private fun computedKeyToKey(row: Int, col: Int, data: ComputedKeyData, x: Int, y: Int, width: Int, height: Int, leftGap: LayoutEntry.Gap?, rightGap: LayoutEntry.Gap?): org.futo.inputmethod.keyboard.Key? {
+    private fun computedKeyToKey(row: Int, col: Int, data: ComputedKeyData, x: Int, y: Int, width: Int, height: Int, leftGap: LayoutEntry.Gap?, rightGap: LayoutEntry.Gap?): org.luxtype.inputmethod.keyboard.Key? {
         // These keys are empty keys and do not get added, leaving an empty gap in place of the key
         // The hitbox of other keys does not get expanded to include this gap though, unlike
         // gaps added for centering rows
@@ -571,7 +571,7 @@ data class LayoutEngine(
             0
         }
 
-        return org.futo.inputmethod.keyboard.Key(
+        return org.luxtype.inputmethod.keyboard.Key(
             code = data.code,
             label = data.label,
             width = width - horizontalGapPx.roundToInt(),
@@ -677,7 +677,7 @@ data class LayoutEngine(
         return currentY.roundToInt()
     }
 
-    fun build(): org.futo.inputmethod.keyboard.Keyboard {
+    fun build(): org.luxtype.inputmethod.keyboard.Keyboard {
         params.mMoreKeysTemplate = R.xml.kbd_more_keys_keyboard_template
         params.mMaxMoreKeysKeyboardColumn = 5
 
@@ -720,6 +720,6 @@ data class LayoutEngine(
 
         params.mMostCommonKeyWidth = regularKeyWidth.roundToInt()
 
-        return org.futo.inputmethod.keyboard.Keyboard(params)
+        return org.luxtype.inputmethod.keyboard.Keyboard(params)
     }
 }

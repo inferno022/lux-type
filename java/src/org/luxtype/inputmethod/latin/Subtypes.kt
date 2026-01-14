@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin
+package org.luxtype.inputmethod.latin
 
 import android.content.Context
 import android.content.Intent
@@ -38,19 +38,19 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.core.stringSetPreferencesKey
-import org.futo.inputmethod.latin.common.Constants
-import org.futo.inputmethod.latin.uix.SettingsKey
-import org.futo.inputmethod.latin.uix.getSetting
-import org.futo.inputmethod.latin.uix.getSettingBlocking
-import org.futo.inputmethod.latin.uix.isDirectBootUnlocked
-import org.futo.inputmethod.latin.uix.setSettingBlocking
-import org.futo.inputmethod.latin.uix.settings.NavigationItem
-import org.futo.inputmethod.latin.uix.settings.NavigationItemStyle
-import org.futo.inputmethod.latin.uix.settings.SettingsActivity
-import org.futo.inputmethod.latin.uix.settings.useDataStoreValue
-import org.futo.inputmethod.latin.uix.theme.Typography
-import org.futo.inputmethod.latin.utils.SubtypeLocaleUtils
-import org.futo.inputmethod.v2keyboard.LayoutManager
+import org.luxtype.inputmethod.latin.common.Constants
+import org.luxtype.inputmethod.latin.uix.SettingsKey
+import org.luxtype.inputmethod.latin.uix.getSetting
+import org.luxtype.inputmethod.latin.uix.getSettingBlocking
+import org.luxtype.inputmethod.latin.uix.isDirectBootUnlocked
+import org.luxtype.inputmethod.latin.uix.setSettingBlocking
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItem
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItemStyle
+import org.luxtype.inputmethod.latin.uix.settings.SettingsActivity
+import org.luxtype.inputmethod.latin.uix.settings.useDataStoreValue
+import org.luxtype.inputmethod.latin.uix.theme.Typography
+import org.luxtype.inputmethod.latin.utils.SubtypeLocaleUtils
+import org.luxtype.inputmethod.v2keyboard.LayoutManager
 import java.util.Locale
 import kotlin.math.sign
 

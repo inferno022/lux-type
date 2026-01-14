@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings.pages.modelmanager
+package org.luxtype.inputmethod.latin.uix.settings.pages.modelmanager
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -24,15 +24,15 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import kotlinx.coroutines.runBlocking
-import org.futo.inputmethod.latin.uix.settings.ScreenTitle
-import org.futo.inputmethod.latin.uix.settings.ScrollableList
-import org.futo.inputmethod.latin.uix.theme.Typography
-import org.futo.inputmethod.latin.xlm.ModelInfoLoader
-import org.futo.inputmethod.latin.xlm.ModelPaths
-import org.futo.inputmethod.latin.xlm.TrainingState
-import org.futo.inputmethod.latin.xlm.TrainingStateWithModel
-import org.futo.inputmethod.latin.xlm.TrainingWorkerStatus
-import org.futo.inputmethod.latin.xlm.scheduleTrainingWorkerImmediately
+import org.luxtype.inputmethod.latin.uix.settings.ScreenTitle
+import org.luxtype.inputmethod.latin.uix.settings.ScrollableList
+import org.luxtype.inputmethod.latin.uix.theme.Typography
+import org.luxtype.inputmethod.latin.xlm.ModelInfoLoader
+import org.luxtype.inputmethod.latin.xlm.ModelPaths
+import org.luxtype.inputmethod.latin.xlm.TrainingState
+import org.luxtype.inputmethod.latin.xlm.TrainingStateWithModel
+import org.luxtype.inputmethod.latin.xlm.TrainingWorkerStatus
+import org.luxtype.inputmethod.latin.xlm.scheduleTrainingWorkerImmediately
 import java.io.File
 import kotlin.math.roundToInt
 

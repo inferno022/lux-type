@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.actions.emoji
+package org.luxtype.inputmethod.latin.uix.actions.emoji
 
 data class EmojiItem(
     val emoji: String,

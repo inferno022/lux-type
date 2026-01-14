@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.theme.presets
+package org.luxtype.inputmethod.latin.uix.theme.presets
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.geometry.Offset
@@ -6,10 +6,10 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.TileMode
 import androidx.compose.ui.tooling.preview.Preview
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.extendedDarkColorScheme
-import org.futo.inputmethod.latin.uix.theme.ThemeOption
-import org.futo.inputmethod.latin.uix.theme.selector.ThemePreview
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.extendedDarkColorScheme
+import org.luxtype.inputmethod.latin.uix.theme.ThemeOption
+import org.luxtype.inputmethod.latin.uix.theme.selector.ThemePreview
 
 private val darkScheme = extendedDarkColorScheme(
     primary=Color(0xFFF0DBBB),

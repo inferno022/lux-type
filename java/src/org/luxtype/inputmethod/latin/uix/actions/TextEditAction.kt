@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.actions
+package org.luxtype.inputmethod.latin.uix.actions
 
 import android.view.KeyEvent
 import androidx.annotation.DrawableRes
@@ -33,10 +33,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.delay
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.common.Constants
-import org.futo.inputmethod.latin.uix.Action
-import org.futo.inputmethod.latin.uix.ActionWindow
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.common.Constants
+import org.luxtype.inputmethod.latin.uix.Action
+import org.luxtype.inputmethod.latin.uix.ActionWindow
 
 @Composable
 fun IconWithColor(@DrawableRes iconId: Int, iconColor: Color, modifier: Modifier = Modifier) {

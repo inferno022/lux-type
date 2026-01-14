@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings.pages.themes
+package org.luxtype.inputmethod.latin.uix.settings.pages.themes
 
 import android.app.Activity
 import android.net.Uri
@@ -35,16 +35,16 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.THEME_KEY
-import org.futo.inputmethod.latin.uix.settings.RotatingChevronIcon
-import org.futo.inputmethod.latin.uix.settings.ScreenTitle
-import org.futo.inputmethod.latin.uix.settings.useDataStore
-import org.futo.inputmethod.latin.uix.theme.ZipThemes
-import org.futo.inputmethod.latin.uix.theme.Typography
-import org.futo.inputmethod.latin.uix.theme.selector.ThemePicker
-import org.futo.inputmethod.latin.uix.theme.selector.ZipThemePreview
-import org.futo.inputmethod.latin.uix.urlEncode
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.THEME_KEY
+import org.luxtype.inputmethod.latin.uix.settings.RotatingChevronIcon
+import org.luxtype.inputmethod.latin.uix.settings.ScreenTitle
+import org.luxtype.inputmethod.latin.uix.settings.useDataStore
+import org.luxtype.inputmethod.latin.uix.theme.ZipThemes
+import org.luxtype.inputmethod.latin.uix.theme.Typography
+import org.luxtype.inputmethod.latin.uix.theme.selector.ThemePicker
+import org.luxtype.inputmethod.latin.uix.theme.selector.ZipThemePreview
+import org.luxtype.inputmethod.latin.uix.urlEncode
 
 
 @Composable
@@ -103,7 +103,7 @@ fun ThemeScreen(navController: NavHostController = rememberNavController()) {
                     TextFieldValue(""),
                     imeOptions = ImeOptions.Default.copy(
                         platformImeOptions = PlatformImeOptions(
-                            privateImeOptions = "org.futo.inputmethod.latin.NoSuggestions=1"
+                            privateImeOptions = "org.luxtype.inputmethod.latin.NoSuggestions=1"
                         )
                     ),
                     onEditCommand = { },

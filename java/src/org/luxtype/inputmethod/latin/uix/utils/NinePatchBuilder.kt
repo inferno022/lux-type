@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.utils
+package org.luxtype.inputmethod.latin.uix.utils
 
 import android.content.res.Resources
 import android.graphics.Bitmap

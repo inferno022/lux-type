@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings.pages
+package org.luxtype.inputmethod.latin.uix.settings.pages
 
 import android.content.ClipData
 import android.content.ClipboardManager
@@ -11,18 +11,18 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import kotlinx.coroutines.runBlocking
-import org.futo.inputmethod.latin.BuildConfig
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.getSetting
-import org.futo.inputmethod.latin.uix.setSetting
-import org.futo.inputmethod.latin.uix.settings.NavigationItem
-import org.futo.inputmethod.latin.uix.settings.NavigationItemStyle
-import org.futo.inputmethod.latin.uix.settings.Tip
-import org.futo.inputmethod.latin.uix.settings.UserSetting
-import org.futo.inputmethod.latin.uix.settings.UserSettingsMenu
-import org.futo.inputmethod.latin.uix.settings.userSettingDecorationOnly
-import org.futo.inputmethod.latin.uix.settings.userSettingNavigationItem
-import org.futo.inputmethod.updates.openURI
+import org.luxtype.inputmethod.latin.BuildConfig
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.getSetting
+import org.luxtype.inputmethod.latin.uix.setSetting
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItem
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItemStyle
+import org.luxtype.inputmethod.latin.uix.settings.Tip
+import org.luxtype.inputmethod.latin.uix.settings.UserSetting
+import org.luxtype.inputmethod.latin.uix.settings.UserSettingsMenu
+import org.luxtype.inputmethod.latin.uix.settings.userSettingDecorationOnly
+import org.luxtype.inputmethod.latin.uix.settings.userSettingNavigationItem
+import org.luxtype.inputmethod.updates.openURI
 
 internal fun Context.copyToClipboard(text: CharSequence, label: String = "Copied Text") {
     val clipboardManager = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager

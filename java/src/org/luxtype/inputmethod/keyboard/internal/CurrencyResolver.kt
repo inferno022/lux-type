@@ -1,4 +1,4 @@
-package org.futo.inputmethod.keyboard.internal
+package org.luxtype.inputmethod.keyboard.internal
 
 import android.icu.util.ULocale
 import android.util.Log

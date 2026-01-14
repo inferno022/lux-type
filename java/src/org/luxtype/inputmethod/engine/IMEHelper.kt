@@ -1,4 +1,4 @@
-package org.futo.inputmethod.engine
+package org.luxtype.inputmethod.engine
 
 import android.content.Context
 import android.graphics.Rect
@@ -6,11 +6,11 @@ import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputConnection
 import androidx.lifecycle.LifecycleCoroutineScope
 import androidx.lifecycle.lifecycleScope
-import org.futo.inputmethod.engine.general.ActionInputTransactionIME
-import org.futo.inputmethod.keyboard.KeyboardSwitcher
-import org.futo.inputmethod.latin.LatinIME
-import org.futo.inputmethod.latin.SuggestedWords
-import org.futo.inputmethod.latin.settings.Settings
+import org.luxtype.inputmethod.engine.general.ActionInputTransactionIME
+import org.luxtype.inputmethod.keyboard.KeyboardSwitcher
+import org.luxtype.inputmethod.latin.LatinIME
+import org.luxtype.inputmethod.latin.SuggestedWords
+import org.luxtype.inputmethod.latin.settings.Settings
 
 interface InputMethodConnectionProvider {
     fun getCurrentInputConnection(): InputConnection?

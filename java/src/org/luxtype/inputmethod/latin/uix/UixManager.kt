@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix
+package org.luxtype.inputmethod.latin.uix
 
 import android.content.ClipDescription
 import android.content.Context
@@ -102,53 +102,53 @@ import androidx.window.layout.WindowInfoTracker
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
-import org.futo.inputmethod.accessibility.AccessibilityUtils
-import org.futo.inputmethod.engine.IMEInterface
-import org.futo.inputmethod.event.Event
-import org.futo.inputmethod.latin.AudioAndHapticFeedbackManager
-import org.futo.inputmethod.latin.BuildConfig
-import org.futo.inputmethod.latin.FoldingOptions
-import org.futo.inputmethod.latin.LanguageSwitcherDialog
-import org.futo.inputmethod.latin.LatinIME
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.RichInputMethodManager
-import org.futo.inputmethod.latin.SuggestedWords
-import org.futo.inputmethod.latin.SuggestedWords.SuggestedWordInfo
-import org.futo.inputmethod.latin.SupportsNavbarExtension
-import org.futo.inputmethod.latin.common.Constants
-import org.futo.inputmethod.latin.settings.Settings
-import org.futo.inputmethod.latin.suggestions.SuggestionStripViewListener
-import org.futo.inputmethod.latin.uix.actions.ActionEditor
-import org.futo.inputmethod.latin.uix.actions.ActionRegistry
-import org.futo.inputmethod.latin.uix.actions.AllActions
-import org.futo.inputmethod.latin.uix.actions.BugViewerAction
-import org.futo.inputmethod.latin.uix.actions.BugViewerState
-import org.futo.inputmethod.latin.uix.actions.KeyboardModeAction
-import org.futo.inputmethod.latin.uix.actions.PersistentEmojiState
-import org.futo.inputmethod.latin.uix.actions.keyCode
-import org.futo.inputmethod.latin.uix.actions.keyCodeAlt
-import org.futo.inputmethod.latin.uix.resizing.KeyboardResizers
-import org.futo.inputmethod.latin.uix.settings.DataStoreCacheProvider
-import org.futo.inputmethod.latin.uix.settings.pages.ActionBarDisplayedSetting
-import org.futo.inputmethod.latin.uix.settings.pages.InlineAutofillSetting
-import org.futo.inputmethod.latin.uix.settings.useDataStore
-import org.futo.inputmethod.latin.uix.theme.KeyboardSurfaceShaderBackground
-import org.futo.inputmethod.latin.uix.theme.Typography
-import org.futo.inputmethod.latin.uix.theme.UixThemeAuto
-import org.futo.inputmethod.latin.uix.theme.UixThemeWrapper
-import org.futo.inputmethod.updates.autoDeferManualUpdateIfNeeded
-import org.futo.inputmethod.updates.deferManualUpdate
-import org.futo.inputmethod.updates.isManualUpdateTimeExpired
-import org.futo.inputmethod.updates.openManualUpdateCheck
-import org.futo.inputmethod.updates.retrieveSavedLastUpdateCheckResult
-import org.futo.inputmethod.v2keyboard.ComputedKeyboardSize
-import org.futo.inputmethod.v2keyboard.FloatingKeyboardSize
-import org.futo.inputmethod.v2keyboard.KeyboardSizingCalculator
-import org.futo.inputmethod.v2keyboard.OneHandedDirection
-import org.futo.inputmethod.v2keyboard.OneHandedKeyboardSize
-import org.futo.inputmethod.v2keyboard.RegularKeyboardSize
-import org.futo.inputmethod.v2keyboard.SplitKeyboardSize
-import org.futo.inputmethod.v2keyboard.opposite
+import org.luxtype.inputmethod.accessibility.AccessibilityUtils
+import org.luxtype.inputmethod.engine.IMEInterface
+import org.luxtype.inputmethod.event.Event
+import org.luxtype.inputmethod.latin.AudioAndHapticFeedbackManager
+import org.luxtype.inputmethod.latin.BuildConfig
+import org.luxtype.inputmethod.latin.FoldingOptions
+import org.luxtype.inputmethod.latin.LanguageSwitcherDialog
+import org.luxtype.inputmethod.latin.LatinIME
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.RichInputMethodManager
+import org.luxtype.inputmethod.latin.SuggestedWords
+import org.luxtype.inputmethod.latin.SuggestedWords.SuggestedWordInfo
+import org.luxtype.inputmethod.latin.SupportsNavbarExtension
+import org.luxtype.inputmethod.latin.common.Constants
+import org.luxtype.inputmethod.latin.settings.Settings
+import org.luxtype.inputmethod.latin.suggestions.SuggestionStripViewListener
+import org.luxtype.inputmethod.latin.uix.actions.ActionEditor
+import org.luxtype.inputmethod.latin.uix.actions.ActionRegistry
+import org.luxtype.inputmethod.latin.uix.actions.AllActions
+import org.luxtype.inputmethod.latin.uix.actions.BugViewerAction
+import org.luxtype.inputmethod.latin.uix.actions.BugViewerState
+import org.luxtype.inputmethod.latin.uix.actions.KeyboardModeAction
+import org.luxtype.inputmethod.latin.uix.actions.PersistentEmojiState
+import org.luxtype.inputmethod.latin.uix.actions.keyCode
+import org.luxtype.inputmethod.latin.uix.actions.keyCodeAlt
+import org.luxtype.inputmethod.latin.uix.resizing.KeyboardResizers
+import org.luxtype.inputmethod.latin.uix.settings.DataStoreCacheProvider
+import org.luxtype.inputmethod.latin.uix.settings.pages.ActionBarDisplayedSetting
+import org.luxtype.inputmethod.latin.uix.settings.pages.InlineAutofillSetting
+import org.luxtype.inputmethod.latin.uix.settings.useDataStore
+import org.luxtype.inputmethod.latin.uix.theme.KeyboardSurfaceShaderBackground
+import org.luxtype.inputmethod.latin.uix.theme.Typography
+import org.luxtype.inputmethod.latin.uix.theme.UixThemeAuto
+import org.luxtype.inputmethod.latin.uix.theme.UixThemeWrapper
+import org.luxtype.inputmethod.updates.autoDeferManualUpdateIfNeeded
+import org.luxtype.inputmethod.updates.deferManualUpdate
+import org.luxtype.inputmethod.updates.isManualUpdateTimeExpired
+import org.luxtype.inputmethod.updates.openManualUpdateCheck
+import org.luxtype.inputmethod.updates.retrieveSavedLastUpdateCheckResult
+import org.luxtype.inputmethod.v2keyboard.ComputedKeyboardSize
+import org.luxtype.inputmethod.v2keyboard.FloatingKeyboardSize
+import org.luxtype.inputmethod.v2keyboard.KeyboardSizingCalculator
+import org.luxtype.inputmethod.v2keyboard.OneHandedDirection
+import org.luxtype.inputmethod.v2keyboard.OneHandedKeyboardSize
+import org.luxtype.inputmethod.v2keyboard.RegularKeyboardSize
+import org.luxtype.inputmethod.v2keyboard.SplitKeyboardSize
+import org.luxtype.inputmethod.v2keyboard.opposite
 import java.util.Locale
 import kotlin.math.roundToInt
 
@@ -1498,7 +1498,7 @@ class UixManager(private val latinIME: LatinIME) {
 
     val tutorialMode: TutorialMode
         get() = when {
-            editorInfo?.privateImeOptions?.contains("org.futo.inputmethod.latin.ResizeMode=1") == true ->
+            editorInfo?.privateImeOptions?.contains("org.luxtype.inputmethod.latin.ResizeMode=1") == true ->
                 TutorialMode.ResizerTutorial
 
             else ->

@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.xlm
+package org.luxtype.inputmethod.latin.xlm
 
 import kotlin.math.PI
 import kotlin.math.ceil

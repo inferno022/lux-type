@@ -1,9 +1,9 @@
-package org.futo.inputmethod.event.combiners
+package org.luxtype.inputmethod.event.combiners
 
 import android.icu.text.Normalizer2
-import org.futo.inputmethod.event.Combiner
-import org.futo.inputmethod.event.Event
-import org.futo.inputmethod.latin.common.Constants
+import org.luxtype.inputmethod.event.Combiner
+import org.luxtype.inputmethod.event.Event
+import org.luxtype.inputmethod.latin.common.Constants
 import java.util.ArrayList
 
 class NFCNormalizingCombiner : Combiner {

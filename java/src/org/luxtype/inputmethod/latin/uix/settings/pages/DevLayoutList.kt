@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings.pages
+package org.luxtype.inputmethod.latin.uix.settings.pages
 
 import android.util.Log
 import androidx.compose.foundation.border
@@ -31,10 +31,10 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import org.futo.inputmethod.latin.uix.KeyboardLayoutPreview
-import org.futo.inputmethod.latin.uix.settings.ScreenTitle
-import org.futo.inputmethod.latin.uix.theme.Typography
-import org.futo.inputmethod.v2keyboard.LayoutManager
+import org.luxtype.inputmethod.latin.uix.KeyboardLayoutPreview
+import org.luxtype.inputmethod.latin.uix.settings.ScreenTitle
+import org.luxtype.inputmethod.latin.uix.theme.Typography
+import org.luxtype.inputmethod.v2keyboard.LayoutManager
 
 @Composable
 fun DevLayoutList(navController: NavHostController = rememberNavController()) {
@@ -72,7 +72,7 @@ fun DevLayoutList(navController: NavHostController = rememberNavController()) {
                         TextFieldValue(""),
                         imeOptions = ImeOptions.Default.copy(
                             platformImeOptions = PlatformImeOptions(
-                                privateImeOptions = "org.futo.inputmethod.latin.NoSuggestions=1,org.futo.inputmethod.latin.ForceLayout=$name,org.futo.inputmethod.latin.ForceLocale=$language"
+                                privateImeOptions = "org.luxtype.inputmethod.latin.NoSuggestions=1,org.luxtype.inputmethod.latin.ForceLayout=$name,org.luxtype.inputmethod.latin.ForceLocale=$language"
                             )
                         ),
                         onEditCommand = {

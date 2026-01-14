@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings.pages
+package org.luxtype.inputmethod.latin.uix.settings.pages
 
 import android.content.Intent
 import androidx.compose.material3.Icon
@@ -7,17 +7,17 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.booleanResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.settings.Settings
-import org.futo.inputmethod.latin.uix.USE_TRANSFORMER_FINETUNING
-import org.futo.inputmethod.latin.uix.settings.NavigationItemStyle
-import org.futo.inputmethod.latin.uix.settings.Tip
-import org.futo.inputmethod.latin.uix.settings.UserSettingsMenu
-import org.futo.inputmethod.latin.uix.settings.useSharedPrefsBool
-import org.futo.inputmethod.latin.uix.settings.userSettingDecorationOnly
-import org.futo.inputmethod.latin.uix.settings.userSettingNavigationItem
-import org.futo.inputmethod.latin.uix.settings.userSettingToggleDataStore
-import org.futo.inputmethod.latin.uix.settings.userSettingToggleSharedPrefs
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.settings.Settings
+import org.luxtype.inputmethod.latin.uix.USE_TRANSFORMER_FINETUNING
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItemStyle
+import org.luxtype.inputmethod.latin.uix.settings.Tip
+import org.luxtype.inputmethod.latin.uix.settings.UserSettingsMenu
+import org.luxtype.inputmethod.latin.uix.settings.useSharedPrefsBool
+import org.luxtype.inputmethod.latin.uix.settings.userSettingDecorationOnly
+import org.luxtype.inputmethod.latin.uix.settings.userSettingNavigationItem
+import org.luxtype.inputmethod.latin.uix.settings.userSettingToggleDataStore
+import org.luxtype.inputmethod.latin.uix.settings.userSettingToggleSharedPrefs
 
 private val visibilityCheckLMEnabled = @Composable {
     useSharedPrefsBool(Settings.PREF_KEY_USE_TRANSFORMER_LM, true).value

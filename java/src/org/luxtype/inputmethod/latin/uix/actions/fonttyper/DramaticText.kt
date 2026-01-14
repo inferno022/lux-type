@@ -1,10 +1,10 @@
-package org.futo.inputmethod.latin.uix.actions.fonttyper
+package org.luxtype.inputmethod.latin.uix.actions.fonttyper
 
 import android.content.Context
 import android.graphics.Bitmap
-import org.futo.inputmethod.latin.uix.theme.loadBitmapFromAssets
-import org.futo.inputmethod.latin.uix.theme.renderShaderToBitmap
-import org.futo.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.theme.loadBitmapFromAssets
+import org.luxtype.inputmethod.latin.uix.theme.renderShaderToBitmap
+import org.luxtype.inputmethod.latin.R
 
 object DramaticTextRenderer : WordImageRenderer() {
     override val isSlow = true

@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.theme.presets
+package org.luxtype.inputmethod.latin.uix.theme.presets
 
 import android.app.UiModeManager
 import android.content.Context
@@ -6,10 +6,10 @@ import android.content.res.Configuration
 import android.os.Build
 import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.theme.ThemeOption
-import org.futo.inputmethod.latin.uix.wrapDarkColorScheme
-import org.futo.inputmethod.latin.uix.wrapLightColorScheme
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.theme.ThemeOption
+import org.luxtype.inputmethod.latin.uix.wrapDarkColorScheme
+import org.luxtype.inputmethod.latin.uix.wrapLightColorScheme
 
 val DynamicSystemTheme = ThemeOption(
     dynamic = true,

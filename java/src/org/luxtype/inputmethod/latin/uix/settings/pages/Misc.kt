@@ -1,14 +1,14 @@
-package org.futo.inputmethod.latin.uix.settings.pages
+package org.luxtype.inputmethod.latin.uix.settings.pages
 
 import androidx.compose.ui.res.stringResource
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.SettingsExporter
-import org.futo.inputmethod.latin.uix.settings.NavigationItemStyle
-import org.futo.inputmethod.latin.uix.settings.ScreenTitle
-import org.futo.inputmethod.latin.uix.settings.Tip
-import org.futo.inputmethod.latin.uix.settings.UserSettingsMenu
-import org.futo.inputmethod.latin.uix.settings.userSettingDecorationOnly
-import org.futo.inputmethod.latin.uix.settings.userSettingNavigationItem
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.SettingsExporter
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItemStyle
+import org.luxtype.inputmethod.latin.uix.settings.ScreenTitle
+import org.luxtype.inputmethod.latin.uix.settings.Tip
+import org.luxtype.inputmethod.latin.uix.settings.UserSettingsMenu
+import org.luxtype.inputmethod.latin.uix.settings.userSettingDecorationOnly
+import org.luxtype.inputmethod.latin.uix.settings.userSettingNavigationItem
 
 val MiscMenu = UserSettingsMenu(
     title = R.string.misc_settings_title,

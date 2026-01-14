@@ -1,7 +1,7 @@
-package org.futo.inputmethod.latin.uix.settings.pages.modelmanager
+package org.luxtype.inputmethod.latin.uix.settings.pages.modelmanager
 
-import org.futo.inputmethod.latin.xlm.ModelInfo
-import org.futo.inputmethod.latin.xlm.ModelInfoLoader
+import org.luxtype.inputmethod.latin.xlm.ModelInfo
+import org.luxtype.inputmethod.latin.xlm.ModelInfoLoader
 import java.io.File
 
 val PreviewModelLoader = ModelInfoLoader(path = File("/tmp/badmodel.gguf"), name = "badmodel")

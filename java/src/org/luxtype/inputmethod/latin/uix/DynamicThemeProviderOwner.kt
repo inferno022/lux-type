@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix
+package org.luxtype.inputmethod.latin.uix
 
 interface DynamicThemeProviderOwner {
     fun getDrawableProvider(): DynamicThemeProvider

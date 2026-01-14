@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings.pages
+package org.luxtype.inputmethod.latin.uix.settings.pages
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
@@ -6,13 +6,13 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.settings.ScreenTitle
-import org.futo.inputmethod.latin.uix.settings.ScrollableList
-import org.futo.inputmethod.latin.uix.settings.SettingSlider
-import org.futo.inputmethod.latin.uix.settings.Tip
-import org.futo.inputmethod.latin.xlm.AutocorrectThresholdSetting
-import org.futo.inputmethod.latin.xlm.BinaryDictTransformerWeightSetting
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.settings.ScreenTitle
+import org.luxtype.inputmethod.latin.uix.settings.ScrollableList
+import org.luxtype.inputmethod.latin.uix.settings.SettingSlider
+import org.luxtype.inputmethod.latin.uix.settings.Tip
+import org.luxtype.inputmethod.latin.xlm.AutocorrectThresholdSetting
+import org.luxtype.inputmethod.latin.xlm.BinaryDictTransformerWeightSetting
 
 @Preview
 @Composable

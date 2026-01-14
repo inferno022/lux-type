@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.futo.inputmethod.keyboard.internal
+package org.luxtype.inputmethod.keyboard.internal
 
 import android.content.res.TypedArray
 import android.graphics.drawable.Drawable
-import org.futo.inputmethod.latin.uix.DynamicThemeProvider
-import org.futo.inputmethod.latin.uix.actions.AllActionsMap
+import org.luxtype.inputmethod.latin.uix.DynamicThemeProvider
+import org.luxtype.inputmethod.latin.uix.actions.AllActionsMap
 
 class KeyboardIconsSet {
     private var provider: DynamicThemeProvider? = null

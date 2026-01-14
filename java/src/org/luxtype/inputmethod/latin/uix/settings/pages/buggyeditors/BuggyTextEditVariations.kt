@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings.pages.buggyeditors
+package org.luxtype.inputmethod.latin.uix.settings.pages.buggyeditors
 
 import android.graphics.RectF
 import android.os.Build
@@ -38,9 +38,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import org.futo.inputmethod.latin.uix.settings.ScreenTitle
-import org.futo.inputmethod.latin.uix.settings.ScrollableList
-import org.futo.inputmethod.latin.uix.settings.SettingToggleRaw
+import org.luxtype.inputmethod.latin.uix.settings.ScreenTitle
+import org.luxtype.inputmethod.latin.uix.settings.ScrollableList
+import org.luxtype.inputmethod.latin.uix.settings.SettingToggleRaw
 import java.util.concurrent.Executor
 import java.util.function.Consumer
 import java.util.function.IntConsumer

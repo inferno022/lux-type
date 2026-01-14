@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings
+package org.luxtype.inputmethod.latin.uix.settings
 
 import android.app.Activity
 import android.app.PendingIntent.FLAG_MUTABLE
@@ -43,13 +43,13 @@ import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
 //import okhttp3.OkHttpClient
 //import okhttp3.Request
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.InfoDialog
-import org.futo.inputmethod.latin.uix.getSetting
-import org.futo.inputmethod.updates.InstallReceiver
-import org.futo.inputmethod.updates.LAST_UPDATE_CHECK_RESULT
-import org.futo.inputmethod.updates.UpdateResult
-import org.futo.inputmethod.updates.openURI
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.InfoDialog
+import org.luxtype.inputmethod.latin.uix.getSetting
+import org.luxtype.inputmethod.updates.InstallReceiver
+import org.luxtype.inputmethod.updates.LAST_UPDATE_CHECK_RESULT
+import org.luxtype.inputmethod.updates.UpdateResult
+import org.luxtype.inputmethod.updates.openURI
 import java.io.ByteArrayOutputStream
 import java.io.InputStream
 import java.io.OutputStream

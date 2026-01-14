@@ -1,11 +1,11 @@
-package org.futo.inputmethod.latin
+package org.luxtype.inputmethod.latin
 
 import android.content.Context
 import android.content.res.Configuration
 import android.content.res.Resources
 import android.os.Build
 import android.util.Log
-import org.futo.inputmethod.latin.uix.actions.throwIfDebug
+import org.luxtype.inputmethod.latin.uix.actions.throwIfDebug
 import java.io.EOFException
 import java.io.File
 import java.io.FileInputStream

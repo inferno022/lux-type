@@ -1,4 +1,4 @@
-package org.futo.inputmethod.updates
+package org.luxtype.inputmethod.updates
 
 import android.app.job.JobInfo
 import android.app.job.JobScheduler
@@ -14,9 +14,9 @@ import kotlinx.serialization.json.Json
 //import okhttp3.OkHttpClient
 //import okhttp3.Request
 //import okhttp3.internal.closeQuietly
-import org.futo.inputmethod.latin.uix.dataStore
-import org.futo.inputmethod.latin.uix.getSetting
-import org.futo.inputmethod.latin.BuildConfig
+import org.luxtype.inputmethod.latin.uix.dataStore
+import org.luxtype.inputmethod.latin.uix.getSetting
+import org.luxtype.inputmethod.latin.BuildConfig
 import java.lang.Exception
 
 const val UPDATE_URL = "https://keyboard.futo.org/keyboard_version"

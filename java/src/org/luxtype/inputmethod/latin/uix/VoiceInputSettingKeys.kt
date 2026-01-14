@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix
+package org.luxtype.inputmethod.latin.uix
 
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.intPreferencesKey

@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.actions
+package org.luxtype.inputmethod.latin.uix.actions
 
 import android.view.HapticFeedbackConstants
 import androidx.compose.foundation.ExperimentalFoundationApi
@@ -44,16 +44,16 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.Action
-import org.futo.inputmethod.latin.uix.ActionWindow
-import org.futo.inputmethod.latin.uix.LocalKeyboardScheme
-import org.futo.inputmethod.latin.uix.LocalManager
-import org.futo.inputmethod.latin.uix.getSettingBlocking
-import org.futo.inputmethod.latin.uix.settings.ScreenTitle
-import org.futo.inputmethod.latin.uix.settings.WarningTip
-import org.futo.inputmethod.latin.uix.settings.useDataStoreValue
-import org.futo.inputmethod.latin.uix.theme.Typography
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.Action
+import org.luxtype.inputmethod.latin.uix.ActionWindow
+import org.luxtype.inputmethod.latin.uix.LocalKeyboardScheme
+import org.luxtype.inputmethod.latin.uix.LocalManager
+import org.luxtype.inputmethod.latin.uix.getSettingBlocking
+import org.luxtype.inputmethod.latin.uix.settings.ScreenTitle
+import org.luxtype.inputmethod.latin.uix.settings.WarningTip
+import org.luxtype.inputmethod.latin.uix.settings.useDataStoreValue
+import org.luxtype.inputmethod.latin.uix.theme.Typography
 import sh.calvin.reorderable.ReorderableItem
 import sh.calvin.reorderable.rememberReorderableLazyGridState
 

@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.xlm
+package org.luxtype.inputmethod.latin.xlm
 
 import android.content.Context
 import android.net.Uri
@@ -7,12 +7,12 @@ import android.util.Log
 import androidx.annotation.Keep
 import androidx.datastore.preferences.core.stringSetPreferencesKey
 import kotlinx.coroutines.flow.MutableSharedFlow
-import org.futo.inputmethod.annotations.ExternallyReferenced
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.SettingsKey
-import org.futo.inputmethod.latin.uix.getSetting
-import org.futo.inputmethod.latin.uix.setSetting
-import org.futo.inputmethod.latin.utils.JniUtils
+import org.luxtype.inputmethod.annotations.ExternallyReferenced
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.SettingsKey
+import org.luxtype.inputmethod.latin.uix.getSetting
+import org.luxtype.inputmethod.latin.uix.setSetting
+import org.luxtype.inputmethod.latin.utils.JniUtils
 import java.io.File
 import java.io.FileOutputStream
 

@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix
+package org.luxtype.inputmethod.latin.uix
 
 import android.content.Context
 import android.graphics.Typeface
@@ -20,19 +20,19 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.Dp
 import androidx.lifecycle.LifecycleCoroutineScope
 import androidx.navigation.NavHostController
-import org.futo.inputmethod.engine.IMEInterface
-import org.futo.inputmethod.latin.LatinIME
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.SuggestionBlacklist
-import org.futo.inputmethod.latin.uix.settings.NavigationItem
-import org.futo.inputmethod.latin.uix.settings.NavigationItemStyle
-import org.futo.inputmethod.latin.uix.settings.ScreenTitle
-import org.futo.inputmethod.latin.uix.settings.SettingToggleDataStore
-import org.futo.inputmethod.latin.uix.settings.SettingToggleSharedPrefs
-import org.futo.inputmethod.latin.uix.settings.UserSettingsMenu
-import org.futo.inputmethod.latin.uix.theme.ThemeOption
-import org.futo.inputmethod.latin.uix.utils.TextContext
-import org.futo.inputmethod.v2keyboard.KeyboardSizingCalculator
+import org.luxtype.inputmethod.engine.IMEInterface
+import org.luxtype.inputmethod.latin.LatinIME
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.SuggestionBlacklist
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItem
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItemStyle
+import org.luxtype.inputmethod.latin.uix.settings.ScreenTitle
+import org.luxtype.inputmethod.latin.uix.settings.SettingToggleDataStore
+import org.luxtype.inputmethod.latin.uix.settings.SettingToggleSharedPrefs
+import org.luxtype.inputmethod.latin.uix.settings.UserSettingsMenu
+import org.luxtype.inputmethod.latin.uix.theme.ThemeOption
+import org.luxtype.inputmethod.latin.uix.utils.TextContext
+import org.luxtype.inputmethod.v2keyboard.KeyboardSizingCalculator
 import java.util.Locale
 
 interface ActionInputTransaction {

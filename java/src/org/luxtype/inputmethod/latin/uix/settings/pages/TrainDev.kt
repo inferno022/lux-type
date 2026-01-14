@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings.pages
+package org.luxtype.inputmethod.latin.uix.settings.pages
 
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -14,16 +14,16 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import org.futo.inputmethod.latin.uix.getSettingFlow
-import org.futo.inputmethod.latin.uix.settings.ScreenTitle
-import org.futo.inputmethod.latin.uix.settings.ScrollableList
-import org.futo.inputmethod.latin.xlm.HistoryLogForTraining
-import org.futo.inputmethod.latin.xlm.NUM_TRAINING_RUNS_KEY
-import org.futo.inputmethod.latin.xlm.TrainingState
-import org.futo.inputmethod.latin.xlm.TrainingStateWithModel
-import org.futo.inputmethod.latin.xlm.TrainingWorkerStatus
-import org.futo.inputmethod.latin.xlm.loadHistoryLogBackup
-import org.futo.inputmethod.latin.xlm.scheduleTrainingWorkerImmediately
+import org.luxtype.inputmethod.latin.uix.getSettingFlow
+import org.luxtype.inputmethod.latin.uix.settings.ScreenTitle
+import org.luxtype.inputmethod.latin.uix.settings.ScrollableList
+import org.luxtype.inputmethod.latin.xlm.HistoryLogForTraining
+import org.luxtype.inputmethod.latin.xlm.NUM_TRAINING_RUNS_KEY
+import org.luxtype.inputmethod.latin.xlm.TrainingState
+import org.luxtype.inputmethod.latin.xlm.TrainingStateWithModel
+import org.luxtype.inputmethod.latin.xlm.TrainingWorkerStatus
+import org.luxtype.inputmethod.latin.xlm.loadHistoryLogBackup
+import org.luxtype.inputmethod.latin.xlm.scheduleTrainingWorkerImmediately
 import kotlin.math.roundToInt
 
 

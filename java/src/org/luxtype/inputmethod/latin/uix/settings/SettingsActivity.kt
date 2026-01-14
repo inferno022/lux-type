@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings
+package org.luxtype.inputmethod.latin.uix.settings
 
 import android.app.Activity
 import android.content.Context
@@ -33,24 +33,24 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import org.futo.inputmethod.latin.uix.BasicThemeProvider
-import org.futo.inputmethod.latin.uix.DynamicThemeProvider
-import org.futo.inputmethod.latin.uix.DynamicThemeProviderOwner
-import org.futo.inputmethod.latin.uix.EXPORT_SETTINGS_REQUEST
-import org.futo.inputmethod.latin.uix.IMPORT_SETTINGS_REQUEST
-import org.futo.inputmethod.latin.uix.ImportResourceActivity
-import org.futo.inputmethod.latin.uix.SettingsExporter
-import org.futo.inputmethod.latin.uix.THEME_KEY
-import org.futo.inputmethod.latin.uix.getSettingBlocking
-import org.futo.inputmethod.latin.uix.getSettingFlow
-import org.futo.inputmethod.latin.uix.theme.ThemeOption
-import org.futo.inputmethod.latin.uix.theme.ThemeOptions
-import org.futo.inputmethod.latin.uix.theme.UixThemeAuto
-import org.futo.inputmethod.latin.uix.theme.getThemeOption
-import org.futo.inputmethod.latin.uix.theme.orDefault
-import org.futo.inputmethod.latin.xlm.ModelPaths
-import org.futo.inputmethod.updates.checkForUpdateAndSaveToPreferences
-import org.futo.inputmethod.v2keyboard.LayoutManager
+import org.luxtype.inputmethod.latin.uix.BasicThemeProvider
+import org.luxtype.inputmethod.latin.uix.DynamicThemeProvider
+import org.luxtype.inputmethod.latin.uix.DynamicThemeProviderOwner
+import org.luxtype.inputmethod.latin.uix.EXPORT_SETTINGS_REQUEST
+import org.luxtype.inputmethod.latin.uix.IMPORT_SETTINGS_REQUEST
+import org.luxtype.inputmethod.latin.uix.ImportResourceActivity
+import org.luxtype.inputmethod.latin.uix.SettingsExporter
+import org.luxtype.inputmethod.latin.uix.THEME_KEY
+import org.luxtype.inputmethod.latin.uix.getSettingBlocking
+import org.luxtype.inputmethod.latin.uix.getSettingFlow
+import org.luxtype.inputmethod.latin.uix.theme.ThemeOption
+import org.luxtype.inputmethod.latin.uix.theme.ThemeOptions
+import org.luxtype.inputmethod.latin.uix.theme.UixThemeAuto
+import org.luxtype.inputmethod.latin.uix.theme.getThemeOption
+import org.luxtype.inputmethod.latin.uix.theme.orDefault
+import org.luxtype.inputmethod.latin.xlm.ModelPaths
+import org.luxtype.inputmethod.updates.checkForUpdateAndSaveToPreferences
+import org.luxtype.inputmethod.v2keyboard.LayoutManager
 import java.io.File
 import kotlin.math.sqrt
 
@@ -76,8 +76,8 @@ private fun Context.isDefaultIMECurrent(): Boolean {
 
 private fun Context.isDoublePackage(): Boolean {
     val value = Settings.Secure.getString(contentResolver, Settings.Secure.DEFAULT_INPUT_METHOD)
-    val standalonePackage = "org.futo.inputmethod.latin"
-    val playstorePackage = "org.futo.inputmethod.latin.playstore"
+    val standalonePackage = "org.luxtype.inputmethod.latin"
+    val playstorePackage = "org.luxtype.inputmethod.latin.playstore"
 
     return (value.startsWith("$standalonePackage/") && packageName == playstorePackage) || (value.startsWith("$playstorePackage/") && packageName == standalonePackage)
 }

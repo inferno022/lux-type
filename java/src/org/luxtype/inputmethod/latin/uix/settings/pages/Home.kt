@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings.pages
+package org.luxtype.inputmethod.latin.uix.settings.pages
 
 import android.content.Intent
 import androidx.compose.foundation.layout.Column
@@ -29,21 +29,21 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import org.futo.inputmethod.latin.BuildConfig
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.LocalNavController
-import org.futo.inputmethod.latin.uix.TextEditPopupActivity
-import org.futo.inputmethod.latin.uix.USE_SYSTEM_VOICE_INPUT
-import org.futo.inputmethod.latin.uix.settings.NavigationItem
-import org.futo.inputmethod.latin.uix.settings.NavigationItemStyle
-import org.futo.inputmethod.latin.uix.settings.UserSetting
-import org.futo.inputmethod.latin.uix.settings.UserSettingsMenu
-import org.futo.inputmethod.latin.uix.settings.render
-import org.futo.inputmethod.latin.uix.settings.useDataStoreValue
-import org.futo.inputmethod.latin.uix.settings.userSettingNavigationItem
-import org.futo.inputmethod.latin.uix.theme.Typography
-import org.futo.inputmethod.updates.ConditionalMigrateUpdateNotice
-import org.futo.inputmethod.updates.openManualUpdateCheck
+import org.luxtype.inputmethod.latin.BuildConfig
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.LocalNavController
+import org.luxtype.inputmethod.latin.uix.TextEditPopupActivity
+import org.luxtype.inputmethod.latin.uix.USE_SYSTEM_VOICE_INPUT
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItem
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItemStyle
+import org.luxtype.inputmethod.latin.uix.settings.UserSetting
+import org.luxtype.inputmethod.latin.uix.settings.UserSettingsMenu
+import org.luxtype.inputmethod.latin.uix.settings.render
+import org.luxtype.inputmethod.latin.uix.settings.useDataStoreValue
+import org.luxtype.inputmethod.latin.uix.settings.userSettingNavigationItem
+import org.luxtype.inputmethod.latin.uix.theme.Typography
+import org.luxtype.inputmethod.updates.ConditionalMigrateUpdateNotice
+import org.luxtype.inputmethod.updates.openManualUpdateCheck
 
 val HomeScreenLite = UserSettingsMenu(
     title = R.string.settings_home_title,

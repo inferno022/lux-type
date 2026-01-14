@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.actions.fonttyper
+package org.luxtype.inputmethod.latin.uix.actions.fonttyper
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -55,17 +55,17 @@ import androidx.core.net.toUri
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.withContext
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.content.FONT_AUTHORITY
-import org.futo.inputmethod.latin.uix.Action
-import org.futo.inputmethod.latin.uix.ActionTextEditor
-import org.futo.inputmethod.latin.uix.ActionWindow
-import org.futo.inputmethod.latin.uix.CloseResult
-import org.futo.inputmethod.latin.uix.LocalKeyboardScheme
-import org.futo.inputmethod.latin.uix.LocalManager
-import org.futo.inputmethod.latin.uix.settings.ScrollableList
-import org.futo.inputmethod.latin.uix.settings.Tip
-import org.futo.inputmethod.latin.uix.settings.pages.VerticalGrid
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.content.FONT_AUTHORITY
+import org.luxtype.inputmethod.latin.uix.Action
+import org.luxtype.inputmethod.latin.uix.ActionTextEditor
+import org.luxtype.inputmethod.latin.uix.ActionWindow
+import org.luxtype.inputmethod.latin.uix.CloseResult
+import org.luxtype.inputmethod.latin.uix.LocalKeyboardScheme
+import org.luxtype.inputmethod.latin.uix.LocalManager
+import org.luxtype.inputmethod.latin.uix.settings.ScrollableList
+import org.luxtype.inputmethod.latin.uix.settings.Tip
+import org.luxtype.inputmethod.latin.uix.settings.pages.VerticalGrid
 import java.io.File
 import java.io.FileOutputStream
 import java.util.UUID

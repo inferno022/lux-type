@@ -1,8 +1,8 @@
-package org.futo.inputmethod.latin.uix.actions
+package org.luxtype.inputmethod.latin.uix.actions
 
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.Subtypes
-import org.futo.inputmethod.latin.uix.Action
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.Subtypes
+import org.luxtype.inputmethod.latin.uix.Action
 
 
 val SwitchLanguageAction = Action(

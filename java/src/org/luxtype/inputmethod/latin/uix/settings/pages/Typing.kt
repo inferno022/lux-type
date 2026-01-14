@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings.pages
+package org.luxtype.inputmethod.latin.uix.settings.pages
 
 import android.content.Context
 import android.media.AudioManager
@@ -81,53 +81,53 @@ import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import kotlinx.coroutines.delay
-import org.futo.inputmethod.accessibility.AccessibilityUtils
-import org.futo.inputmethod.engine.IMESettingsMenu
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.settings.LongPressKey
-import org.futo.inputmethod.latin.settings.LongPressKeyLayoutSetting
-import org.futo.inputmethod.latin.settings.Settings
-import org.futo.inputmethod.latin.settings.Settings.PREF_KEYPRESS_SOUND_VOLUME
-import org.futo.inputmethod.latin.settings.Settings.PREF_VIBRATION_DURATION_SETTINGS
-import org.futo.inputmethod.latin.settings.description
-import org.futo.inputmethod.latin.settings.name
-import org.futo.inputmethod.latin.settings.toEncodedString
-import org.futo.inputmethod.latin.settings.toLongPressKeyLayoutItems
-import org.futo.inputmethod.latin.uix.AndroidTextInput
-import org.futo.inputmethod.latin.uix.BasicThemeProvider
-import org.futo.inputmethod.latin.uix.KeyHintsSetting
-import org.futo.inputmethod.latin.uix.LocalKeyboardScheme
-import org.futo.inputmethod.latin.uix.SHOW_EMOJI_SUGGESTIONS
-import org.futo.inputmethod.latin.uix.SettingsKey
-import org.futo.inputmethod.latin.uix.getSettingBlocking
-import org.futo.inputmethod.latin.uix.setSettingBlocking
-import org.futo.inputmethod.latin.uix.settings.BottomSpacer
-import org.futo.inputmethod.latin.uix.settings.DataStoreItem
-import org.futo.inputmethod.latin.uix.settings.DropDownPickerSettingItem
-import org.futo.inputmethod.latin.uix.settings.LocalSharedPrefsCache
-import org.futo.inputmethod.latin.uix.settings.NavigationItemStyle
-import org.futo.inputmethod.latin.uix.settings.PrimarySettingToggleDataStoreItem
-import org.futo.inputmethod.latin.uix.settings.ScreenTitle
-import org.futo.inputmethod.latin.uix.settings.ScrollableList
-import org.futo.inputmethod.latin.uix.settings.SettingItem
-import org.futo.inputmethod.latin.uix.settings.SettingRadio
-import org.futo.inputmethod.latin.uix.settings.SettingSlider
-import org.futo.inputmethod.latin.uix.settings.SettingSliderSharedPrefsInt
-import org.futo.inputmethod.latin.uix.settings.SyncDataStoreToPreferencesFloat
-import org.futo.inputmethod.latin.uix.settings.SyncDataStoreToPreferencesInt
-import org.futo.inputmethod.latin.uix.settings.Tip
-import org.futo.inputmethod.latin.uix.settings.UserSetting
-import org.futo.inputmethod.latin.uix.settings.UserSettingsMenu
-import org.futo.inputmethod.latin.uix.settings.render
-import org.futo.inputmethod.latin.uix.settings.useDataStore
-import org.futo.inputmethod.latin.uix.settings.useSharedPrefsBool
-import org.futo.inputmethod.latin.uix.settings.useSharedPrefsInt
-import org.futo.inputmethod.latin.uix.settings.userSettingDecorationOnly
-import org.futo.inputmethod.latin.uix.settings.userSettingNavigationItem
-import org.futo.inputmethod.latin.uix.settings.userSettingToggleDataStore
-import org.futo.inputmethod.latin.uix.settings.userSettingToggleSharedPrefs
-import org.futo.inputmethod.latin.uix.theme.Typography
-import org.futo.inputmethod.v2keyboard.KeyboardSettings
+import org.luxtype.inputmethod.accessibility.AccessibilityUtils
+import org.luxtype.inputmethod.engine.IMESettingsMenu
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.settings.LongPressKey
+import org.luxtype.inputmethod.latin.settings.LongPressKeyLayoutSetting
+import org.luxtype.inputmethod.latin.settings.Settings
+import org.luxtype.inputmethod.latin.settings.Settings.PREF_KEYPRESS_SOUND_VOLUME
+import org.luxtype.inputmethod.latin.settings.Settings.PREF_VIBRATION_DURATION_SETTINGS
+import org.luxtype.inputmethod.latin.settings.description
+import org.luxtype.inputmethod.latin.settings.name
+import org.luxtype.inputmethod.latin.settings.toEncodedString
+import org.luxtype.inputmethod.latin.settings.toLongPressKeyLayoutItems
+import org.luxtype.inputmethod.latin.uix.AndroidTextInput
+import org.luxtype.inputmethod.latin.uix.BasicThemeProvider
+import org.luxtype.inputmethod.latin.uix.KeyHintsSetting
+import org.luxtype.inputmethod.latin.uix.LocalKeyboardScheme
+import org.luxtype.inputmethod.latin.uix.SHOW_EMOJI_SUGGESTIONS
+import org.luxtype.inputmethod.latin.uix.SettingsKey
+import org.luxtype.inputmethod.latin.uix.getSettingBlocking
+import org.luxtype.inputmethod.latin.uix.setSettingBlocking
+import org.luxtype.inputmethod.latin.uix.settings.BottomSpacer
+import org.luxtype.inputmethod.latin.uix.settings.DataStoreItem
+import org.luxtype.inputmethod.latin.uix.settings.DropDownPickerSettingItem
+import org.luxtype.inputmethod.latin.uix.settings.LocalSharedPrefsCache
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItemStyle
+import org.luxtype.inputmethod.latin.uix.settings.PrimarySettingToggleDataStoreItem
+import org.luxtype.inputmethod.latin.uix.settings.ScreenTitle
+import org.luxtype.inputmethod.latin.uix.settings.ScrollableList
+import org.luxtype.inputmethod.latin.uix.settings.SettingItem
+import org.luxtype.inputmethod.latin.uix.settings.SettingRadio
+import org.luxtype.inputmethod.latin.uix.settings.SettingSlider
+import org.luxtype.inputmethod.latin.uix.settings.SettingSliderSharedPrefsInt
+import org.luxtype.inputmethod.latin.uix.settings.SyncDataStoreToPreferencesFloat
+import org.luxtype.inputmethod.latin.uix.settings.SyncDataStoreToPreferencesInt
+import org.luxtype.inputmethod.latin.uix.settings.Tip
+import org.luxtype.inputmethod.latin.uix.settings.UserSetting
+import org.luxtype.inputmethod.latin.uix.settings.UserSettingsMenu
+import org.luxtype.inputmethod.latin.uix.settings.render
+import org.luxtype.inputmethod.latin.uix.settings.useDataStore
+import org.luxtype.inputmethod.latin.uix.settings.useSharedPrefsBool
+import org.luxtype.inputmethod.latin.uix.settings.useSharedPrefsInt
+import org.luxtype.inputmethod.latin.uix.settings.userSettingDecorationOnly
+import org.luxtype.inputmethod.latin.uix.settings.userSettingNavigationItem
+import org.luxtype.inputmethod.latin.uix.settings.userSettingToggleDataStore
+import org.luxtype.inputmethod.latin.uix.settings.userSettingToggleSharedPrefs
+import org.luxtype.inputmethod.latin.uix.theme.Typography
+import org.luxtype.inputmethod.v2keyboard.KeyboardSettings
 import kotlin.math.absoluteValue
 import kotlin.math.roundToInt
 import kotlin.math.sign
@@ -182,7 +182,7 @@ fun ResizeScreen(navController: NavHostController = rememberNavController()) {
             TextFieldValue(""),
             imeOptions = ImeOptions.Default.copy(
                 platformImeOptions = PlatformImeOptions(
-                    privateImeOptions = "org.futo.inputmethod.latin.ResizeMode=1"
+                    privateImeOptions = "org.luxtype.inputmethod.latin.ResizeMode=1"
                 )
             ),
             onEditCommand = { },
@@ -231,7 +231,7 @@ fun ResizeScreen(navController: NavHostController = rememberNavController()) {
             Spacer(Modifier.height(8.dp))
             ResizeMenuLite.render(showTitle = false)
 
-            AndroidTextInput(allowPredictions = false, customOptions = setOf("org.futo.inputmethod.latin.ResizeMode"), autoshow = false)
+            AndroidTextInput(allowPredictions = false, customOptions = setOf("org.luxtype.inputmethod.latin.ResizeMode"), autoshow = false)
         }
     }
 }

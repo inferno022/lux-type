@@ -1,4 +1,4 @@
-package org.futo.inputmethod.v2keyboard
+package org.luxtype.inputmethod.v2keyboard
 
 import android.content.Context
 import android.text.InputType
@@ -7,18 +7,18 @@ import android.view.inputmethod.EditorInfo
 import androidx.compose.ui.unit.dp
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
-import org.futo.inputmethod.keyboard.Keyboard
-import org.futo.inputmethod.keyboard.KeyboardId
-import org.futo.inputmethod.keyboard.internal.KeyboardLayoutElement
-import org.futo.inputmethod.keyboard.internal.KeyboardLayoutKind
-import org.futo.inputmethod.keyboard.internal.KeyboardLayoutPage
-import org.futo.inputmethod.keyboard.internal.KeyboardParams
-import org.futo.inputmethod.keyboard.internal.KeyboardTextsMultiSet
-import org.futo.inputmethod.latin.settings.LongPressKeySettings
-import org.futo.inputmethod.latin.uix.actions.BugInfo
-import org.futo.inputmethod.latin.uix.actions.BugViewerState
-import org.futo.inputmethod.latin.uix.settings.pages.CustomLayout
-import org.futo.inputmethod.latin.utils.InputTypeUtils
+import org.luxtype.inputmethod.keyboard.Keyboard
+import org.luxtype.inputmethod.keyboard.KeyboardId
+import org.luxtype.inputmethod.keyboard.internal.KeyboardLayoutElement
+import org.luxtype.inputmethod.keyboard.internal.KeyboardLayoutKind
+import org.luxtype.inputmethod.keyboard.internal.KeyboardLayoutPage
+import org.luxtype.inputmethod.keyboard.internal.KeyboardParams
+import org.luxtype.inputmethod.keyboard.internal.KeyboardTextsMultiSet
+import org.luxtype.inputmethod.latin.settings.LongPressKeySettings
+import org.luxtype.inputmethod.latin.uix.actions.BugInfo
+import org.luxtype.inputmethod.latin.uix.actions.BugViewerState
+import org.luxtype.inputmethod.latin.uix.settings.pages.CustomLayout
+import org.luxtype.inputmethod.latin.utils.InputTypeUtils
 import java.util.Locale
 import kotlin.io.encoding.Base64
 import kotlin.io.encoding.ExperimentalEncodingApi
@@ -73,7 +73,7 @@ internal fun EditorInfo.getPrivateImeOptions(): Map<String, String> {
 }
 
 fun getPrimaryLayoutOverride(editorInfo: EditorInfo?): String? {
-    return editorInfo?.getPrivateImeOptions()?.get("org.futo.inputmethod.latin.ForceLayout")
+    return editorInfo?.getPrivateImeOptions()?.get("org.luxtype.inputmethod.latin.ForceLayout")
 }
 
 data class KeyboardLayoutSetV2Params(
@@ -101,13 +101,13 @@ class KeyboardLayoutSetV2 internal constructor(
     val editorInfo = params.editorInfo ?: EditorInfo()
 
     val privateParams = editorInfo.getPrivateImeOptions()
-    val forcedLayout = privateParams["org.futo.inputmethod.latin.ForceLayout"]
-    val forcedLocale = privateParams["org.futo.inputmethod.latin.ForceLocale"]?.let { Locale.forLanguageTag(it) }
+    val forcedLayout = privateParams["org.luxtype.inputmethod.latin.ForceLayout"]
+    val forcedLocale = privateParams["org.luxtype.inputmethod.latin.ForceLocale"]?.let { Locale.forLanguageTag(it) }
     val forcedMultilingualTypingLanguages: List<Locale>? = forcedLocale?.let { emptyList() }
 
 
     @OptIn(ExperimentalEncodingApi::class)
-    val forcedCustomLayout = privateParams["org.futo.inputmethod.latin.ForceCustomLayoutYamlB64"]?.let {
+    val forcedCustomLayout = privateParams["org.luxtype.inputmethod.latin.ForceCustomLayoutYamlB64"]?.let {
         try {
             Json.Default.decodeFromString(
                 CustomLayout.serializer(),
@@ -158,7 +158,7 @@ Layout: $it
     }
 
     init {
-        Log.d("KeyboardLayoutSet", "$forcedCustomLayout, ${privateParams["org.futo.inputmethod.latin.ForceCustomLayoutYamlB64"]}, $privateParams, ${editorInfo.privateImeOptions}")
+        Log.d("KeyboardLayoutSet", "$forcedCustomLayout, ${privateParams["org.luxtype.inputmethod.latin.ForceCustomLayoutYamlB64"]}, $privateParams, ${editorInfo.privateImeOptions}")
     }
 
     // Necessary for Java API
@@ -166,7 +166,7 @@ Layout: $it
 
     private val keyboardMode = getKeyboardMode(editorInfo)
 
-    private fun safeGetLayout(name: String): org.futo.inputmethod.v2keyboard.Keyboard =
+    private fun safeGetLayout(name: String): org.luxtype.inputmethod.v2keyboard.Keyboard =
         try {
             LayoutManager.getLayout(context, name)
         } catch (e: Exception) {
@@ -196,7 +196,7 @@ Layout: $layoutName
     val phoneSymbolsLayout = safeGetLayout(mainLayout.layoutSetOverrides.phoneShifted)
     val numberBasicLayout = safeGetLayout("number_basic")
 
-    private fun getSubKeyboard(element: KeyboardLayoutElement): org.futo.inputmethod.v2keyboard.Keyboard? {
+    private fun getSubKeyboard(element: KeyboardLayoutElement): org.luxtype.inputmethod.v2keyboard.Keyboard? {
         return mainLayout.subKeyboards[element.kind]?.let {
             mainLayout.copy(
                 rows = it.rows,
@@ -247,7 +247,7 @@ Layout: $layoutName
         ) to numberBasicLayout,
     )
 
-    private fun getKeyboardLayoutForElement(element: KeyboardLayoutElement): org.futo.inputmethod.v2keyboard.Keyboard {
+    private fun getKeyboardLayoutForElement(element: KeyboardLayoutElement): org.luxtype.inputmethod.v2keyboard.Keyboard {
         return getSubKeyboard(element) ?: elements[element.normalize()] ?: run {
             // If this is an alt layout, try to get the matching alt
             element.page.altIdx?.let { altIdx ->

@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings.pages.buggyeditors
+package org.luxtype.inputmethod.latin.uix.settings.pages.buggyeditors
 
 data class BuggyEditorConfiguration(
     // does not set composing region,

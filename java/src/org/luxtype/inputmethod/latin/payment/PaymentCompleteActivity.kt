@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.payment
+package org.luxtype.inputmethod.latin.payment
 
 import android.os.Bundle
 import android.util.Log
@@ -19,20 +19,20 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import kotlinx.coroutines.launch
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.dataStore
-import org.futo.inputmethod.latin.uix.getSetting
-import org.futo.inputmethod.latin.uix.settings.DataStoreCacheProvider
-import org.futo.inputmethod.latin.uix.settings.NavigationItem
-import org.futo.inputmethod.latin.uix.settings.NavigationItemStyle
-import org.futo.inputmethod.latin.uix.settings.SettingsActivity
-import org.futo.inputmethod.latin.uix.settings.pages.EXT_LICENSE_KEY
-import org.futo.inputmethod.latin.uix.settings.pages.IS_ALREADY_PAID
-import org.futo.inputmethod.latin.uix.settings.pages.IS_PAYMENT_PENDING
-import org.futo.inputmethod.latin.uix.settings.pages.PaymentThankYouScreen
-import org.futo.inputmethod.latin.uix.settings.pages.startAppActivity
-import org.futo.inputmethod.latin.uix.theme.UixThemeAuto
-import org.futo.inputmethod.updates.openURI
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.dataStore
+import org.luxtype.inputmethod.latin.uix.getSetting
+import org.luxtype.inputmethod.latin.uix.settings.DataStoreCacheProvider
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItem
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItemStyle
+import org.luxtype.inputmethod.latin.uix.settings.SettingsActivity
+import org.luxtype.inputmethod.latin.uix.settings.pages.EXT_LICENSE_KEY
+import org.luxtype.inputmethod.latin.uix.settings.pages.IS_ALREADY_PAID
+import org.luxtype.inputmethod.latin.uix.settings.pages.IS_PAYMENT_PENDING
+import org.luxtype.inputmethod.latin.uix.settings.pages.PaymentThankYouScreen
+import org.luxtype.inputmethod.latin.uix.settings.pages.startAppActivity
+import org.luxtype.inputmethod.latin.uix.theme.UixThemeAuto
+import org.luxtype.inputmethod.updates.openURI
 
 class PaymentCompleteActivity : ComponentActivity() {
     private fun updateContent() {

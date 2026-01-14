@@ -1,16 +1,16 @@
-package org.futo.inputmethod.latin
+package org.luxtype.inputmethod.latin
 
 import android.content.Context
 import androidx.lifecycle.LifecycleCoroutineScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
-import org.futo.inputmethod.latin.SuggestedWords.SuggestedWordInfo
-import org.futo.inputmethod.latin.settings.Settings
-import org.futo.inputmethod.latin.uix.SUGGESTION_BLACKLIST
-import org.futo.inputmethod.latin.uix.getSetting
-import org.futo.inputmethod.latin.uix.getSettingFlow
-import org.futo.inputmethod.latin.uix.settings.badWords
-import org.futo.inputmethod.latin.uix.settings.isFiltered
+import org.luxtype.inputmethod.latin.SuggestedWords.SuggestedWordInfo
+import org.luxtype.inputmethod.latin.settings.Settings
+import org.luxtype.inputmethod.latin.uix.SUGGESTION_BLACKLIST
+import org.luxtype.inputmethod.latin.uix.getSetting
+import org.luxtype.inputmethod.latin.uix.getSettingFlow
+import org.luxtype.inputmethod.latin.uix.settings.badWords
+import org.luxtype.inputmethod.latin.uix.settings.isFiltered
 
 class SuggestionBlacklist(val settings: Settings, val context: Context, val lifecycleScope: LifecycleCoroutineScope) {
     var offensiveWordsAdded = false

@@ -1,10 +1,10 @@
-package org.futo.inputmethod.latin.xlm
+package org.luxtype.inputmethod.latin.xlm
 
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.newSingleThreadContext
 import kotlinx.coroutines.withContext
-import org.futo.inputmethod.annotations.ExternallyReferenced
+import org.luxtype.inputmethod.annotations.ExternallyReferenced
 
 @OptIn(DelicateCoroutinesApi::class)
 val TrainingContext = newSingleThreadContext("AdapterTrainingContext")

@@ -1,4 +1,4 @@
-package org.futo.inputmethod.v2keyboard
+package org.luxtype.inputmethod.v2keyboard
 
 import com.charleskorn.kaml.YamlInput
 import com.charleskorn.kaml.YamlList

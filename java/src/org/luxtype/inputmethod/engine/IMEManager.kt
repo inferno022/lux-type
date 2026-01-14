@@ -1,4 +1,4 @@
-package org.futo.inputmethod.engine
+package org.luxtype.inputmethod.engine
 
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringSetPreferencesKey
@@ -9,21 +9,21 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import org.futo.inputmethod.annotations.UsedForTesting
-import org.futo.inputmethod.engine.general.ActionInputTransactionIME
-import org.futo.inputmethod.engine.general.GeneralIME
-import org.futo.inputmethod.engine.general.JapaneseIME
-import org.futo.inputmethod.latin.LatinIME
-import org.futo.inputmethod.latin.settings.Settings
-import org.futo.inputmethod.latin.settings.SettingsValues
-import org.futo.inputmethod.latin.uix.ActionInputTransaction
-import org.futo.inputmethod.latin.uix.SettingsKey
-import org.futo.inputmethod.latin.uix.actions.throwIfDebug
-import org.futo.inputmethod.latin.uix.dataStore
-import org.futo.inputmethod.latin.uix.deferSetSetting
-import org.futo.inputmethod.latin.uix.getSetting
-import org.futo.inputmethod.latin.uix.isDirectBootUnlocked
-import org.futo.inputmethod.v2keyboard.KeyboardLayoutSetV2
+import org.luxtype.inputmethod.annotations.UsedForTesting
+import org.luxtype.inputmethod.engine.general.ActionInputTransactionIME
+import org.luxtype.inputmethod.engine.general.GeneralIME
+import org.luxtype.inputmethod.engine.general.JapaneseIME
+import org.luxtype.inputmethod.latin.LatinIME
+import org.luxtype.inputmethod.latin.settings.Settings
+import org.luxtype.inputmethod.latin.settings.SettingsValues
+import org.luxtype.inputmethod.latin.uix.ActionInputTransaction
+import org.luxtype.inputmethod.latin.uix.SettingsKey
+import org.luxtype.inputmethod.latin.uix.actions.throwIfDebug
+import org.luxtype.inputmethod.latin.uix.dataStore
+import org.luxtype.inputmethod.latin.uix.deferSetSetting
+import org.luxtype.inputmethod.latin.uix.getSetting
+import org.luxtype.inputmethod.latin.uix.isDirectBootUnlocked
+import org.luxtype.inputmethod.v2keyboard.KeyboardLayoutSetV2
 
 enum class IMEMessage {
     ReloadResources,

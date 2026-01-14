@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.theme
+package org.luxtype.inputmethod.latin.uix.theme
 
 import android.graphics.Rect
 import android.graphics.Typeface

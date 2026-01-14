@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix
+package org.luxtype.inputmethod.latin.uix
 
 import android.content.Context
 import android.graphics.Canvas
@@ -26,19 +26,19 @@ import androidx.compose.ui.unit.dp
 import androidx.core.graphics.withClip
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.booleanPreferencesKey
-import org.futo.inputmethod.keyboard.Key
-import org.futo.inputmethod.keyboard.Keyboard
-import org.futo.inputmethod.keyboard.internal.KeyDrawParams
-import org.futo.inputmethod.keyboard.internal.KeyboardIconsSet
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.actions.AllActions
-import org.futo.inputmethod.latin.uix.actions.AllActionsMap
-import org.futo.inputmethod.latin.uix.theme.AdvancedThemeMatcher
-import org.futo.inputmethod.latin.uix.theme.KeyBackground
-import org.futo.inputmethod.latin.uix.theme.KeyDrawingConfiguration
-import org.futo.inputmethod.latin.uix.utils.toNinePatchDrawable
-import org.futo.inputmethod.v2keyboard.Direction
-import org.futo.inputmethod.v2keyboard.KeyVisualStyle
+import org.luxtype.inputmethod.keyboard.Key
+import org.luxtype.inputmethod.keyboard.Keyboard
+import org.luxtype.inputmethod.keyboard.internal.KeyDrawParams
+import org.luxtype.inputmethod.keyboard.internal.KeyboardIconsSet
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.actions.AllActions
+import org.luxtype.inputmethod.latin.uix.actions.AllActionsMap
+import org.luxtype.inputmethod.latin.uix.theme.AdvancedThemeMatcher
+import org.luxtype.inputmethod.latin.uix.theme.KeyBackground
+import org.luxtype.inputmethod.latin.uix.theme.KeyDrawingConfiguration
+import org.luxtype.inputmethod.latin.uix.utils.toNinePatchDrawable
+import org.luxtype.inputmethod.v2keyboard.Direction
+import org.luxtype.inputmethod.v2keyboard.KeyVisualStyle
 
 val KeyBordersSetting = SettingsKey(booleanPreferencesKey("keyBorders"), true)
 val HiddenKeysSetting = SettingsKey(booleanPreferencesKey("hiddenKeys1"), false)

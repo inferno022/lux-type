@@ -1,8 +1,8 @@
-package org.futo.inputmethod.v2keyboard
+package org.luxtype.inputmethod.v2keyboard
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
-import org.futo.inputmethod.keyboard.internal.KeyboardParams
+import org.luxtype.inputmethod.keyboard.internal.KeyboardParams
 
 @Serializable
 @SerialName("flick")

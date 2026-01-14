@@ -1,16 +1,16 @@
-package org.futo.inputmethod.keyboard.internal
+package org.luxtype.inputmethod.keyboard.internal
 
 import android.util.Log
 import android.view.ViewConfiguration
 import android.view.inputmethod.EditorInfo
 import androidx.annotation.VisibleForTesting
-import org.futo.inputmethod.event.Event
-import org.futo.inputmethod.keyboard.Key
-import org.futo.inputmethod.keyboard.Keyboard
-import org.futo.inputmethod.keyboard.KeyboardId
-import org.futo.inputmethod.latin.BuildConfig
-import org.futo.inputmethod.latin.common.Constants
-import org.futo.inputmethod.v2keyboard.getKeyboardMode
+import org.luxtype.inputmethod.event.Event
+import org.luxtype.inputmethod.keyboard.Key
+import org.luxtype.inputmethod.keyboard.Keyboard
+import org.luxtype.inputmethod.keyboard.KeyboardId
+import org.luxtype.inputmethod.latin.BuildConfig
+import org.luxtype.inputmethod.latin.common.Constants
+import org.luxtype.inputmethod.v2keyboard.getKeyboardMode
 
 enum class KeyboardLayoutKind {
     Alphabet0,

@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings.pages.pdict
+package org.luxtype.inputmethod.latin.uix.settings.pages.pdict
 
 import android.app.Activity
 import android.content.Intent
@@ -35,24 +35,24 @@ import androidx.navigation.NavBackStackEntry
 import androidx.navigation.NavHostController
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
-import org.futo.inputmethod.engine.GlobalIMEMessage
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.Subtypes
-import org.futo.inputmethod.latin.SubtypesSetting
-import org.futo.inputmethod.latin.localeFromString
-import org.futo.inputmethod.latin.settings.Settings
-import org.futo.inputmethod.latin.uix.IMPORT_SETTINGS_REQUEST
-import org.futo.inputmethod.latin.uix.LocalNavController
-import org.futo.inputmethod.latin.uix.PersonalWord
-import org.futo.inputmethod.latin.uix.SettingsTextEdit
-import org.futo.inputmethod.latin.uix.UserDictionaryIO
-import org.futo.inputmethod.latin.uix.getImportedUserDictFilesForLocale
-import org.futo.inputmethod.latin.uix.settings.NavigationItem
-import org.futo.inputmethod.latin.uix.settings.NavigationItemStyle
-import org.futo.inputmethod.latin.uix.settings.ScreenTitle
-import org.futo.inputmethod.latin.uix.settings.ScrollableList
-import org.futo.inputmethod.latin.uix.settings.useDataStoreValue
-import org.futo.inputmethod.latin.uix.urlEncode
+import org.luxtype.inputmethod.engine.GlobalIMEMessage
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.Subtypes
+import org.luxtype.inputmethod.latin.SubtypesSetting
+import org.luxtype.inputmethod.latin.localeFromString
+import org.luxtype.inputmethod.latin.settings.Settings
+import org.luxtype.inputmethod.latin.uix.IMPORT_SETTINGS_REQUEST
+import org.luxtype.inputmethod.latin.uix.LocalNavController
+import org.luxtype.inputmethod.latin.uix.PersonalWord
+import org.luxtype.inputmethod.latin.uix.SettingsTextEdit
+import org.luxtype.inputmethod.latin.uix.UserDictionaryIO
+import org.luxtype.inputmethod.latin.uix.getImportedUserDictFilesForLocale
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItem
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItemStyle
+import org.luxtype.inputmethod.latin.uix.settings.ScreenTitle
+import org.luxtype.inputmethod.latin.uix.settings.ScrollableList
+import org.luxtype.inputmethod.latin.uix.settings.useDataStoreValue
+import org.luxtype.inputmethod.latin.uix.urlEncode
 import java.util.Locale
 
 @Composable

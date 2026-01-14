@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.theme
+package org.luxtype.inputmethod.latin.uix.theme
 
 import android.content.Context
 import android.graphics.Rect
@@ -6,11 +6,11 @@ import android.graphics.drawable.Drawable
 import android.util.Log
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
-import org.futo.inputmethod.keyboard.Key
-import org.futo.inputmethod.keyboard.Keyboard
-import org.futo.inputmethod.keyboard.internal.KeyDrawParams
-import org.futo.inputmethod.latin.uix.DynamicThemeProvider
-import org.futo.inputmethod.latin.uix.KeyboardColorScheme
+import org.luxtype.inputmethod.keyboard.Key
+import org.luxtype.inputmethod.keyboard.Keyboard
+import org.luxtype.inputmethod.keyboard.internal.KeyDrawParams
+import org.luxtype.inputmethod.latin.uix.DynamicThemeProvider
+import org.luxtype.inputmethod.latin.uix.KeyboardColorScheme
 
 
 data class KeyDrawingConfiguration(

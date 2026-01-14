@@ -1,12 +1,12 @@
-package org.futo.inputmethod.latin.uix.theme
+package org.luxtype.inputmethod.latin.uix.theme
 
 import android.graphics.BitmapFactory
 import android.graphics.Typeface
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.graphics.asImageBitmap
-import org.futo.inputmethod.latin.uix.actions.BugInfo
-import org.futo.inputmethod.latin.uix.actions.BugViewerState
-import org.futo.inputmethod.v2keyboard.KeyVisualStyle
+import org.luxtype.inputmethod.latin.uix.actions.BugInfo
+import org.luxtype.inputmethod.latin.uix.actions.BugViewerState
+import org.luxtype.inputmethod.v2keyboard.KeyVisualStyle
 import java.io.File
 
 // Returns an empty set if the key is malformed

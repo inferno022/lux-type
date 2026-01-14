@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.actions.fonttyper
+package org.luxtype.inputmethod.latin.uix.actions.fonttyper
 
 import android.content.Context
 import android.graphics.Canvas
@@ -16,7 +16,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.graphics.createBitmap
 import androidx.core.graphics.withScale
-import org.futo.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.R
 import kotlin.math.roundToInt
 
 object HorizonRenderer: WordImageRenderer() {

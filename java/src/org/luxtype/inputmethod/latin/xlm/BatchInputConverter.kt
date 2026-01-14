@@ -1,6 +1,6 @@
-package org.futo.inputmethod.latin.xlm
+package org.luxtype.inputmethod.latin.xlm
 
-import org.futo.inputmethod.keyboard.KeyDetector
+import org.luxtype.inputmethod.keyboard.KeyDetector
 import kotlin.math.sqrt
 
 private fun normalize(pair: Pair<Int, Int>): Pair<Float, Float> {

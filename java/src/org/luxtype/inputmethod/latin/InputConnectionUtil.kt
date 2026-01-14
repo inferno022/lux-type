@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin
+package org.luxtype.inputmethod.latin
 
 import android.os.Build
 import android.view.inputmethod.ExtractedTextRequest

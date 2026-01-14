@@ -1,15 +1,15 @@
-package org.futo.inputmethod.v2keyboard
+package org.luxtype.inputmethod.v2keyboard
 
 import android.view.inputmethod.EditorInfo
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
-import org.futo.inputmethod.keyboard.KeyboardId
-import org.futo.inputmethod.keyboard.internal.KeyboardIconsSet
-import org.futo.inputmethod.keyboard.internal.KeyboardLayoutKind
-import org.futo.inputmethod.keyboard.internal.KeyboardParams
-import org.futo.inputmethod.latin.common.Constants
-import org.futo.inputmethod.latin.uix.actions.AllActionKeys
-import org.futo.inputmethod.latin.utils.InputTypeUtils
+import org.luxtype.inputmethod.keyboard.KeyboardId
+import org.luxtype.inputmethod.keyboard.internal.KeyboardIconsSet
+import org.luxtype.inputmethod.keyboard.internal.KeyboardLayoutKind
+import org.luxtype.inputmethod.keyboard.internal.KeyboardParams
+import org.luxtype.inputmethod.latin.common.Constants
+import org.luxtype.inputmethod.latin.uix.actions.AllActionKeys
+import org.luxtype.inputmethod.latin.utils.InputTypeUtils
 
 val FunctionalAttributes = KeyAttributes(
     width = KeyWidth.FunctionalKey,

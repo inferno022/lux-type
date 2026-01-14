@@ -1,15 +1,15 @@
-package org.futo.inputmethod.engine
+package org.luxtype.inputmethod.engine
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
-import org.futo.inputmethod.engine.general.JapaneseIMESettings
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.Subtypes
-import org.futo.inputmethod.latin.SubtypesSetting
-import org.futo.inputmethod.latin.uix.settings.NavigationItemStyle
-import org.futo.inputmethod.latin.uix.settings.UserSettingsMenu
-import org.futo.inputmethod.latin.uix.settings.useDataStoreValue
-import org.futo.inputmethod.latin.uix.settings.userSettingNavigationItem
+import org.luxtype.inputmethod.engine.general.JapaneseIMESettings
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.Subtypes
+import org.luxtype.inputmethod.latin.SubtypesSetting
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItemStyle
+import org.luxtype.inputmethod.latin.uix.settings.UserSettingsMenu
+import org.luxtype.inputmethod.latin.uix.settings.useDataStoreValue
+import org.luxtype.inputmethod.latin.uix.settings.userSettingNavigationItem
 
 @Composable
 private fun isVisible(language: String): Boolean {

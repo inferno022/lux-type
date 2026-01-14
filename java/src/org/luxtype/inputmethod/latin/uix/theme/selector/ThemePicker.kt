@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.theme.selector
+package org.luxtype.inputmethod.latin.uix.theme.selector
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -49,31 +49,31 @@ import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.KeyBordersSetting
-import org.futo.inputmethod.latin.uix.KeyboardBackground
-import org.futo.inputmethod.latin.uix.KeyboardColorScheme
-import org.futo.inputmethod.latin.uix.THEME_KEY
-import org.futo.inputmethod.latin.uix.actions.BugInfo
-import org.futo.inputmethod.latin.uix.actions.BugViewerState
-import org.futo.inputmethod.latin.uix.setSetting
-import org.futo.inputmethod.latin.uix.settings.ScreenTitle
-import org.futo.inputmethod.latin.uix.settings.SettingToggleDataStore
-import org.futo.inputmethod.latin.uix.settings.useDataStore
-import org.futo.inputmethod.latin.uix.theme.ZipThemes
-import org.futo.inputmethod.latin.uix.theme.ThemeOption
-import org.futo.inputmethod.latin.uix.theme.ThemeOptionKeys
-import org.futo.inputmethod.latin.uix.theme.Typography
-import org.futo.inputmethod.latin.uix.theme.UixThemeWrapper
-import org.futo.inputmethod.latin.uix.theme.defaultThemeOption
-import org.futo.inputmethod.latin.uix.theme.getThemeOption
-import org.futo.inputmethod.latin.uix.theme.presets.AMOLEDDarkPurple
-import org.futo.inputmethod.latin.uix.theme.presets.ClassicMaterialDark
-import org.futo.inputmethod.latin.uix.theme.presets.DefaultLightScheme
-import org.futo.inputmethod.latin.uix.theme.presets.DynamicDarkTheme
-import org.futo.inputmethod.latin.uix.theme.presets.DynamicLightTheme
-import org.futo.inputmethod.latin.uix.theme.presets.DynamicSystemTheme
-import org.futo.inputmethod.latin.uix.theme.presets.VoiceInputTheme
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.KeyBordersSetting
+import org.luxtype.inputmethod.latin.uix.KeyboardBackground
+import org.luxtype.inputmethod.latin.uix.KeyboardColorScheme
+import org.luxtype.inputmethod.latin.uix.THEME_KEY
+import org.luxtype.inputmethod.latin.uix.actions.BugInfo
+import org.luxtype.inputmethod.latin.uix.actions.BugViewerState
+import org.luxtype.inputmethod.latin.uix.setSetting
+import org.luxtype.inputmethod.latin.uix.settings.ScreenTitle
+import org.luxtype.inputmethod.latin.uix.settings.SettingToggleDataStore
+import org.luxtype.inputmethod.latin.uix.settings.useDataStore
+import org.luxtype.inputmethod.latin.uix.theme.ZipThemes
+import org.luxtype.inputmethod.latin.uix.theme.ThemeOption
+import org.luxtype.inputmethod.latin.uix.theme.ThemeOptionKeys
+import org.luxtype.inputmethod.latin.uix.theme.Typography
+import org.luxtype.inputmethod.latin.uix.theme.UixThemeWrapper
+import org.luxtype.inputmethod.latin.uix.theme.defaultThemeOption
+import org.luxtype.inputmethod.latin.uix.theme.getThemeOption
+import org.luxtype.inputmethod.latin.uix.theme.presets.AMOLEDDarkPurple
+import org.luxtype.inputmethod.latin.uix.theme.presets.ClassicMaterialDark
+import org.luxtype.inputmethod.latin.uix.theme.presets.DefaultLightScheme
+import org.luxtype.inputmethod.latin.uix.theme.presets.DynamicDarkTheme
+import org.luxtype.inputmethod.latin.uix.theme.presets.DynamicLightTheme
+import org.luxtype.inputmethod.latin.uix.theme.presets.DynamicSystemTheme
+import org.luxtype.inputmethod.latin.uix.theme.presets.VoiceInputTheme
 
 @Composable
 fun ThemePreview(theme: ThemeOption, isSelected: Boolean = false, overrideName: String? = null, modifier: Modifier = Modifier, onClick: () -> Unit = { }) {

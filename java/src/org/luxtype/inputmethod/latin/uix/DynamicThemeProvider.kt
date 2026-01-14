@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix
+package org.luxtype.inputmethod.latin.uix
 
 import android.content.Context
 import android.content.res.TypedArray
@@ -7,13 +7,13 @@ import android.graphics.drawable.Drawable
 import android.view.ContextThemeWrapper
 import androidx.annotation.ColorInt
 import androidx.compose.ui.graphics.Color
-import org.futo.inputmethod.keyboard.Key
-import org.futo.inputmethod.keyboard.Keyboard
-import org.futo.inputmethod.keyboard.internal.KeyDrawParams
-import org.futo.inputmethod.latin.uix.theme.KeyBackground
-import org.futo.inputmethod.latin.uix.theme.KeyDrawingConfiguration
-import org.futo.inputmethod.v2keyboard.Direction
-import org.futo.inputmethod.v2keyboard.KeyVisualStyle
+import org.luxtype.inputmethod.keyboard.Key
+import org.luxtype.inputmethod.keyboard.Keyboard
+import org.luxtype.inputmethod.keyboard.internal.KeyDrawParams
+import org.luxtype.inputmethod.latin.uix.theme.KeyBackground
+import org.luxtype.inputmethod.latin.uix.theme.KeyDrawingConfiguration
+import org.luxtype.inputmethod.v2keyboard.Direction
+import org.luxtype.inputmethod.v2keyboard.KeyVisualStyle
 
 /** Visual style descriptor for a key */
 data class VisualStyleDescriptor(

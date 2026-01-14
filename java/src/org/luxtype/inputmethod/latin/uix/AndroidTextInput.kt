@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix
+package org.luxtype.inputmethod.latin.uix
 
 import android.content.Context
 import android.os.Build
@@ -18,7 +18,7 @@ import androidx.compose.ui.platform.LocalInspectionMode
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import kotlinx.coroutines.delay
-import org.futo.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.R
 
 @Composable
 fun AndroidTextInput(allowPredictions: Boolean = true, customOptions: Set<String> = setOf(), autoshow: Boolean = true) {
@@ -33,7 +33,7 @@ fun AndroidTextInput(allowPredictions: Boolean = true, customOptions: Set<String
                 inputType = EditorInfo.TYPE_CLASS_TEXT
 
                 privateImeOptions = (customOptions + if(!allowPredictions) {
-                    listOf("org.futo.inputmethod.latin.NoSuggestions")
+                    listOf("org.luxtype.inputmethod.latin.NoSuggestions")
                 } else {
                     listOf()
                 }).joinToString { "$it=1" }

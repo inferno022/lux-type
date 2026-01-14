@@ -1,10 +1,10 @@
-package org.futo.inputmethod.v2keyboard
+package org.luxtype.inputmethod.v2keyboard
 
-import org.futo.inputmethod.keyboard.KeyConsts
-import org.futo.inputmethod.keyboard.internal.KeyboardParams
-import org.futo.inputmethod.keyboard.internal.MoreKeySpec
-import org.futo.inputmethod.keyboard.internal.isAlphabet
-import org.futo.inputmethod.latin.settings.LongPressKey
+import org.luxtype.inputmethod.keyboard.KeyConsts
+import org.luxtype.inputmethod.keyboard.internal.KeyboardParams
+import org.luxtype.inputmethod.keyboard.internal.MoreKeySpec
+import org.luxtype.inputmethod.keyboard.internal.isAlphabet
+import org.luxtype.inputmethod.latin.settings.LongPressKey
 
 typealias MoreKeys = List<String>
 

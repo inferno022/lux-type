@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings
+package org.luxtype.inputmethod.latin.uix.settings
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.animateFloatAsState
@@ -96,12 +96,12 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.LocalKeyboardScheme
-import org.futo.inputmethod.latin.uix.LocalNavController
-import org.futo.inputmethod.latin.uix.SettingsKey
-import org.futo.inputmethod.latin.uix.getSettingBlocking
-import org.futo.inputmethod.latin.uix.theme.Typography
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.LocalKeyboardScheme
+import org.luxtype.inputmethod.latin.uix.LocalNavController
+import org.luxtype.inputmethod.latin.uix.SettingsKey
+import org.luxtype.inputmethod.latin.uix.getSettingBlocking
+import org.luxtype.inputmethod.latin.uix.theme.Typography
 import kotlin.math.pow
 
 @Composable

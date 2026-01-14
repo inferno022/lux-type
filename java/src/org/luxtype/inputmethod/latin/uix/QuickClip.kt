@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix
+package org.luxtype.inputmethod.latin.uix
 
 import android.content.ClipData
 import android.content.ClipDescription
@@ -39,10 +39,10 @@ import androidx.compose.ui.semantics.onClick
 import androidx.compose.ui.semantics.role
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import org.futo.inputmethod.accessibility.AccessibilityUtils
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.actions.ClipboardQuickClipsEnabled
-import org.futo.inputmethod.latin.uix.theme.Typography
+import org.luxtype.inputmethod.accessibility.AccessibilityUtils
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.actions.ClipboardQuickClipsEnabled
+import org.luxtype.inputmethod.latin.uix.theme.Typography
 
 enum class QuickClipKind {
     FullString,

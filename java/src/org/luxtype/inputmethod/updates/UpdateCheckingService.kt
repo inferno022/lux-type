@@ -1,4 +1,4 @@
-package org.futo.inputmethod.updates
+package org.luxtype.inputmethod.updates
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -15,7 +15,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
-import org.futo.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.R
 
 const val CHANNEL_ID = "UPDATES"
 const val NOTIFICATION_ID = 1

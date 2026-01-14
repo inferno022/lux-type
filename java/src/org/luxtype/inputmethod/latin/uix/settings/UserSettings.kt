@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings
+package org.luxtype.inputmethod.latin.uix.settings
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
@@ -6,8 +6,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavHostController
-import org.futo.inputmethod.latin.uix.LocalNavController
-import org.futo.inputmethod.latin.uix.SettingsKey
+import org.luxtype.inputmethod.latin.uix.LocalNavController
+import org.luxtype.inputmethod.latin.uix.SettingsKey
 
 data class UserSetting(
     @StringRes val name: Int,

@@ -1,9 +1,9 @@
-package org.futo.inputmethod.latin.uix.theme
+package org.luxtype.inputmethod.latin.uix.theme
 
 
-import org.futo.inputmethod.keyboard.Key
-import org.futo.inputmethod.keyboard.Keyboard
-import org.futo.inputmethod.v2keyboard.KeyVisualStyle
+import org.luxtype.inputmethod.keyboard.Key
+import org.luxtype.inputmethod.keyboard.Keyboard
+import org.luxtype.inputmethod.v2keyboard.KeyVisualStyle
 
 sealed class RowColSelection {
     data class RowEq(val n: Int) : RowColSelection()

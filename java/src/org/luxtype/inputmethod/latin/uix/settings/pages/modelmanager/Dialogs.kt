@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings.pages.modelmanager
+package org.luxtype.inputmethod.latin.uix.settings.pages.modelmanager
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Warning
@@ -13,8 +13,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import kotlinx.coroutines.runBlocking
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.xlm.ModelPaths
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.xlm.ModelPaths
 import java.io.File
 
 

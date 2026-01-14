@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.content
+package org.luxtype.inputmethod.latin.content
 
 import android.content.ContentProvider
 import android.content.ContentValues
@@ -6,8 +6,8 @@ import android.content.UriMatcher
 import android.database.Cursor
 import android.net.Uri
 import android.os.ParcelFileDescriptor
-import org.futo.inputmethod.latin.BuildConfig
-import org.futo.inputmethod.latin.uix.actions.fonttyper.ImageTyperState
+import org.luxtype.inputmethod.latin.BuildConfig
+import org.luxtype.inputmethod.latin.uix.actions.fonttyper.ImageTyperState
 import java.io.File
 import java.util.UUID
 

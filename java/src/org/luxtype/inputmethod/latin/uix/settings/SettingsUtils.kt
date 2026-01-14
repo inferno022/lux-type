@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings
+package org.luxtype.inputmethod.latin.uix.settings
 
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.unit.dp
-import org.futo.inputmethod.accessibility.AccessibilityUtils
+import org.luxtype.inputmethod.accessibility.AccessibilityUtils
 
 @Composable
 fun SetupOrMain(inputMethodEnabled: Boolean, inputMethodSelected: Boolean, doublePackage: Boolean, main: @Composable () -> Unit) {

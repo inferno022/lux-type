@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin
+package org.luxtype.inputmethod.latin
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -9,9 +9,9 @@ import android.view.inputmethod.InputConnection
 import android.view.inputmethod.InputConnectionWrapper
 import android.view.inputmethod.TextAttribute
 import androidx.datastore.preferences.core.booleanPreferencesKey
-import org.futo.inputmethod.latin.uix.SettingsKey
-import org.futo.inputmethod.latin.uix.actions.throwIfDebug
-import org.futo.inputmethod.latin.uix.getSetting
+import org.luxtype.inputmethod.latin.uix.SettingsKey
+import org.luxtype.inputmethod.latin.uix.actions.throwIfDebug
+import org.luxtype.inputmethod.latin.uix.getSetting
 import kotlin.text.iterator
 
 val TextInputAlternativeIC = SettingsKey(

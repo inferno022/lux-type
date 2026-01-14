@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix
+package org.luxtype.inputmethod.latin.uix
 
 import android.content.Context
 import android.graphics.RectF
@@ -216,8 +216,8 @@ private fun GenericEditTextCompose(
             )
 
             privateImeOptions = StringBuilder().apply {
-                if(!autocorrect) append("org.futo.inputmethod.latin.NoSuggestions=1,")
-                if(forceQwerty) append("org.futo.inputmethod.latin.ForceLayout=qwerty,org.futo.inputmethod.latin.ForceLocale=zz,")
+                if(!autocorrect) append("org.luxtype.inputmethod.latin.NoSuggestions=1,")
+                if(forceQwerty) append("org.luxtype.inputmethod.latin.ForceLayout=qwerty,org.luxtype.inputmethod.latin.ForceLocale=zz,")
             }.toString()
 
             setHeight(height.toInt())

@@ -1,20 +1,20 @@
-package org.futo.inputmethod.latin.uix.actions
+package org.luxtype.inputmethod.latin.uix.actions
 
 import android.content.Context
 import androidx.collection.mutableIntSetOf
 import androidx.core.content.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
-import org.futo.inputmethod.keyboard.internal.KeyboardCodesSet
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.common.Constants
-import org.futo.inputmethod.latin.settings.Settings
-import org.futo.inputmethod.latin.uix.Action
-import org.futo.inputmethod.latin.uix.PreferenceUtils
-import org.futo.inputmethod.latin.uix.SettingsKey
-import org.futo.inputmethod.latin.uix.USE_SYSTEM_VOICE_INPUT
-import org.futo.inputmethod.latin.uix.actions.fonttyper.FontTyperAction
-import org.futo.inputmethod.latin.uix.getSetting
-import org.futo.inputmethod.latin.uix.setSettingBlocking
+import org.luxtype.inputmethod.keyboard.internal.KeyboardCodesSet
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.common.Constants
+import org.luxtype.inputmethod.latin.settings.Settings
+import org.luxtype.inputmethod.latin.uix.Action
+import org.luxtype.inputmethod.latin.uix.PreferenceUtils
+import org.luxtype.inputmethod.latin.uix.SettingsKey
+import org.luxtype.inputmethod.latin.uix.USE_SYSTEM_VOICE_INPUT
+import org.luxtype.inputmethod.latin.uix.actions.fonttyper.FontTyperAction
+import org.luxtype.inputmethod.latin.uix.getSetting
+import org.luxtype.inputmethod.latin.uix.setSettingBlocking
 
 // Note: indices must stay stable
 val AllActionsMap = mapOf(

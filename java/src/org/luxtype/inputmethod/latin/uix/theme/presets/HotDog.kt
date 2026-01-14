@@ -1,13 +1,13 @@
-package org.futo.inputmethod.latin.uix.theme.presets
+package org.luxtype.inputmethod.latin.uix.theme.presets
 
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.theme.ThemeOption
-import org.futo.inputmethod.latin.uix.theme.selector.ThemePreview
-import org.futo.inputmethod.latin.uix.wrapLightColorScheme
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.theme.ThemeOption
+import org.luxtype.inputmethod.latin.uix.theme.selector.ThemePreview
+import org.luxtype.inputmethod.latin.uix.wrapLightColorScheme
 
 private val primaryLight = Color(0xFFC4FF00)
 private val onPrimaryLight = Color(0xFF000000)

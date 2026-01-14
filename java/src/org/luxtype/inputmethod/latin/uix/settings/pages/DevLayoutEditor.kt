@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings.pages
+package org.luxtype.inputmethod.latin.uix.settings.pages
 
 import android.content.Context
 import android.util.Log
@@ -30,21 +30,21 @@ import androidx.navigation.compose.rememberNavController
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.RichInputMethodSubtype
-import org.futo.inputmethod.latin.Subtypes
-import org.futo.inputmethod.latin.SubtypesSetting
-import org.futo.inputmethod.latin.uix.LocalKeyboardScheme
-import org.futo.inputmethod.latin.uix.SettingsKey
-import org.futo.inputmethod.latin.uix.getSettingBlocking
-import org.futo.inputmethod.latin.uix.setSettingBlocking
-import org.futo.inputmethod.latin.uix.settings.NavigationItem
-import org.futo.inputmethod.latin.uix.settings.NavigationItemStyle
-import org.futo.inputmethod.latin.uix.settings.ScreenTitle
-import org.futo.inputmethod.latin.uix.settings.ScrollableList
-import org.futo.inputmethod.updates.openURI
-import org.futo.inputmethod.v2keyboard.Keyboard
-import org.futo.inputmethod.v2keyboard.parseKeyboardYamlString
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.RichInputMethodSubtype
+import org.luxtype.inputmethod.latin.Subtypes
+import org.luxtype.inputmethod.latin.SubtypesSetting
+import org.luxtype.inputmethod.latin.uix.LocalKeyboardScheme
+import org.luxtype.inputmethod.latin.uix.SettingsKey
+import org.luxtype.inputmethod.latin.uix.getSettingBlocking
+import org.luxtype.inputmethod.latin.uix.setSettingBlocking
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItem
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItemStyle
+import org.luxtype.inputmethod.latin.uix.settings.ScreenTitle
+import org.luxtype.inputmethod.latin.uix.settings.ScrollableList
+import org.luxtype.inputmethod.updates.openURI
+import org.luxtype.inputmethod.v2keyboard.Keyboard
+import org.luxtype.inputmethod.v2keyboard.parseKeyboardYamlString
 import java.util.Locale
 import kotlin.io.encoding.Base64
 import kotlin.io.encoding.ExperimentalEncodingApi
@@ -207,7 +207,7 @@ fun LayoutEditor(layout: CustomLayout, onSave: (CustomLayout) -> Unit, onDelete:
             textStyle = style,
             keyboardOptions = KeyboardOptions.Default.copy(
                 platformImeOptions = PlatformImeOptions(
-                    privateImeOptions = "org.futo.inputmethod.latin.NoSuggestions=1,org.futo.inputmethod.latin.ForceLocale=${language.text},org.futo.inputmethod.latin.ForceCustomLayoutYamlB64=${
+                    privateImeOptions = "org.luxtype.inputmethod.latin.NoSuggestions=1,org.luxtype.inputmethod.latin.ForceLocale=${language.text},org.luxtype.inputmethod.latin.ForceCustomLayoutYamlB64=${
                         Base64.encode(Json.Default.encodeToString(layout).toByteArray()).replace("=", "_")
                     }"
                 )

@@ -1,10 +1,10 @@
-package org.futo.inputmethod.engine
+package org.luxtype.inputmethod.engine
 
-import org.futo.inputmethod.annotations.UsedForTesting
-import org.futo.inputmethod.event.Event
-import org.futo.inputmethod.latin.common.Constants
-import org.futo.inputmethod.latin.common.InputPointers
-import org.futo.inputmethod.v2keyboard.KeyboardLayoutSetV2
+import org.luxtype.inputmethod.annotations.UsedForTesting
+import org.luxtype.inputmethod.event.Event
+import org.luxtype.inputmethod.latin.common.Constants
+import org.luxtype.inputmethod.latin.common.InputPointers
+import org.luxtype.inputmethod.v2keyboard.KeyboardLayoutSetV2
 
 interface IMEInterface {
     // Basic lifecycle

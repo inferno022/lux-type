@@ -1,22 +1,22 @@
-package org.futo.inputmethod.latin.uix.settings.pages
+package org.luxtype.inputmethod.latin.uix.settings.pages
 
 import android.content.Intent
 import androidx.compose.runtime.Composable
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.AUDIO_FOCUS
-import org.futo.inputmethod.latin.uix.CAN_EXPAND_SPACE
-import org.futo.inputmethod.latin.uix.DISALLOW_SYMBOLS
-import org.futo.inputmethod.latin.uix.ENABLE_SOUND
-import org.futo.inputmethod.latin.uix.PREFER_BLUETOOTH
-import org.futo.inputmethod.latin.uix.USE_PERSONAL_DICT
-import org.futo.inputmethod.latin.uix.USE_SYSTEM_VOICE_INPUT
-import org.futo.inputmethod.latin.uix.USE_VAD_AUTOSTOP
-import org.futo.inputmethod.latin.uix.VERBOSE_PROGRESS
-import org.futo.inputmethod.latin.uix.settings.NavigationItemStyle
-import org.futo.inputmethod.latin.uix.settings.UserSettingsMenu
-import org.futo.inputmethod.latin.uix.settings.useDataStoreValue
-import org.futo.inputmethod.latin.uix.settings.userSettingNavigationItem
-import org.futo.inputmethod.latin.uix.settings.userSettingToggleDataStore
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.AUDIO_FOCUS
+import org.luxtype.inputmethod.latin.uix.CAN_EXPAND_SPACE
+import org.luxtype.inputmethod.latin.uix.DISALLOW_SYMBOLS
+import org.luxtype.inputmethod.latin.uix.ENABLE_SOUND
+import org.luxtype.inputmethod.latin.uix.PREFER_BLUETOOTH
+import org.luxtype.inputmethod.latin.uix.USE_PERSONAL_DICT
+import org.luxtype.inputmethod.latin.uix.USE_SYSTEM_VOICE_INPUT
+import org.luxtype.inputmethod.latin.uix.USE_VAD_AUTOSTOP
+import org.luxtype.inputmethod.latin.uix.VERBOSE_PROGRESS
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItemStyle
+import org.luxtype.inputmethod.latin.uix.settings.UserSettingsMenu
+import org.luxtype.inputmethod.latin.uix.settings.useDataStoreValue
+import org.luxtype.inputmethod.latin.uix.settings.userSettingNavigationItem
+import org.luxtype.inputmethod.latin.uix.settings.userSettingToggleDataStore
 
 private val visibilityCheckNotSystemVoiceInput = @Composable {
     useDataStoreValue(USE_SYSTEM_VOICE_INPUT) == false

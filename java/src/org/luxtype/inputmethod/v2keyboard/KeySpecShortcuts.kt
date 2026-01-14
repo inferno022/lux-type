@@ -1,7 +1,7 @@
-package org.futo.inputmethod.v2keyboard
+package org.luxtype.inputmethod.v2keyboard
 
-import org.futo.inputmethod.keyboard.internal.KeyboardLayoutKind
-import org.futo.inputmethod.keyboard.internal.KeyboardTextsSet
+import org.luxtype.inputmethod.keyboard.internal.KeyboardLayoutKind
+import org.luxtype.inputmethod.keyboard.internal.KeyboardTextsSet
 
 fun shortcutsOf(vararg values: Pair<String, List<String>>): Map<String, List<String>> =
     mapOf(*values).mapValues {

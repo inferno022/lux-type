@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.futo.inputmethod.latin.suggestions
+package org.luxtype.inputmethod.latin.suggestions
 
-import org.futo.inputmethod.latin.SuggestedWords
-import org.futo.inputmethod.latin.SuggestedWords.SuggestedWordInfo
+import org.luxtype.inputmethod.latin.SuggestedWords
+import org.luxtype.inputmethod.latin.SuggestedWords.SuggestedWordInfo
 
 interface SuggestionStripViewListener {
     fun showImportantNoticeContents()

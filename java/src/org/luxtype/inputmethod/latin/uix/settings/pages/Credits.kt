@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings.pages
+package org.luxtype.inputmethod.latin.uix.settings.pages
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -30,24 +30,24 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.settings.BottomSpacer
-import org.futo.inputmethod.latin.uix.settings.NavigationItem
-import org.futo.inputmethod.latin.uix.settings.NavigationItemStyle
-import org.futo.inputmethod.latin.uix.settings.ScreenTitle
-import org.futo.inputmethod.latin.uix.settings.ScrollableList
-import org.futo.inputmethod.latin.uix.settings.SpacedColumn
-import org.futo.inputmethod.latin.uix.settings.UserSettingsMenu
-import org.futo.inputmethod.latin.uix.settings.pages.credits.ThirdPartyItem
-import org.futo.inputmethod.latin.uix.settings.pages.credits.ThirdPartyList
-import org.futo.inputmethod.latin.uix.settings.pages.credits.codeContribs
-import org.futo.inputmethod.latin.uix.settings.pages.credits.languageContribs
-import org.futo.inputmethod.latin.uix.settings.pages.credits.layoutContribs
-import org.futo.inputmethod.latin.uix.settings.pages.credits.text
-import org.futo.inputmethod.latin.uix.settings.render
-import org.futo.inputmethod.latin.uix.settings.userSettingNavigationItem
-import org.futo.inputmethod.latin.uix.theme.Typography
-import org.futo.inputmethod.updates.openURI
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.settings.BottomSpacer
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItem
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItemStyle
+import org.luxtype.inputmethod.latin.uix.settings.ScreenTitle
+import org.luxtype.inputmethod.latin.uix.settings.ScrollableList
+import org.luxtype.inputmethod.latin.uix.settings.SpacedColumn
+import org.luxtype.inputmethod.latin.uix.settings.UserSettingsMenu
+import org.luxtype.inputmethod.latin.uix.settings.pages.credits.ThirdPartyItem
+import org.luxtype.inputmethod.latin.uix.settings.pages.credits.ThirdPartyList
+import org.luxtype.inputmethod.latin.uix.settings.pages.credits.codeContribs
+import org.luxtype.inputmethod.latin.uix.settings.pages.credits.languageContribs
+import org.luxtype.inputmethod.latin.uix.settings.pages.credits.layoutContribs
+import org.luxtype.inputmethod.latin.uix.settings.pages.credits.text
+import org.luxtype.inputmethod.latin.uix.settings.render
+import org.luxtype.inputmethod.latin.uix.settings.userSettingNavigationItem
+import org.luxtype.inputmethod.latin.uix.theme.Typography
+import org.luxtype.inputmethod.updates.openURI
 
 @Composable
 @Preview(showBackground = true)

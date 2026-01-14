@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.resizing
+package org.luxtype.inputmethod.latin.uix.resizing
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxScope
@@ -12,18 +12,18 @@ import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.coerceAtLeast
 import androidx.compose.ui.unit.dp
-import org.futo.inputmethod.latin.LatinIME
-import org.futo.inputmethod.latin.uix.keyboardBottomPadding
-import org.futo.inputmethod.latin.uix.navBarHeight
-import org.futo.inputmethod.latin.uix.safeKeyboardPadding
-import org.futo.inputmethod.v2keyboard.ComputedKeyboardSize
-import org.futo.inputmethod.v2keyboard.FloatingKeyboardSize
-import org.futo.inputmethod.v2keyboard.KeyboardMode
-import org.futo.inputmethod.v2keyboard.OneHandedDirection
-import org.futo.inputmethod.v2keyboard.OneHandedKeyboardSize
-import org.futo.inputmethod.v2keyboard.RegularKeyboardSize
-import org.futo.inputmethod.v2keyboard.SavedKeyboardSizingSettings
-import org.futo.inputmethod.v2keyboard.SplitKeyboardSize
+import org.luxtype.inputmethod.latin.LatinIME
+import org.luxtype.inputmethod.latin.uix.keyboardBottomPadding
+import org.luxtype.inputmethod.latin.uix.navBarHeight
+import org.luxtype.inputmethod.latin.uix.safeKeyboardPadding
+import org.luxtype.inputmethod.v2keyboard.ComputedKeyboardSize
+import org.luxtype.inputmethod.v2keyboard.FloatingKeyboardSize
+import org.luxtype.inputmethod.v2keyboard.KeyboardMode
+import org.luxtype.inputmethod.v2keyboard.OneHandedDirection
+import org.luxtype.inputmethod.v2keyboard.OneHandedKeyboardSize
+import org.luxtype.inputmethod.v2keyboard.RegularKeyboardSize
+import org.luxtype.inputmethod.v2keyboard.SavedKeyboardSizingSettings
+import org.luxtype.inputmethod.v2keyboard.SplitKeyboardSize
 
 open class KeyboardResizeHelper(
     val viewSize: IntSize,

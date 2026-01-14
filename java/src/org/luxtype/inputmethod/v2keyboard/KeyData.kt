@@ -1,9 +1,9 @@
-package org.futo.inputmethod.v2keyboard
+package org.luxtype.inputmethod.v2keyboard
 
 import kotlinx.serialization.Serializable
-import org.futo.inputmethod.keyboard.internal.KeyboardLayoutElement
-import org.futo.inputmethod.keyboard.internal.KeyboardParams
-import org.futo.inputmethod.keyboard.internal.MoreKeySpec
+import org.luxtype.inputmethod.keyboard.internal.KeyboardLayoutElement
+import org.luxtype.inputmethod.keyboard.internal.KeyboardParams
+import org.luxtype.inputmethod.keyboard.internal.MoreKeySpec
 import kotlin.math.sqrt
 
 data class KeyCoordinate(

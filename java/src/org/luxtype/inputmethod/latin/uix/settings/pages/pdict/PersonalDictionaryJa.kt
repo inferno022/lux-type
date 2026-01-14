@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings.pages.pdict
+package org.luxtype.inputmethod.latin.uix.settings.pages.pdict
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -23,16 +23,16 @@ import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import org.futo.inputmethod.engine.GlobalIMEMessage
-import org.futo.inputmethod.engine.IMEMessage
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.LocalNavController
-import org.futo.inputmethod.latin.uix.PersonalWord
-import org.futo.inputmethod.latin.uix.SettingsTextEdit
-import org.futo.inputmethod.latin.uix.UserDictionaryIO
-import org.futo.inputmethod.latin.uix.getImportedUserDictFilesForLocale
-import org.futo.inputmethod.latin.uix.removeImportedUserDictFile
-import org.futo.inputmethod.latin.uix.settings.DropDownPicker
+import org.luxtype.inputmethod.engine.GlobalIMEMessage
+import org.luxtype.inputmethod.engine.IMEMessage
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.LocalNavController
+import org.luxtype.inputmethod.latin.uix.PersonalWord
+import org.luxtype.inputmethod.latin.uix.SettingsTextEdit
+import org.luxtype.inputmethod.latin.uix.UserDictionaryIO
+import org.luxtype.inputmethod.latin.uix.getImportedUserDictFilesForLocale
+import org.luxtype.inputmethod.latin.uix.removeImportedUserDictFile
+import org.luxtype.inputmethod.latin.uix.settings.DropDownPicker
 import org.mozc.android.inputmethod.japanese.protobuf.ProtoUserDictionaryStorage
 import java.util.Locale
 

@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.actions
+package org.luxtype.inputmethod.latin.uix.actions
 
 import android.content.ClipData
 import android.content.ClipboardManager
@@ -13,12 +13,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import org.futo.inputmethod.latin.BuildConfig
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.Action
-import org.futo.inputmethod.latin.uix.ActionWindow
-import org.futo.inputmethod.latin.uix.settings.ScrollableList
-import org.futo.inputmethod.updates.openURI
+import org.luxtype.inputmethod.latin.BuildConfig
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.Action
+import org.luxtype.inputmethod.latin.uix.ActionWindow
+import org.luxtype.inputmethod.latin.uix.settings.ScrollableList
+import org.luxtype.inputmethod.updates.openURI
 
 
 data class BugInfo(val name: String, val details: String)

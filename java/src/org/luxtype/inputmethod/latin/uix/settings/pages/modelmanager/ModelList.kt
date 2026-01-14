@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings.pages.modelmanager
+package org.luxtype.inputmethod.latin.uix.settings.pages.modelmanager
 
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
@@ -14,15 +14,15 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import kotlinx.coroutines.runBlocking
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.settings.NavigationItem
-import org.futo.inputmethod.latin.uix.settings.NavigationItemStyle
-import org.futo.inputmethod.latin.uix.settings.ScreenTitle
-import org.futo.inputmethod.latin.uix.settings.ScrollableList
-import org.futo.inputmethod.latin.uix.settings.Tip
-import org.futo.inputmethod.latin.xlm.ModelInfo
-import org.futo.inputmethod.latin.xlm.ModelPaths
-import org.futo.inputmethod.updates.openURI
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItem
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItemStyle
+import org.luxtype.inputmethod.latin.uix.settings.ScreenTitle
+import org.luxtype.inputmethod.latin.uix.settings.ScrollableList
+import org.luxtype.inputmethod.latin.uix.settings.Tip
+import org.luxtype.inputmethod.latin.xlm.ModelInfo
+import org.luxtype.inputmethod.latin.xlm.ModelPaths
+import org.luxtype.inputmethod.updates.openURI
 import java.net.URLEncoder
 import java.util.Locale
 

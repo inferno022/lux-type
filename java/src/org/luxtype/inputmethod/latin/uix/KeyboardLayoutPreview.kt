@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix
+package org.luxtype.inputmethod.latin.uix
 
 import android.content.Context
 import android.graphics.Rect
@@ -22,17 +22,17 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import org.futo.inputmethod.keyboard.Keyboard
-import org.futo.inputmethod.keyboard.KeyboardView
-import org.futo.inputmethod.keyboard.internal.KeyboardLayoutElement
-import org.futo.inputmethod.keyboard.internal.KeyboardLayoutKind
-import org.futo.inputmethod.keyboard.internal.KeyboardLayoutPage
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.actions.BugViewerState
-import org.futo.inputmethod.v2keyboard.KeyboardLayoutSetV2
-import org.futo.inputmethod.v2keyboard.KeyboardLayoutSetV2Params
-import org.futo.inputmethod.v2keyboard.LayoutManager
-import org.futo.inputmethod.v2keyboard.RegularKeyboardSize
+import org.luxtype.inputmethod.keyboard.Keyboard
+import org.luxtype.inputmethod.keyboard.KeyboardView
+import org.luxtype.inputmethod.keyboard.internal.KeyboardLayoutElement
+import org.luxtype.inputmethod.keyboard.internal.KeyboardLayoutKind
+import org.luxtype.inputmethod.keyboard.internal.KeyboardLayoutPage
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.actions.BugViewerState
+import org.luxtype.inputmethod.v2keyboard.KeyboardLayoutSetV2
+import org.luxtype.inputmethod.v2keyboard.KeyboardLayoutSetV2Params
+import org.luxtype.inputmethod.v2keyboard.LayoutManager
+import org.luxtype.inputmethod.v2keyboard.RegularKeyboardSize
 import java.util.Locale
 import kotlin.math.roundToInt
 

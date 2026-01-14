@@ -1,4 +1,4 @@
-package org.futo.inputmethod.v2keyboard
+package org.luxtype.inputmethod.v2keyboard
 
 import android.content.Context
 import android.content.res.AssetManager
@@ -10,11 +10,11 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.builtins.MapSerializer
 import kotlinx.serialization.builtins.serializer
 import kotlinx.serialization.modules.EmptySerializersModule
-import org.futo.inputmethod.latin.localeFromString
-import org.futo.inputmethod.latin.uix.actions.BugInfo
-import org.futo.inputmethod.latin.uix.actions.BugViewerState
-import org.futo.inputmethod.latin.uix.settings.pages.CustomLayout
-import org.futo.inputmethod.latin.uix.settings.pages.getCustomLayout
+import org.luxtype.inputmethod.latin.localeFromString
+import org.luxtype.inputmethod.latin.uix.actions.BugInfo
+import org.luxtype.inputmethod.latin.uix.actions.BugViewerState
+import org.luxtype.inputmethod.latin.uix.settings.pages.CustomLayout
+import org.luxtype.inputmethod.latin.uix.settings.pages.getCustomLayout
 import java.util.Locale
 
 @Serializable

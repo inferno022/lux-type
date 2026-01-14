@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings
+package org.luxtype.inputmethod.latin.uix.settings
 
 import android.content.Context
 import android.content.Intent
@@ -34,12 +34,12 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import kotlinx.coroutines.runBlocking
-import org.futo.inputmethod.latin.BuildConfig
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.SettingsKey
-import org.futo.inputmethod.latin.uix.setSetting
-import org.futo.inputmethod.latin.uix.theme.Typography
-import org.futo.inputmethod.updates.openURI
+import org.luxtype.inputmethod.latin.BuildConfig
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.SettingsKey
+import org.luxtype.inputmethod.latin.uix.setSetting
+import org.luxtype.inputmethod.latin.uix.theme.Typography
+import org.luxtype.inputmethod.updates.openURI
 
 @Composable
 fun SetupContainer(inner: @Composable () -> Unit) {

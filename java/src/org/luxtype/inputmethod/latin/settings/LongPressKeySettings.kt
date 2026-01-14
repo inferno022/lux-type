@@ -1,11 +1,11 @@
-package org.futo.inputmethod.latin.settings
+package org.luxtype.inputmethod.latin.settings
 
 import android.content.Context
 import androidx.datastore.preferences.core.stringPreferencesKey
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.KeyHintsSetting
-import org.futo.inputmethod.latin.uix.SettingsKey
-import org.futo.inputmethod.latin.uix.getSettingBlocking
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.KeyHintsSetting
+import org.luxtype.inputmethod.latin.uix.SettingsKey
+import org.luxtype.inputmethod.latin.uix.getSettingBlocking
 
 enum class LongPressKey {
     Numbers,

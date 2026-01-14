@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.settings.pages
+package org.luxtype.inputmethod.latin.uix.settings.pages
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.Composable
@@ -7,27 +7,27 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import org.futo.inputmethod.latin.R
-import org.futo.inputmethod.latin.uix.actions.ActionCategory
-import org.futo.inputmethod.latin.uix.actions.ActionsEditor
-import org.futo.inputmethod.latin.uix.actions.ActionsSettings
-import org.futo.inputmethod.latin.uix.actions.AllActionsMap
-import org.futo.inputmethod.latin.uix.actions.EmojiAction
-import org.futo.inputmethod.latin.uix.actions.SwitchLanguageAction
-import org.futo.inputmethod.latin.uix.actions.ensureWellFormed
-import org.futo.inputmethod.latin.uix.actions.toActionEditorItems
-import org.futo.inputmethod.latin.uix.actions.toActionMap
-import org.futo.inputmethod.latin.uix.actions.updateSettingsWithNewActions
-import org.futo.inputmethod.latin.uix.getSetting
-import org.futo.inputmethod.latin.uix.settings.NavigationItemStyle
-import org.futo.inputmethod.latin.uix.settings.ScreenTitle
-import org.futo.inputmethod.latin.uix.settings.SettingToggleRaw
-import org.futo.inputmethod.latin.uix.settings.UserSetting
-import org.futo.inputmethod.latin.uix.settings.UserSettingsMenu
-import org.futo.inputmethod.latin.uix.settings.useDataStoreValue
-import org.futo.inputmethod.latin.uix.settings.userSettingDecorationOnly
-import org.futo.inputmethod.latin.uix.settings.userSettingNavigationItem
-import org.futo.inputmethod.latin.uix.urlEncode
+import org.luxtype.inputmethod.latin.R
+import org.luxtype.inputmethod.latin.uix.actions.ActionCategory
+import org.luxtype.inputmethod.latin.uix.actions.ActionsEditor
+import org.luxtype.inputmethod.latin.uix.actions.ActionsSettings
+import org.luxtype.inputmethod.latin.uix.actions.AllActionsMap
+import org.luxtype.inputmethod.latin.uix.actions.EmojiAction
+import org.luxtype.inputmethod.latin.uix.actions.SwitchLanguageAction
+import org.luxtype.inputmethod.latin.uix.actions.ensureWellFormed
+import org.luxtype.inputmethod.latin.uix.actions.toActionEditorItems
+import org.luxtype.inputmethod.latin.uix.actions.toActionMap
+import org.luxtype.inputmethod.latin.uix.actions.updateSettingsWithNewActions
+import org.luxtype.inputmethod.latin.uix.getSetting
+import org.luxtype.inputmethod.latin.uix.settings.NavigationItemStyle
+import org.luxtype.inputmethod.latin.uix.settings.ScreenTitle
+import org.luxtype.inputmethod.latin.uix.settings.SettingToggleRaw
+import org.luxtype.inputmethod.latin.uix.settings.UserSetting
+import org.luxtype.inputmethod.latin.uix.settings.UserSettingsMenu
+import org.luxtype.inputmethod.latin.uix.settings.useDataStoreValue
+import org.luxtype.inputmethod.latin.uix.settings.userSettingDecorationOnly
+import org.luxtype.inputmethod.latin.uix.settings.userSettingNavigationItem
+import org.luxtype.inputmethod.latin.uix.urlEncode
 
 val ActionsScreen = UserSettingsMenu(
     title = R.string.action_settings_title,

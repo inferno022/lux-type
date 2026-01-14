@@ -1,7 +1,7 @@
-package org.futo.inputmethod.v2keyboard
+package org.luxtype.inputmethod.v2keyboard
 
-import org.futo.inputmethod.keyboard.internal.isAlphabet
-import org.futo.inputmethod.latin.common.Constants
+import org.luxtype.inputmethod.keyboard.internal.isAlphabet
+import org.luxtype.inputmethod.latin.common.Constants
 
 fun getDefaultMoreKeysForKey(code: Int, relevantSpecShortcut: List<String>?): String {
     if(code == Constants.CODE_ENTER) {

@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix
+package org.luxtype.inputmethod.latin.uix
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -37,11 +37,11 @@ import kotlinx.coroutines.withContext
 import okio.buffer
 import okio.sink
 import okio.source
-import org.futo.inputmethod.latin.ActiveSubtype
-import org.futo.inputmethod.latin.Subtypes
-import org.futo.inputmethod.latin.SubtypesSetting
-import org.futo.inputmethod.latin.uix.theme.presets.ClassicMaterialDark
-import org.futo.inputmethod.v2keyboard.LayoutManager
+import org.luxtype.inputmethod.latin.ActiveSubtype
+import org.luxtype.inputmethod.latin.Subtypes
+import org.luxtype.inputmethod.latin.SubtypesSetting
+import org.luxtype.inputmethod.latin.uix.theme.presets.ClassicMaterialDark
+import org.luxtype.inputmethod.v2keyboard.LayoutManager
 import java.io.File
 
 // Used before first unlock (direct boot)

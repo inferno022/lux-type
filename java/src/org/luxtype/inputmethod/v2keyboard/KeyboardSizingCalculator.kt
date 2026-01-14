@@ -1,4 +1,4 @@
-package org.futo.inputmethod.v2keyboard
+package org.luxtype.inputmethod.v2keyboard
 
 import android.content.Context
 import android.graphics.Rect
@@ -22,16 +22,16 @@ import kotlinx.serialization.encoding.Encoder
 import kotlinx.serialization.encoding.decodeStructure
 import kotlinx.serialization.encoding.encodeStructure
 import kotlinx.serialization.json.Json
-import org.futo.inputmethod.latin.FoldStateProvider
-import org.futo.inputmethod.latin.LatinIME
-import org.futo.inputmethod.latin.settings.SettingsValues
-import org.futo.inputmethod.latin.uix.OldStyleActionsBar
-import org.futo.inputmethod.latin.uix.SettingsKey
-import org.futo.inputmethod.latin.uix.UixManager
-import org.futo.inputmethod.latin.uix.getSetting
-import org.futo.inputmethod.latin.uix.getSettingBlocking
-import org.futo.inputmethod.latin.uix.setSettingBlocking
-import org.futo.inputmethod.latin.utils.ResourceUtils
+import org.luxtype.inputmethod.latin.FoldStateProvider
+import org.luxtype.inputmethod.latin.LatinIME
+import org.luxtype.inputmethod.latin.settings.SettingsValues
+import org.luxtype.inputmethod.latin.uix.OldStyleActionsBar
+import org.luxtype.inputmethod.latin.uix.SettingsKey
+import org.luxtype.inputmethod.latin.uix.UixManager
+import org.luxtype.inputmethod.latin.uix.getSetting
+import org.luxtype.inputmethod.latin.uix.getSettingBlocking
+import org.luxtype.inputmethod.latin.uix.setSettingBlocking
+import org.luxtype.inputmethod.latin.utils.ResourceUtils
 import kotlin.math.roundToInt
 
 val OldKeyboardHeightMultiplierSetting = SettingsKey(floatPreferencesKey("keyboardHeightMultiplier"), 1.0f)

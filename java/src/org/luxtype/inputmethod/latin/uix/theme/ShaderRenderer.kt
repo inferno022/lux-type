@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix.theme
+package org.luxtype.inputmethod.latin.uix.theme
 
 import android.content.Context
 import android.graphics.Bitmap
