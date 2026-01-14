@@ -1,0 +1,33 @@
+name: Basic Build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+
+    - name: Setup Java
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+
+    - name: Build
+      run: |
+        chmod +x gradlew
+        ./gradlew assembleUnstableDebug
+
+    - name: Upload
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: apk
+        path: java/build/outputs/apk/unstable/debug/
+        retention-days: 30
