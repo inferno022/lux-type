@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.common;
+package org.luxtype.inputmethod.latin.common;
 
 import javax.annotation.Nonnull;
 
