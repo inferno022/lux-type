@@ -256,7 +256,11 @@ class SettingsActivity : ComponentActivity(), DynamicThemeProviderOwner {
 
         // playStartupSoundIfEligible(savedInstanceState)
 
-        LayoutManager.init(this)
+        try {
+            LayoutManager.init(this)
+        } catch (e: Throwable) {
+            // If LayoutManager fails to init (e.g. missing assets), continue without it
+        }
 
         enableEdgeToEdge()
 
