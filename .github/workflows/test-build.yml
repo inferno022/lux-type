@@ -1,0 +1,41 @@
+name: Test Build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+
+    - name: Setup Java
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+
+    - name: Test Compile Only
+      run: |
+        chmod +x gradlew
+        ./gradlew compileUnstableDebugKotlin --continue --no-daemon
+
+    - name: Build APK
+      if: success()
+      run: |
+        ./gradlew assembleUnstableDebug --no-daemon
+
+    - name: Upload Results
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: test-results
+        path: |
+          java/build/outputs/apk/unstable/debug/
+          java/build/reports/
+        retention-days: 7
+        if-no-files-found: warn
