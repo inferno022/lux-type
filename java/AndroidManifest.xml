@@ -30,8 +30,8 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" tools:node="remove"/>
 
     <application android:label="@string/english_ime_name"
-         android:icon="@mipmap/ic_launcher"
-         android:roundIcon="@mipmap/ic_launcher_round"
+         android:icon="@drawable/ic_launcher_keyboard"
+         android:roundIcon="@drawable/ic_launcher_keyboard"
          android:supportsRtl="true"
          android:allowBackup="true"
          android:largeHeap="true"
@@ -66,8 +66,8 @@
         <!-- Activities -->
         <activity android:name=".uix.settings.SettingsActivity"
              android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
-             android:icon="@mipmap/ic_launcher"
-             android:roundIcon="@mipmap/ic_launcher_round"
+             android:icon="@drawable/ic_launcher_keyboard"
+             android:roundIcon="@drawable/ic_launcher_keyboard"
              android:launchMode="singleTask"
              android:noHistory="false"
              android:configChanges="orientation|screenLayout|screenSize|keyboardHidden|keyboard|uiMode|density"
@@ -81,8 +81,8 @@
         <activity android:name=".uix.ImportResourceActivity"
             android:label="@string/language_settings_import_dictionary_or_model"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
-            android:icon="@mipmap/ic_launcher"
-            android:roundIcon="@mipmap/ic_launcher_round"
+            android:icon="@drawable/ic_launcher_keyboard"
+            android:roundIcon="@drawable/ic_launcher_keyboard"
             android:launchMode="singleTask"
             android:noHistory="false"
             android:configChanges="orientation|screenLayout|screenSize|keyboardHidden|keyboard|uiMode|density"

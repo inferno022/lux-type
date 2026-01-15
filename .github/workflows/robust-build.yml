@@ -49,17 +49,39 @@ jobs:
         echo "Building release bundle..."
         ./gradlew bundleStableRelease --info --stacktrace --no-daemon
 
-    - name: Find and Upload Artifacts
+    - name: Collect Artifacts
+      if: always()
+      run: |
+        mkdir -p artifacts
+        cp build/outputs/apk/unstable/debug/*.apk artifacts/LuxType-unstable-debug.apk
+        cp build/outputs/apk/stable/release/*.apk artifacts/LuxType-stable-release.apk || true
+        cp build/outputs/bundle/stableRelease/*.aab artifacts/LuxType-stable-release.aab || true
+
+    - name: Upload Debug APK
       uses: actions/upload-artifact@v4
       if: always()
       with:
-        name: build-artifacts
-        path: |
-          build/outputs/apk/unstable/debug/
-          build/outputs/apk/stable/release/
-          build/outputs/bundle/stableRelease/
-          build/reports/
-        retention-days: 7
+        name: LuxType-unstable-debug
+        path: artifacts/LuxType-unstable-debug.apk
+        retention-days: 30
+        if-no-files-found: error
+
+    - name: Upload Stable Release APK
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: LuxType-stable-release-apk
+        path: artifacts/LuxType-stable-release.apk
+        retention-days: 30
+        if-no-files-found: warn
+
+    - name: Upload Stable Release AAB
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: LuxType-stable-release-aab
+        path: artifacts/LuxType-stable-release.aab
+        retention-days: 30
         if-no-files-found: warn
 
     - name: Build Summary
