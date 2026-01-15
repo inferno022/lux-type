@@ -50,6 +50,7 @@ import org.luxtype.inputmethod.latin.uix.theme.ThemeOptions
 import org.luxtype.inputmethod.latin.uix.theme.UixThemeAuto
 import org.luxtype.inputmethod.latin.uix.theme.getThemeOption
 import org.luxtype.inputmethod.latin.uix.theme.orDefault
+import org.luxtype.inputmethod.latin.uix.theme.presets.DefaultDarkScheme
 import org.luxtype.inputmethod.latin.xlm.ModelPaths
 import org.luxtype.inputmethod.updates.checkForUpdateAndSaveToPreferences
 import org.luxtype.inputmethod.v2keyboard.LayoutManager
@@ -237,16 +238,25 @@ class SettingsActivity : ComponentActivity(), DynamicThemeProviderOwner {
 
         enableEdgeToEdge()
 
-        // Must happen before setContent() because themeProvider is used by theme/drawable plumbing.
-        getSettingBlocking(THEME_KEY).let {
-            val themeOption = getThemeOption(this, it).orDefault(this@SettingsActivity)
-
-            this.themeOption.value = themeOption
+        // Initialize themeProvider safely in a coroutine; set a placeholder to avoid null crashes.
+        try {
+            getSettingBlocking(THEME_KEY).let {
+                val themeOption = getThemeOption(this, it).orDefault(this@SettingsActivity)
+                this.themeOption.value = themeOption
+                this.themeProvider = BasicThemeProvider(
+                    context = this@SettingsActivity,
+                    colorScheme = themeOption.obtainColors(this@SettingsActivity)
+                )
+                updateEdgeToEdge()
+            }
+        } catch (e: Throwable) {
+            // Fallback: use a default theme provider to avoid crashes
+            val fallbackTheme = ThemeOptions["default_dark"] ?: DefaultDarkScheme
+            this.themeOption.value = fallbackTheme
             this.themeProvider = BasicThemeProvider(
                 context = this@SettingsActivity,
-                colorScheme = themeOption.obtainColors(this@SettingsActivity)
+                colorScheme = fallbackTheme.obtainColors(this@SettingsActivity)
             )
-
             updateEdgeToEdge()
         }
 
@@ -261,15 +271,17 @@ class SettingsActivity : ComponentActivity(), DynamicThemeProviderOwner {
 
         lifecycleScope.launch {
             getSettingFlow(THEME_KEY).collect {
-                val themeOption = getThemeOption(this@SettingsActivity, it).orDefault(this@SettingsActivity)
-
-                this@SettingsActivity.themeOption.value = themeOption
-                this@SettingsActivity.themeProvider = BasicThemeProvider(
-                    context = this@SettingsActivity,
-                    colorScheme = themeOption.obtainColors(this@SettingsActivity)
-                )
-
-                updateEdgeToEdge()
+                try {
+                    val themeOption = getThemeOption(this@SettingsActivity, it).orDefault(this@SettingsActivity)
+                    this@SettingsActivity.themeOption.value = themeOption
+                    this@SettingsActivity.themeProvider = BasicThemeProvider(
+                        context = this@SettingsActivity,
+                        colorScheme = themeOption.obtainColors(this@SettingsActivity)
+                    )
+                    updateEdgeToEdge()
+                } catch (e: Throwable) {
+                    // Ignore theme update errors to avoid crashes
+                }
             }
         }
 
