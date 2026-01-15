@@ -159,27 +159,49 @@ class SettingsActivity : ComponentActivity(), DynamicThemeProviderOwner {
     }
 
     private fun updateContent() {
-        setContent {
-            DataStoreCacheProvider {
-                SharedPrefsCacheProvider {
-                    UixThemeAuto {
-                        Surface(
-                            modifier = Modifier
-                                .fillMaxSize(),
-                            color = MaterialTheme.colorScheme.background
-                        ) {
-                            Box(Modifier.safeDrawingPadding()) {
-                                SetupOrMain(
-                                    inputMethodEnabled.value,
-                                    inputMethodSelected.value,
-                                    doublePackage.value
-                                ) {
-                                    SettingsNavigator(navController = navController)
+        try {
+            setContent {
+                DataStoreCacheProvider {
+                    SharedPrefsCacheProvider {
+                        UixThemeAuto {
+                            Surface(
+                                modifier = Modifier
+                                    .fillMaxSize(),
+                                color = MaterialTheme.colorScheme.background
+                            ) {
+                                Box(Modifier.safeDrawingPadding()) {
+                                    SetupOrMain(
+                                        inputMethodEnabled.value,
+                                        inputMethodSelected.value,
+                                        doublePackage.value
+                                    ) {
+                                        SettingsNavigator(navController = navController)
+                                    }
                                 }
                             }
                         }
                     }
                 }
+            }
+        } catch (e: Throwable) {
+            // Emergency fallback: show a simple static UI if anything in Compose fails
+            runOnUiThread {
+                setContentView(android.widget.TextView(this).apply {
+                    text = "Lux Type Keyboard\n\nTap to continue to settings"
+                    setOnClickListener {
+                        try {
+                            // Try to open system settings for this IME as a last resort
+                            val intent = android.content.Intent(android.provider.Settings.ACTION_INPUT_METHOD_SETTINGS)
+                            startActivity(intent)
+                            finish()
+                        } catch (_: Throwable) {
+                            finish()
+                        }
+                    }
+                    gravity = android.view.Gravity.CENTER
+                    setTextColor(android.graphics.Color.WHITE)
+                    setBackgroundColor(android.graphics.Color.BLACK)
+                })
             }
         }
     }
