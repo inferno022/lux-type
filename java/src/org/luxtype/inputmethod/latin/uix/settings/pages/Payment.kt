@@ -266,7 +266,7 @@ fun UnpaidNotice(openMenu: () -> Unit = { }) {
             }
 
             Button(onClick = openMenu, modifier = Modifier.fillMaxWidth()) {
-                Text(stringResource(R.string.payment_screen_pay_via_futopay, BuildConfig.PAYMENT_PRICE))
+                Text(stringResource(R.string.payment_screen_pay_via_luxtypepay, BuildConfig.PAYMENT_PRICE))
             }
         }
     }
@@ -492,7 +492,7 @@ fun PaymentScreen(
                     }
 
                     Button(
-                        onClick = { context.openURI(BuildConfig.FUTOPAY_URL) },
+                        onClick = { context.openURI(BuildConfig.LUXTYPEPAY_URL) },
                         modifier = Modifier
                             .fillMaxWidth()
                             .heightIn(min = 44.dp)
@@ -500,14 +500,14 @@ fun PaymentScreen(
 
                         Text(
                             stringResource(
-                                R.string.payment_screen_pay_via_futopay2,
-                                BuildConfig.FUTOPAY_PRICE
+                                R.string.payment_screen_pay_via_luxtypepay2,
+                                BuildConfig.LUXTYPEPAY_PRICE
                             ), style = Typography.Body.Medium
                         )
                     }
                 } else {
                     Button(
-                        onClick = { context.openURI(BuildConfig.FUTOPAY_URL) },
+                        onClick = { context.openURI(BuildConfig.LUXTYPEPAY_URL) },
                         modifier = Modifier
                             .fillMaxWidth()
                             .heightIn(min = 44.dp)
@@ -515,8 +515,8 @@ fun PaymentScreen(
 
                         Text(
                             stringResource(
-                                R.string.payment_screen_pay_via_futopay,
-                                BuildConfig.FUTOPAY_PRICE
+                                R.string.payment_screen_pay_via_luxtypepay,
+                                BuildConfig.LUXTYPEPAY_PRICE
                             ), style = Typography.Body.Medium
                         )
                     }
