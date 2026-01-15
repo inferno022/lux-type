@@ -1,4 +1,4 @@
-package org.futo.voiceinput.shared.util
+package org.luxtype.voiceinput.shared.util
 
 fun Array<DoubleArray>.transpose(): Array<DoubleArray> {
     return Array(this[0].size) { i ->

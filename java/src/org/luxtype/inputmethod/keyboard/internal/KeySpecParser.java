@@ -16,8 +16,8 @@
 
 package org.luxtype.inputmethod.keyboard.internal;
 
-import static org.futo.inputmethod.latin.common.Constants.CODE_OUTPUT_TEXT;
-import static org.futo.inputmethod.latin.common.Constants.CODE_UNSPECIFIED;
+import static org.luxtype.inputmethod.latin.common.Constants.CODE_OUTPUT_TEXT;
+import static org.luxtype.inputmethod.latin.common.Constants.CODE_UNSPECIFIED;
 
 import org.luxtype.inputmethod.latin.common.Constants;
 import org.luxtype.inputmethod.latin.common.StringUtils;

@@ -821,7 +821,9 @@ class PersistentEmojiState : PersistentActionState {
             }
 
             GlobalScope.launch(Dispatchers.IO) {
-                val inputStream = GZIPInputStream(context.resources.openRawResource(R.raw.emoji_i18n))
+                val resId = context.resources.getIdentifier("emoji_i18n", "raw", context.packageName)
+                if (resId == 0) return@launch
+                val inputStream = GZIPInputStream(context.resources.openRawResource(resId))
 
                 var data: JsonObject? = null
                 BufferedReader(InputStreamReader(inputStream, StandardCharsets.UTF_8)).use { reader ->

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.common;
+package org.luxtype.inputmethod.latin.common;
 
 public class NativeSuggestOptions {
     // Need to update suggest_options.h when you add, remove or reorder options.

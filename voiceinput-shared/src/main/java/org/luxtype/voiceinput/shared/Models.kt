@@ -1,8 +1,8 @@
-package org.futo.voiceinput.shared
+package org.luxtype.voiceinput.shared
 
-import org.futo.voiceinput.shared.types.ModelBuiltInAsset
-import org.futo.voiceinput.shared.types.ModelDownloadable
-import org.futo.voiceinput.shared.types.ModelLoader
+import org.luxtype.voiceinput.shared.types.ModelBuiltInAsset
+import org.luxtype.voiceinput.shared.types.ModelDownloadable
+import org.luxtype.voiceinput.shared.types.ModelLoader
 
 val BUILTIN_ENGLISH_MODEL: ModelLoader = ModelBuiltInAsset(
     name = R.string.tiny_en_name,

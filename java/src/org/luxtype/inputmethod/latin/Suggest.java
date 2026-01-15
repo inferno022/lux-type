@@ -19,8 +19,8 @@ package org.luxtype.inputmethod.latin;
 import android.text.TextUtils;
 import android.util.Log;
 
-import static org.futo.inputmethod.latin.define.DecoderSpecificConstants.SHOULD_AUTO_CORRECT_USING_NON_WHITE_LISTED_SUGGESTION;
-import static org.futo.inputmethod.latin.define.DecoderSpecificConstants.SHOULD_REMOVE_PREVIOUSLY_REJECTED_SUGGESTION;
+import static org.luxtype.inputmethod.latin.define.DecoderSpecificConstants.SHOULD_AUTO_CORRECT_USING_NON_WHITE_LISTED_SUGGESTION;
+import static org.luxtype.inputmethod.latin.define.DecoderSpecificConstants.SHOULD_REMOVE_PREVIOUSLY_REJECTED_SUGGESTION;
 
 import org.luxtype.inputmethod.keyboard.Keyboard;
 import org.luxtype.inputmethod.latin.SuggestedWords.SuggestedWordInfo;

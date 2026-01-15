@@ -1,4 +1,4 @@
-package org.futo.voiceinput.shared.util
+package org.luxtype.voiceinput.shared.util
 
 import android.content.Context
 import android.content.res.Resources

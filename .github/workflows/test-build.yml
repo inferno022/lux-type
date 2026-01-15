@@ -35,7 +35,7 @@ jobs:
       with:
         name: test-results
         path: |
-          java/build/outputs/apk/unstable/debug/
-          java/build/reports/
+          build/outputs/apk/unstable/debug/
+          build/reports/
         retention-days: 7
         if-no-files-found: warn

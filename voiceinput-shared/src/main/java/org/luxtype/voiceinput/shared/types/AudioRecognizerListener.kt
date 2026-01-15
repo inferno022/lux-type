@@ -1,6 +1,6 @@
-package org.futo.voiceinput.shared.types
+package org.luxtype.voiceinput.shared.types
 
-import org.futo.voiceinput.shared.ui.MicrophoneDeviceState
+import org.luxtype.voiceinput.shared.ui.MicrophoneDeviceState
 
 enum class MagnitudeState {
     NOT_TALKED_YET, MIC_MAY_BE_BLOCKED, TALKING

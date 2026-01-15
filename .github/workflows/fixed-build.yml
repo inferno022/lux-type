@@ -44,8 +44,8 @@ jobs:
       with:
         name: build-artifacts
         path: |
-          java/build/outputs/apk/unstable/debug/
-          java/build/outputs/apk/stable/release/
+          build/outputs/apk/unstable/debug/
+          build/outputs/apk/stable/release/
         retention-days: 7
 
     - name: Upload build logs

@@ -16,12 +16,12 @@
 
 package org.luxtype.inputmethod.latin.utils;
 
-import static org.futo.inputmethod.latin.common.Constants.Subtype.KEYBOARD_MODE;
-import static org.futo.inputmethod.latin.common.Constants.Subtype.ExtraValue.ASCII_CAPABLE;
-import static org.futo.inputmethod.latin.common.Constants.Subtype.ExtraValue.EMOJI_CAPABLE;
-import static org.futo.inputmethod.latin.common.Constants.Subtype.ExtraValue.IS_ADDITIONAL_SUBTYPE;
-import static org.futo.inputmethod.latin.common.Constants.Subtype.ExtraValue.KEYBOARD_LAYOUT_SET;
-import static org.futo.inputmethod.latin.common.Constants.Subtype.ExtraValue.UNTRANSLATABLE_STRING_IN_SUBTYPE_NAME;
+import static org.luxtype.inputmethod.latin.common.Constants.Subtype.KEYBOARD_MODE;
+import static org.luxtype.inputmethod.latin.common.Constants.Subtype.ExtraValue.ASCII_CAPABLE;
+import static org.luxtype.inputmethod.latin.common.Constants.Subtype.ExtraValue.EMOJI_CAPABLE;
+import static org.luxtype.inputmethod.latin.common.Constants.Subtype.ExtraValue.IS_ADDITIONAL_SUBTYPE;
+import static org.luxtype.inputmethod.latin.common.Constants.Subtype.ExtraValue.KEYBOARD_LAYOUT_SET;
+import static org.luxtype.inputmethod.latin.common.Constants.Subtype.ExtraValue.UNTRANSLATABLE_STRING_IN_SUBTYPE_NAME;
 
 import android.os.Build;
 import android.text.TextUtils;

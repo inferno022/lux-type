@@ -1,4 +1,4 @@
-package org.futo.voiceinput.shared
+package org.luxtype.voiceinput.shared
 
 import android.content.Context
 import androidx.compose.foundation.clickable
@@ -18,18 +18,18 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.LifecycleCoroutineScope
-import org.futo.voiceinput.shared.types.AudioRecognizerListener
-import org.futo.voiceinput.shared.types.InferenceState
-import org.futo.voiceinput.shared.types.Language
-import org.futo.voiceinput.shared.types.MagnitudeState
-import org.futo.voiceinput.shared.ui.InnerRecognize
-import org.futo.voiceinput.shared.ui.MicrophoneDeviceState
-import org.futo.voiceinput.shared.ui.PartialDecodingResult
-import org.futo.voiceinput.shared.ui.RecognizeLoadingCircle
-import org.futo.voiceinput.shared.ui.RecognizeMicError
-import org.futo.voiceinput.shared.whisper.DecodingConfiguration
-import org.futo.voiceinput.shared.whisper.ModelManager
-import org.futo.voiceinput.shared.whisper.MultiModelRunConfiguration
+import org.luxtype.voiceinput.shared.types.AudioRecognizerListener
+import org.luxtype.voiceinput.shared.types.InferenceState
+import org.luxtype.voiceinput.shared.types.Language
+import org.luxtype.voiceinput.shared.types.MagnitudeState
+import org.luxtype.voiceinput.shared.ui.InnerRecognize
+import org.luxtype.voiceinput.shared.ui.MicrophoneDeviceState
+import org.luxtype.voiceinput.shared.ui.PartialDecodingResult
+import org.luxtype.voiceinput.shared.ui.RecognizeLoadingCircle
+import org.luxtype.voiceinput.shared.ui.RecognizeMicError
+import org.luxtype.voiceinput.shared.whisper.DecodingConfiguration
+import org.luxtype.voiceinput.shared.whisper.ModelManager
+import org.luxtype.voiceinput.shared.whisper.MultiModelRunConfiguration
 
 data class RecognizerViewSettings(
     val shouldShowVerboseFeedback: Boolean,

@@ -29,5 +29,5 @@ jobs:
       if: always()
       with:
         name: apk
-        path: java/build/outputs/apk/unstable/debug/
+        path: build/outputs/apk/unstable/debug/
         retention-days: 30

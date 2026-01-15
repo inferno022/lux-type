@@ -1,4 +1,4 @@
-package org.futo.voiceinput.shared
+package org.luxtype.voiceinput.shared
 
 import android.content.Context
 import android.media.AudioAttributes

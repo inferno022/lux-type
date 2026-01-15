@@ -1,4 +1,4 @@
-package org.futo.voiceinput.shared.types
+package org.luxtype.voiceinput.shared.types
 
 enum class InferenceState {
     ExtractingMel, LoadingModel, Encoding, DecodingLanguage, SwitchingModel, DecodingStarted

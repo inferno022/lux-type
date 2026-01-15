@@ -1,8 +1,8 @@
-package org.futo.voiceinput.shared.whisper
+package org.luxtype.voiceinput.shared.whisper
 
 import android.content.Context
-import org.futo.voiceinput.shared.ggml.WhisperGGML
-import org.futo.voiceinput.shared.types.ModelLoader
+import org.luxtype.voiceinput.shared.ggml.WhisperGGML
+import org.luxtype.voiceinput.shared.types.ModelLoader
 
 
 class ModelManager(

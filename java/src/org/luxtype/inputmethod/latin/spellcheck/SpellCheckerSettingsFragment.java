@@ -29,7 +29,7 @@ import org.luxtype.inputmethod.latin.permissions.PermissionsUtil;
 import org.luxtype.inputmethod.latin.settings.SubScreenFragment;
 import org.luxtype.inputmethod.latin.utils.ApplicationUtils;
 
-import static org.futo.inputmethod.latin.permissions.PermissionsManager.get;
+import static org.luxtype.inputmethod.latin.permissions.PermissionsManager.get;
 
 /**
  * Preference screen.

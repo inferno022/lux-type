@@ -16,9 +16,9 @@
 
 package org.luxtype.inputmethod.latin;
 
-import static org.futo.inputmethod.latin.common.Constants.ImeOption.FORCE_ASCII;
-import static org.futo.inputmethod.latin.common.Constants.ImeOption.NO_MICROPHONE;
-import static org.futo.inputmethod.latin.common.Constants.ImeOption.NO_MICROPHONE_COMPAT;
+import static org.luxtype.inputmethod.latin.common.Constants.ImeOption.FORCE_ASCII;
+import static org.luxtype.inputmethod.latin.common.Constants.ImeOption.NO_MICROPHONE;
+import static org.luxtype.inputmethod.latin.common.Constants.ImeOption.NO_MICROPHONE_COMPAT;
 
 import android.Manifest.permission;
 import android.app.Activity;

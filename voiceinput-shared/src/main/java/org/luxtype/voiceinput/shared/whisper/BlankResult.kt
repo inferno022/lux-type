@@ -1,4 +1,4 @@
-package org.futo.voiceinput.shared.whisper
+package org.luxtype.voiceinput.shared.whisper
 
 private fun createBlankResultPermutations(blankResults: List<String>): HashSet<String> {
     val blankResultsResult = blankResults.map { it.lowercase() }.toMutableList()

@@ -16,8 +16,6 @@ import org.luxtype.inputmethod.latin.utils.JniUtils
 import java.io.File
 import java.io.FileOutputStream
 
-
-val BASE_MODEL_RESOURCE = R.raw.ml4_q6_k
 val BASE_MODEL_NAME = "ml4_q6_k"
 val DEPRECATED_MODEL_NAME = "ml4_1_f16_meta_fixed"
 
@@ -226,13 +224,14 @@ object ModelPaths {
     fun ensureDefaultModelExists(context: Context) {
         val directory = getModelDirectory(context)
 
-
         val oldFile = File(directory, "$DEPRECATED_MODEL_NAME.gguf")
         if(oldFile.isFile) oldFile.delete()
 
         val tgtFile = File(directory, "$BASE_MODEL_NAME.gguf")
         if(!tgtFile.isFile) {
-            context.resources.openRawResource(BASE_MODEL_RESOURCE).use { inputStream ->
+            val resId = context.resources.getIdentifier(BASE_MODEL_NAME, "raw", context.packageName)
+            if (resId == 0) return
+            context.resources.openRawResource(resId).use { inputStream ->
                 FileOutputStream(tgtFile).use { outputStream ->
                     var read = 0
                     val bytes = ByteArray(1024)

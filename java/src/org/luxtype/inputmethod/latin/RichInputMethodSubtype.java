@@ -16,7 +16,7 @@
 
 package org.luxtype.inputmethod.latin;
 
-import static org.futo.inputmethod.latin.common.Constants.Subtype.KEYBOARD_MODE;
+import static org.luxtype.inputmethod.latin.common.Constants.Subtype.KEYBOARD_MODE;
 
 import android.content.Context;
 import android.os.Build;

@@ -1,4 +1,4 @@
-package org.futo.voiceinput.shared.ui
+package org.luxtype.voiceinput.shared.ui
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect

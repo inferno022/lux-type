@@ -181,7 +181,7 @@ public final class KeyboardSwitcher implements SwitchActions {
 
     private int transformAutoCapsState(int state) {
         if(mKeyboardLayoutSet == null) return state;
-        final org.futo.inputmethod.v2keyboard.Keyboard keyboard = mKeyboardLayoutSet.getMainLayout();
+        final org.luxtype.inputmethod.v2keyboard.Keyboard keyboard = mKeyboardLayoutSet.getMainLayout();
         if(keyboard == null) return state;
 
         if(!keyboard.getAutoShift())

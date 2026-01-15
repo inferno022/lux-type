@@ -1,4 +1,4 @@
-package org.futo.voiceinput.shared.ui
+package org.luxtype.voiceinput.shared.ui
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
@@ -56,9 +56,9 @@ import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.delay
-import org.futo.voiceinput.shared.R
-import org.futo.voiceinput.shared.types.MagnitudeState
-import org.futo.voiceinput.shared.ui.theme.Typography
+import org.luxtype.voiceinput.shared.R
+import org.luxtype.voiceinput.shared.types.MagnitudeState
+import org.luxtype.voiceinput.shared.ui.theme.Typography
 
 data class MicrophoneDeviceState(
     val bluetoothAvailable: Boolean,

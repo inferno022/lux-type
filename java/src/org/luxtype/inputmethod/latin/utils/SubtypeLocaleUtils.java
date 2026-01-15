@@ -16,9 +16,9 @@
 
 package org.luxtype.inputmethod.latin.utils;
 
-import static org.futo.inputmethod.latin.common.Constants.Subtype.ExtraValue.COMBINING_RULES;
-import static org.futo.inputmethod.latin.common.Constants.Subtype.ExtraValue.KEYBOARD_LAYOUT_SET;
-import static org.futo.inputmethod.latin.common.Constants.Subtype.ExtraValue.UNTRANSLATABLE_STRING_IN_SUBTYPE_NAME;
+import static org.luxtype.inputmethod.latin.common.Constants.Subtype.ExtraValue.COMBINING_RULES;
+import static org.luxtype.inputmethod.latin.common.Constants.Subtype.ExtraValue.KEYBOARD_LAYOUT_SET;
+import static org.luxtype.inputmethod.latin.common.Constants.Subtype.ExtraValue.UNTRANSLATABLE_STRING_IN_SUBTYPE_NAME;
 
 import android.content.Context;
 import android.content.res.Resources;

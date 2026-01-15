@@ -1,18 +1,18 @@
-package org.futo.voiceinput.shared.whisper
+package org.luxtype.voiceinput.shared.whisper
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
-import org.futo.voiceinput.shared.ggml.BailLanguageException
-import org.futo.voiceinput.shared.ggml.DecodingMode
-import org.futo.voiceinput.shared.ggml.InferenceCancelledException
-import org.futo.voiceinput.shared.types.InferenceState
-import org.futo.voiceinput.shared.types.Language
-import org.futo.voiceinput.shared.types.ModelInferenceCallback
-import org.futo.voiceinput.shared.types.ModelLoader
-import org.futo.voiceinput.shared.types.getLanguageFromWhisperString
-import org.futo.voiceinput.shared.types.toWhisperString
+import org.luxtype.voiceinput.shared.ggml.BailLanguageException
+import org.luxtype.voiceinput.shared.ggml.DecodingMode
+import org.luxtype.voiceinput.shared.ggml.InferenceCancelledException
+import org.luxtype.voiceinput.shared.types.InferenceState
+import org.luxtype.voiceinput.shared.types.Language
+import org.luxtype.voiceinput.shared.types.ModelInferenceCallback
+import org.luxtype.voiceinput.shared.types.ModelLoader
+import org.luxtype.voiceinput.shared.types.getLanguageFromWhisperString
+import org.luxtype.voiceinput.shared.types.toWhisperString
 
 
 data class MultiModelRunConfiguration(
