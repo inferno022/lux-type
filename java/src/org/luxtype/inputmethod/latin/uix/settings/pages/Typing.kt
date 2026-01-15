@@ -15,6 +15,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.InlineTextContent
 import androidx.compose.foundation.text.appendInlineContent
 import androidx.compose.material.icons.Icons
@@ -28,6 +29,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
@@ -198,11 +200,14 @@ fun ResizeScreen(navController: NavHostController = rememberNavController()) {
         ScrollableList {
             ScreenTitle(stringResource(R.string.size_settings_title), showBack = true, navController)
 
-            PaymentSurface(
-                isPrimary = false,
+            Surface(
+                color = MaterialTheme.colorScheme.primaryContainer,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(8.dp),
+                shape = RoundedCornerShape(4.dp)
             ) {
-                PaymentSurfaceHeading(title = stringResource(R.string.settings_tip))
-
+                val iconSize = 18.dp
                 Text(
                     buildAnnotatedString {
                         append(stringResource(R.string.size_settings_keyboard_modes_tip))
@@ -213,19 +218,25 @@ fun ResizeScreen(navController: NavHostController = rememberNavController()) {
                         appendLine()
                         append(stringResource(R.string.size_settings_resize_tip))
                     },
+                    modifier = Modifier.padding(8.dp),
                     style = Typography.Body.MediumMl,
-                    color = LocalContentColor.current,
+                    color = MaterialTheme.colorScheme.onPrimaryContainer,
                     inlineContent = mapOf(
                         "icon" to InlineTextContent(
                             Placeholder(
-                                width = with(LocalDensity.current) { 24.dp.toPx().toSp() },
-                                height = with(LocalDensity.current) { 24.dp.toPx().toSp() },
+                                width = with(LocalDensity.current) { iconSize.toSp() },
+                                height = with(LocalDensity.current) { iconSize.toSp() },
                                 placeholderVerticalAlign = PlaceholderVerticalAlign.Center
                             )
-                        ){
-                            Icon(painterResource(R.drawable.keyboard_gear), contentDescription = null)
+                        ) {
+                            Icon(
+                                painterResource(R.drawable.keyboard_icon),
+                                contentDescription = null,
+                                modifier = Modifier.size(iconSize)
+                            )
                         }
-                    ))
+                    )
+                )
             }
 
             Spacer(Modifier.height(8.dp))

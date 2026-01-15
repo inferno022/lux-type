@@ -5,7 +5,9 @@ import android.content.Context
 import android.content.Context.INPUT_METHOD_SERVICE
 import android.content.Intent
 import android.graphics.Color
+import android.media.MediaPlayer
 import android.os.Bundle
+import android.os.SystemClock
 import android.provider.Settings
 import android.view.inputmethod.InputMethodManager
 import androidx.activity.ComponentActivity
@@ -102,6 +104,9 @@ class SettingsActivity : ComponentActivity(), DynamicThemeProviderOwner {
 
     companion object {
         private var pollJob: Job? = null
+        private var startupSoundPlayedForProcess: Boolean = false
+        private var startupSoundPlayer: MediaPlayer? = null
+        private var lastStartupSoundUptimeMs: Long = 0L
     }
 
     @OptIn(DelicateCoroutinesApi::class)
@@ -178,22 +183,80 @@ class SettingsActivity : ComponentActivity(), DynamicThemeProviderOwner {
         }
     }
 
+    private fun playStartupSoundIfEligible(savedInstanceState: Bundle?) {
+        if(startupSoundPlayedForProcess) return
+
+        val i = intent
+        val isLauncherStart = (i?.action == Intent.ACTION_MAIN) && (i.categories?.contains(Intent.CATEGORY_LAUNCHER) == true)
+        if(!isLauncherStart) return
+        if(savedInstanceState != null) return
+
+        // In case the app is crash-looping, avoid hammering the speaker with repeated audio.
+        val now = SystemClock.uptimeMillis()
+        if(now - lastStartupSoundUptimeMs < 3000L) return
+        lastStartupSoundUptimeMs = now
+
+        startupSoundPlayedForProcess = true
+
+        try {
+            startupSoundPlayer?.run {
+                stop()
+                release()
+            }
+            startupSoundPlayer = null
+
+            val player = MediaPlayer.create(this, org.luxtype.inputmethod.latin.R.raw.tap_in)
+            if(player != null) {
+                startupSoundPlayer = player
+                player.setVolume(0.07f, 0.07f)
+                player.setOnCompletionListener {
+                    it.release()
+                    if(startupSoundPlayer === it) startupSoundPlayer = null
+                }
+                player.setOnErrorListener { mp, _, _ ->
+                    mp.release()
+                    if(startupSoundPlayer === mp) startupSoundPlayer = null
+                    true
+                }
+                player.start()
+            }
+        } catch (_: Throwable) {
+            startupSoundPlayer?.run {
+                release()
+            }
+            startupSoundPlayer = null
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // playStartupSoundIfEligible(savedInstanceState)
 
         LayoutManager.init(this)
 
         enableEdgeToEdge()
 
-        lifecycleScope.launch {
-            repeatOnLifecycle(Lifecycle.State.STARTED) {
-                updateSystemState()
-                updateContent()
-            }
+        // Must happen before setContent() because themeProvider is used by theme/drawable plumbing.
+        getSettingBlocking(THEME_KEY).let {
+            val themeOption = getThemeOption(this, it).orDefault(this@SettingsActivity)
+
+            this.themeOption.value = themeOption
+            this.themeProvider = BasicThemeProvider(
+                context = this@SettingsActivity,
+                colorScheme = themeOption.obtainColors(this@SettingsActivity)
+            )
+
+            updateEdgeToEdge()
         }
 
+        updateSystemState()
+        updateContent()
+
         lifecycleScope.launch {
-            checkForUpdateAndSaveToPreferences(applicationContext)
+            runCatching {
+                checkForUpdateAndSaveToPreferences(applicationContext)
+            }
         }
 
         lifecycleScope.launch {
@@ -208,18 +271,6 @@ class SettingsActivity : ComponentActivity(), DynamicThemeProviderOwner {
 
                 updateEdgeToEdge()
             }
-        }
-
-        getSettingBlocking(THEME_KEY).let {
-            val themeOption = getThemeOption(this, it).orDefault(this@SettingsActivity)
-
-            this.themeOption.value = themeOption
-            this.themeProvider = BasicThemeProvider(
-                context = this@SettingsActivity,
-                colorScheme = themeOption.obtainColors(this@SettingsActivity)
-            )
-
-            updateEdgeToEdge()
         }
 
         val intent = intent
@@ -251,6 +302,10 @@ class SettingsActivity : ComponentActivity(), DynamicThemeProviderOwner {
         super.onResume()
 
         updateSystemState()
+    }
+
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
     }
 
     override fun onRestart() {

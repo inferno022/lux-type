@@ -35,9 +35,6 @@ import org.luxtype.inputmethod.latin.uix.SettingsKey
 import org.luxtype.inputmethod.latin.uix.getSetting
 import org.luxtype.inputmethod.latin.uix.setSetting
 import org.luxtype.inputmethod.latin.uix.settings.SettingItem
-import org.luxtype.inputmethod.latin.uix.settings.pages.ParagraphText
-import org.luxtype.inputmethod.latin.uix.settings.pages.PaymentSurface
-import org.luxtype.inputmethod.latin.uix.settings.pages.PaymentSurfaceHeading
 import org.luxtype.inputmethod.latin.uix.settings.useDataStore
 
 val LAST_UPDATE_CHECK_RESULT = stringPreferencesKey("last_update_check_result")
@@ -154,39 +151,16 @@ fun ConditionalMigrateUpdateNotice() {
     val context = LocalContext.current
     val value = useDataStore(dismissedMigrateUpdateNotice, blocking = true)
     if(!value.value) {
-        PaymentSurface(isPrimary = true) {
-            PaymentSurfaceHeading(stringResource(R.string.manual_update_notice_title))
-
-            ParagraphText(stringResource(R.string.manual_update_notice_paragraph_1))
-
-            if(booleanResource(R.bool.use_dev_styling)) {
-                ParagraphText(stringResource(R.string.manual_update_notice_dev_paragraph))
-            } else {
-                ParagraphText(stringResource(R.string.manual_update_notice_paragraph_2))
-            }
-
-            Row(
-                modifier = Modifier.fillMaxWidth()
-            ) {
-                Box(modifier = Modifier.weight(1.0f)) {
-                    Button(onClick = {
-                        context.openURI("https://keyboard.futo.org/#downloads")
-                    }, modifier = Modifier.align(Alignment.Center)) {
-                        Text(stringResource(R.string.manual_update_notice_visit_site_button))
-                    }
+        SettingItem(
+            title = stringResource(R.string.manual_update_notice_title),
+            subtitle = stringResource(
+                if(booleanResource(R.bool.use_dev_styling)) {
+                    R.string.manual_update_notice_dev_paragraph
+                } else {
+                    R.string.manual_update_notice_paragraph_2
                 }
-                Box(modifier = Modifier.weight(1.0f)) {
-                    Button(
-                        onClick = { value.setValue(true) },
-                        colors = ButtonDefaults.buttonColors(
-                            containerColor = MaterialTheme.colorScheme.secondary,
-                            contentColor = MaterialTheme.colorScheme.onSecondary
-                        ), modifier = Modifier.align(Alignment.Center)
-                    ) {
-                        Text(stringResource(R.string.manual_update_notice_dismiss_notice_button))
-                    }
-                }
-            }
-        }
+            ),
+            onClick = { context.openURI("https://keyboard.futo.org/#downloads") }
+        ) { }
     }
 }

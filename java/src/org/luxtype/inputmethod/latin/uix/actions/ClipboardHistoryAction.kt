@@ -69,8 +69,8 @@ import org.luxtype.inputmethod.latin.uix.DialogRequestItem
 import org.luxtype.inputmethod.latin.uix.PersistentActionState
 import org.luxtype.inputmethod.latin.uix.PersistentStateInitialization
 import org.luxtype.inputmethod.latin.uix.SettingsKey
-import org.luxtype.inputmethod.latin.uix.settings.UserSetting
 import org.luxtype.inputmethod.latin.uix.settings.UserSettingsMenu
+import org.luxtype.inputmethod.latin.uix.settings.UserSetting
 import org.luxtype.inputmethod.latin.uix.getSetting
 import org.luxtype.inputmethod.latin.uix.getSettingBlocking
 import org.luxtype.inputmethod.latin.uix.getUnlockedSetting
@@ -78,9 +78,6 @@ import org.luxtype.inputmethod.latin.uix.isDirectBootUnlocked
 import org.luxtype.inputmethod.latin.uix.settings.ScrollableList
 import org.luxtype.inputmethod.latin.uix.settings.SettingSlider
 import org.luxtype.inputmethod.latin.uix.settings.SettingToggleDataStore
-import org.luxtype.inputmethod.latin.uix.settings.pages.ParagraphText
-import org.luxtype.inputmethod.latin.uix.settings.pages.PaymentSurface
-import org.luxtype.inputmethod.latin.uix.settings.pages.PaymentSurfaceHeading
 import org.luxtype.inputmethod.latin.uix.settings.useDataStore
 import org.luxtype.inputmethod.latin.uix.settings.useDataStoreValue
 import org.luxtype.inputmethod.latin.uix.settings.userSettingToggleDataStore
@@ -716,21 +713,28 @@ val ClipboardHistoryAction = Action(
                 val clipboardHistory = useDataStore(ClipboardHistoryEnabled, blocking = true)
                 if(!unlocked) {
                     ScrollableList {
-                        PaymentSurface(isPrimary = true) {
-                            PaymentSurfaceHeading(title = stringResource(R.string.action_clipboard_manager_error_device_locked_title))
-
-                            ParagraphText(stringResource(R.string.action_clipboard_manager_error_device_locked_text))
-                        }
+                        Text(
+                            text = stringResource(R.string.action_clipboard_manager_error_device_locked_title),
+                            style = Typography.Heading.Medium
+                        )
+                        Text(
+                            text = stringResource(R.string.action_clipboard_manager_error_device_locked_text),
+                            style = Typography.Body.RegularMl
+                        )
                     }
                 } else if(clipboardHistoryManager.clipboardIOFailure.value) {
                     ScrollableList {
-                        PaymentSurface(isPrimary = true) {
-                            PaymentSurfaceHeading(title = stringResource(R.string.action_clipboard_manager_error_general_title))
-                            ParagraphText(
-                                stringResource(
-                                    R.string.action_clipboard_manager_error_general_text,
-                                    clipboardHistoryManager.clipboardIOFailureReason
-                                ))
+                        Text(
+                            text = stringResource(R.string.action_clipboard_manager_error_general_title),
+                            style = Typography.Heading.Medium
+                        )
+                        Text(
+                            text = stringResource(
+                                R.string.action_clipboard_manager_error_general_text,
+                                clipboardHistoryManager.clipboardIOFailureReason
+                            ),
+                            style = Typography.Body.RegularMl
+                        )
                             Button(onClick = {
                                 manager.activateAction(BugViewerAction)
                             }, modifier = Modifier.fillMaxWidth()) {
@@ -760,17 +764,21 @@ val ClipboardHistoryAction = Action(
                             ) {
                                 Text(context.getString(R.string.action_clipboard_manager_delete_corrupted_clipboard_button))
                             }
-                        }
                     }
                 } else if(!clipboardHistory.value) {
                     ScrollableList {
-                        PaymentSurface(isPrimary = true) {
-                            PaymentSurfaceHeading(title = stringResource(R.string.action_clipboard_manager_error_clipboard_history_disabled_title))
-                            ParagraphText(stringResource(R.string.action_clipboard_manager_error_clipboard_history_disabled_text_v2,
-                                    context.getSetting(ClipboardHistoryItemsToKeep),
-                                    (context.getSetting(ClipboardHistoryTimeToKeep) / 24.0f).roundToInt()
-                                )
-                            )
+                        Text(
+                            text = stringResource(R.string.action_clipboard_manager_error_clipboard_history_disabled_title),
+                            style = Typography.Heading.Medium
+                        )
+                        Text(
+                            text = stringResource(
+                                R.string.action_clipboard_manager_error_clipboard_history_disabled_text_v2,
+                                context.getSetting(ClipboardHistoryItemsToKeep),
+                                (context.getSetting(ClipboardHistoryTimeToKeep) / 24.0f).roundToInt()
+                            ),
+                            style = Typography.Body.RegularMl
+                        )
                             Button(onClick = {
                                     clipboardHistory.setValue(true)
                                 }, modifier = Modifier
@@ -778,7 +786,6 @@ val ClipboardHistoryAction = Action(
                             ) {
                                 Text(stringResource(R.string.action_clipboard_manager_enable_clipboard_history_button))
                             }
-                        }
                     }
                 } else {
                     val sortedList = when {
