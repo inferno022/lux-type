@@ -93,7 +93,7 @@ val HelpMenu = UserSettingsMenu(
             subtitle = R.string.help_menu_website_subtitle,
             style = NavigationItemStyle.Misc,
             navigate = { nav ->
-                nav.context.openURI("https://futo.org/")
+                nav.context.openURI("https://luxtype.org/")
             }
         ).copy(searchTags = R.string.help_menu_website_tags),
 
@@ -102,7 +102,7 @@ val HelpMenu = UserSettingsMenu(
             subtitle = R.string.help_menu_documentation_subtitle,
             style = NavigationItemStyle.Misc,
             navigate = { nav ->
-                nav.context.openURI("https://docs.keyboard.futo.org/")
+                nav.context.openURI("https://docs.luxtype.org/")
             }
         ),
         userSettingNavigationItem(
@@ -110,15 +110,15 @@ val HelpMenu = UserSettingsMenu(
             subtitle = R.string.help_menu_discord_subtitle,
             style = NavigationItemStyle.Misc,
             navigate = { nav ->
-                nav.context.openURI("https://keyboard.futo.org/discord")
+                nav.context.openURI("https://keyboard.luxtype.org/discord")
             }
         ),
         userSettingNavigationItem(
-            title = R.string.help_menu_futo_chat,
-            subtitle = R.string.help_menu_futo_chat_subtitle,
+            title = R.string.help_menu_luxtype_chat,
+            subtitle = R.string.help_menu_luxtype_chat_subtitle,
             style = NavigationItemStyle.Misc,
             navigate = { nav ->
-                nav.context.openURI("https://chat.futo.org/")
+                nav.context.openURI("https://chat.luxtype.org/")
             }
         ),
         userSettingNavigationItem(
@@ -126,7 +126,7 @@ val HelpMenu = UserSettingsMenu(
             subtitle = R.string.help_menu_github_subtitle,
             style = NavigationItemStyle.Misc,
             navigate = { nav ->
-                nav.context.openURI("https://github.com/futo-org/android-keyboard/issues")
+                nav.context.openURI("https://github.com/inferno022/Lux-Type/issues")
             }
         ),
         userSettingNavigationItem(
@@ -134,7 +134,7 @@ val HelpMenu = UserSettingsMenu(
             subtitle = R.string.help_menu_email_subtitle,
             style = NavigationItemStyle.Mail,
             navigate = { nav ->
-                nav.context.openURI("mailto:keyboard@futo.org")
+                nav.context.openURI("mailto:keyboard@luxtype.org")
             }
         ).copy(searchTags = R.string.help_menu_email_tags),
     )
