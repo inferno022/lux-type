@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard;
+package org.luxtype.inputmethod.keyboard;
 
-import static org.futo.inputmethod.latin.common.Constants.Subtype.ExtraValue.KEYBOARD_LAYOUT_SET;
+import static org.luxtype.inputmethod.latin.common.Constants.Subtype.ExtraValue.KEYBOARD_LAYOUT_SET;
 
 import android.text.InputType;
 import android.text.TextUtils;
 import android.view.inputmethod.EditorInfo;
 
-import org.futo.inputmethod.compat.EditorInfoCompatUtils;
-import org.futo.inputmethod.keyboard.internal.KeyboardLayoutElement;
-import org.futo.inputmethod.latin.settings.LongPressKeySettings;
-import org.futo.inputmethod.latin.utils.InputTypeUtils;
+import org.luxtype.inputmethod.compat.EditorInfoCompatUtils;
+import org.luxtype.inputmethod.keyboard.internal.KeyboardLayoutElement;
+import org.luxtype.inputmethod.latin.settings.LongPressKeySettings;
+import org.luxtype.inputmethod.latin.utils.InputTypeUtils;
 
 import java.util.Arrays;
 import java.util.Locale;

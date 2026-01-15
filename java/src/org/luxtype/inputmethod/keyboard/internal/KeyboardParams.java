@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard.internal;
+package org.luxtype.inputmethod.keyboard.internal;
 
 import android.util.SparseIntArray;
 
-import org.futo.inputmethod.keyboard.Key;
-import org.futo.inputmethod.keyboard.KeyboardId;
-import org.futo.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.keyboard.Key;
+import org.luxtype.inputmethod.keyboard.KeyboardId;
+import org.luxtype.inputmethod.latin.common.Constants;
 
 import java.util.ArrayList;
 import java.util.Comparator;
