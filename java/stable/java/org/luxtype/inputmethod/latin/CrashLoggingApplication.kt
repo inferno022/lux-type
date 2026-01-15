@@ -83,10 +83,10 @@ class CrashLoggingApplication : Application() /*, Configuration.Provider*/ {
                 //    }
                 //} else {
                 mailSender {
-                    mailTo = "keyboard@futo.org"
+                    mailTo = "support@luxtype.org"
                     reportAsFile = true
                     reportFileName = "Crash.txt"
-                    subject = "Keyboard Crash Report"
+                    subject = "Lux Type Keyboard Crash Report"
                     body =
                         "I experienced this crash. My version: ${BuildConfig.VERSION_NAME}.\n\n(Enter details here if necessary)"
                 }
