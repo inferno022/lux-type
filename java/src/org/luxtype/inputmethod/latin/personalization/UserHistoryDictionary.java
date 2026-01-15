@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.personalization;
+package org.luxtype.inputmethod.latin.personalization;
 
 import android.content.Context;
 
-import org.futo.inputmethod.annotations.ExternallyReferenced;
-import org.futo.inputmethod.annotations.UsedForTesting;
-import org.futo.inputmethod.latin.BinaryDictionary;
-import org.futo.inputmethod.latin.Dictionary;
-import org.futo.inputmethod.latin.ExpandableBinaryDictionary;
-import org.futo.inputmethod.latin.NgramContext;
-import org.futo.inputmethod.latin.define.ProductionFlags;
-import org.futo.inputmethod.latin.makedict.DictionaryHeader;
+import org.luxtype.inputmethod.annotations.ExternallyReferenced;
+import org.luxtype.inputmethod.annotations.UsedForTesting;
+import org.luxtype.inputmethod.latin.BinaryDictionary;
+import org.luxtype.inputmethod.latin.Dictionary;
+import org.luxtype.inputmethod.latin.ExpandableBinaryDictionary;
+import org.luxtype.inputmethod.latin.NgramContext;
+import org.luxtype.inputmethod.latin.define.ProductionFlags;
+import org.luxtype.inputmethod.latin.makedict.DictionaryHeader;
 
 import java.io.File;
 import java.util.Locale;

@@ -14,7 +14,7 @@
  * the License.
  */
 
-package org.futo.inputmethod.dictionarypack;
+package org.luxtype.inputmethod.dictionarypack;
 
 /**
  * A simple interface to report problems.

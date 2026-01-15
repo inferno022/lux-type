@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin;
+package org.luxtype.inputmethod.latin;
 
 import android.content.res.Resources;
 import android.util.Log;
 import android.util.Pair;
 import android.view.KeyEvent;
 
-import org.futo.inputmethod.keyboard.KeyboardSwitcher;
-import org.futo.inputmethod.latin.settings.Settings;
+import org.luxtype.inputmethod.keyboard.KeyboardSwitcher;
+import org.luxtype.inputmethod.latin.settings.Settings;
 
 import java.util.ArrayList;
 import java.util.HashSet;

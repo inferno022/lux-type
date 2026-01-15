@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.accounts;
+package org.luxtype.inputmethod.latin.accounts;
 
 import androidx.annotation.NonNull;
 

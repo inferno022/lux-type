@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin;
+package org.luxtype.inputmethod.latin;
 
 import android.app.backup.BackupAgentHelper;
 import android.app.backup.BackupDataInput;
@@ -22,7 +22,7 @@ import android.app.backup.SharedPreferencesBackupHelper;
 import android.content.SharedPreferences;
 import android.os.ParcelFileDescriptor;
 
-import org.futo.inputmethod.latin.settings.LocalSettingsConstants;
+import org.luxtype.inputmethod.latin.settings.LocalSettingsConstants;
 
 import java.io.IOException;
 

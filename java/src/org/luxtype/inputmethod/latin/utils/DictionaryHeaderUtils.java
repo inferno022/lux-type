@@ -14,10 +14,10 @@
  * limitations under the License
  */
 
-package org.futo.inputmethod.latin.utils;
+package org.luxtype.inputmethod.latin.utils;
 
-import org.futo.inputmethod.latin.AssetFileAddress;
-import org.futo.inputmethod.latin.makedict.DictionaryHeader;
+import org.luxtype.inputmethod.latin.AssetFileAddress;
+import org.luxtype.inputmethod.latin.makedict.DictionaryHeader;
 
 import java.io.File;
 

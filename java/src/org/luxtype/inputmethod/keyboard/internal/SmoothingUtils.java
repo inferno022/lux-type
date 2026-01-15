@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard.internal;
+package org.luxtype.inputmethod.keyboard.internal;
 
-import org.futo.inputmethod.annotations.UsedForTesting;
-import org.futo.inputmethod.keyboard.internal.MatrixUtils.MatrixOperationFailedException;
+import org.luxtype.inputmethod.annotations.UsedForTesting;
+import org.luxtype.inputmethod.keyboard.internal.MatrixUtils.MatrixOperationFailedException;
 
 import android.util.Log;
 

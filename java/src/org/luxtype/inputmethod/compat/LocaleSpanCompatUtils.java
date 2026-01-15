@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.compat;
+package org.luxtype.inputmethod.compat;
 
 import android.text.Spannable;
 import android.text.Spanned;
 import android.text.style.LocaleSpan;
 import android.util.Log;
 
-import org.futo.inputmethod.annotations.UsedForTesting;
+import org.luxtype.inputmethod.annotations.UsedForTesting;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;

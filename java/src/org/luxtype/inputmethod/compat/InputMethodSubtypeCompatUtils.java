@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.compat;
+package org.luxtype.inputmethod.compat;
 
 import android.os.Build;
 import android.text.TextUtils;
 import android.view.inputmethod.InputMethodSubtype;
 
-import org.futo.inputmethod.annotations.UsedForTesting;
-import org.futo.inputmethod.latin.RichInputMethodSubtype;
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.common.LocaleUtils;
+import org.luxtype.inputmethod.annotations.UsedForTesting;
+import org.luxtype.inputmethod.latin.RichInputMethodSubtype;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.common.LocaleUtils;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;

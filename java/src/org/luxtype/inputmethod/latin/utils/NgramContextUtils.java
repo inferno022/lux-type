@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.utils;
+package org.luxtype.inputmethod.latin.utils;
 
-import org.futo.inputmethod.latin.NgramContext;
-import org.futo.inputmethod.latin.NgramContext.WordInfo;
-import org.futo.inputmethod.latin.define.DecoderSpecificConstants;
-import org.futo.inputmethod.latin.settings.SpacingAndPunctuations;
+import org.luxtype.inputmethod.latin.NgramContext;
+import org.luxtype.inputmethod.latin.NgramContext.WordInfo;
+import org.luxtype.inputmethod.latin.define.DecoderSpecificConstants;
+import org.luxtype.inputmethod.latin.settings.SpacingAndPunctuations;
 
 import java.util.Arrays;
 import java.util.regex.Pattern;

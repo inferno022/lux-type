@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.dictionarypack;
+package org.luxtype.inputmethod.dictionarypack;
 
 /**
  * A simple container of download ID and download start date.

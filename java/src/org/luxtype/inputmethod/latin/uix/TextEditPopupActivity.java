@@ -1,4 +1,4 @@
-package org.futo.inputmethod.latin.uix;
+package org.luxtype.inputmethod.latin.uix;
 
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
@@ -13,7 +13,7 @@ import androidx.annotation.ColorInt;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-import org.futo.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.R;
 
 public class TextEditPopupActivity extends AppCompatActivity {
 

@@ -14,28 +14,28 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin;
+package org.luxtype.inputmethod.latin;
 
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.SparseArray;
 
-import org.futo.inputmethod.annotations.UsedForTesting;
-import org.futo.inputmethod.latin.SuggestedWords.SuggestedWordInfo;
-import org.futo.inputmethod.latin.common.ComposedData;
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.common.FileUtils;
-import org.futo.inputmethod.latin.common.InputPointers;
-import org.futo.inputmethod.latin.common.StringUtils;
-import org.futo.inputmethod.latin.makedict.DictionaryHeader;
-import org.futo.inputmethod.latin.makedict.FormatSpec;
-import org.futo.inputmethod.latin.makedict.FormatSpec.DictionaryOptions;
-import org.futo.inputmethod.latin.makedict.UnsupportedFormatException;
-import org.futo.inputmethod.latin.makedict.WordProperty;
-import org.futo.inputmethod.latin.settings.SettingsValuesForSuggestion;
-import org.futo.inputmethod.latin.utils.BinaryDictionaryUtils;
-import org.futo.inputmethod.latin.utils.JniUtils;
-import org.futo.inputmethod.latin.utils.WordInputEventForPersonalization;
+import org.luxtype.inputmethod.annotations.UsedForTesting;
+import org.luxtype.inputmethod.latin.SuggestedWords.SuggestedWordInfo;
+import org.luxtype.inputmethod.latin.common.ComposedData;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.common.FileUtils;
+import org.luxtype.inputmethod.latin.common.InputPointers;
+import org.luxtype.inputmethod.latin.common.StringUtils;
+import org.luxtype.inputmethod.latin.makedict.DictionaryHeader;
+import org.luxtype.inputmethod.latin.makedict.FormatSpec;
+import org.luxtype.inputmethod.latin.makedict.FormatSpec.DictionaryOptions;
+import org.luxtype.inputmethod.latin.makedict.UnsupportedFormatException;
+import org.luxtype.inputmethod.latin.makedict.WordProperty;
+import org.luxtype.inputmethod.latin.settings.SettingsValuesForSuggestion;
+import org.luxtype.inputmethod.latin.utils.BinaryDictionaryUtils;
+import org.luxtype.inputmethod.latin.utils.JniUtils;
+import org.luxtype.inputmethod.latin.utils.WordInputEventForPersonalization;
 
 import java.io.File;
 import java.util.ArrayList;

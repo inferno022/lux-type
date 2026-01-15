@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard.internal;
+package org.luxtype.inputmethod.keyboard.internal;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -22,10 +22,10 @@ import android.text.TextUtils;
 
 import androidx.annotation.Nullable;
 
-import org.futo.inputmethod.annotations.UsedForTesting;
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.utils.RunInLocale;
-import org.futo.inputmethod.latin.utils.SubtypeLocaleUtils;
+import org.luxtype.inputmethod.annotations.UsedForTesting;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.utils.RunInLocale;
+import org.luxtype.inputmethod.latin.utils.SubtypeLocaleUtils;
 
 import java.util.Currency;
 import java.util.Locale;

@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.utils;
+package org.luxtype.inputmethod.latin.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.view.inputmethod.InputMethodSubtype;
 
-import org.futo.inputmethod.latin.DictionaryFacilitator;
-import org.futo.inputmethod.latin.RichInputMethodManager;
-import org.futo.inputmethod.latin.SuggestedWords;
-import org.futo.inputmethod.latin.settings.Settings;
-import org.futo.inputmethod.latin.settings.SettingsValues;
-import org.futo.inputmethod.latin.uix.PreferenceUtils;
-import org.futo.inputmethod.latin.uix.settings.BadWordsKt;
+import org.luxtype.inputmethod.latin.DictionaryFacilitator;
+import org.luxtype.inputmethod.latin.RichInputMethodManager;
+import org.luxtype.inputmethod.latin.SuggestedWords;
+import org.luxtype.inputmethod.latin.settings.Settings;
+import org.luxtype.inputmethod.latin.settings.SettingsValues;
+import org.luxtype.inputmethod.latin.uix.PreferenceUtils;
+import org.luxtype.inputmethod.latin.uix.settings.BadWordsKt;
 
 @SuppressWarnings("unused")
 public final class StatsUtils {

@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin;
+package org.luxtype.inputmethod.latin;
 
-import org.futo.inputmethod.latin.common.NativeSuggestOptions;
-import org.futo.inputmethod.latin.define.DecoderSpecificConstants;
-import org.futo.inputmethod.latin.utils.JniUtils;
+import org.luxtype.inputmethod.latin.common.NativeSuggestOptions;
+import org.luxtype.inputmethod.latin.define.DecoderSpecificConstants;
+import org.luxtype.inputmethod.latin.utils.JniUtils;
 
 import java.util.Locale;
 

@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.inputlogic;
+package org.luxtype.inputmethod.latin.inputlogic;
 
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Message;
 
-import org.futo.inputmethod.compat.LooperCompatUtils;
-import org.futo.inputmethod.latin.LatinIMELegacy;
-import org.futo.inputmethod.latin.SuggestedWords;
-import org.futo.inputmethod.latin.Suggest.OnGetSuggestedWordsCallback;
-import org.futo.inputmethod.latin.common.InputPointers;
+import org.luxtype.inputmethod.compat.LooperCompatUtils;
+import org.luxtype.inputmethod.latin.LatinIMELegacy;
+import org.luxtype.inputmethod.latin.SuggestedWords;
+import org.luxtype.inputmethod.latin.Suggest.OnGetSuggestedWordsCallback;
+import org.luxtype.inputmethod.latin.common.InputPointers;
 
 /**
  * A helper to manage deferred tasks for the input logic.

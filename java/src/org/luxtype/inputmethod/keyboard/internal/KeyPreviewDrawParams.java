@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard.internal;
+package org.luxtype.inputmethod.keyboard.internal;
 
 import android.animation.Animator;
 import android.animation.AnimatorInflater;
@@ -26,8 +26,8 @@ import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
 
-import org.futo.inputmethod.latin.uix.DynamicThemeProvider;
-import org.futo.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.uix.DynamicThemeProvider;
+import org.luxtype.inputmethod.latin.R;
 
 public final class KeyPreviewDrawParams {
     // XML attributes of {@link MainKeyboardView}.

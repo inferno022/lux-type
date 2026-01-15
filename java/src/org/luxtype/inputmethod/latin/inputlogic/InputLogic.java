@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.inputlogic;
+package org.luxtype.inputmethod.latin.inputlogic;
 
 import android.graphics.Color;
 import android.os.SystemClock;
@@ -29,37 +29,37 @@ import android.view.KeyEvent;
 import android.view.inputmethod.CorrectionInfo;
 import android.view.inputmethod.EditorInfo;
 
-import org.futo.inputmethod.accessibility.AccessibilityUtils;
-import org.futo.inputmethod.compat.SuggestionSpanUtils;
-import org.futo.inputmethod.engine.IMEHelper;
-import org.futo.inputmethod.engine.general.GeneralIME;
-import org.futo.inputmethod.event.Event;
-import org.futo.inputmethod.event.InputTransaction;
-import org.futo.inputmethod.keyboard.Keyboard;
-import org.futo.inputmethod.keyboard.KeyboardSwitcher;
-import org.futo.inputmethod.latin.DictionaryFacilitator;
-import org.futo.inputmethod.latin.LastComposedWord;
-import org.futo.inputmethod.latin.NgramContext;
-import org.futo.inputmethod.latin.RichInputConnection;
-import org.futo.inputmethod.latin.Suggest;
-import org.futo.inputmethod.latin.Suggest.OnGetSuggestedWordsCallback;
-import org.futo.inputmethod.latin.SuggestedWords;
-import org.futo.inputmethod.latin.SuggestedWords.SuggestedWordInfo;
-import org.futo.inputmethod.latin.WordComposer;
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.common.InputPointers;
-import org.futo.inputmethod.latin.common.StringUtils;
-import org.futo.inputmethod.latin.define.DebugFlags;
-import org.futo.inputmethod.latin.settings.Settings;
-import org.futo.inputmethod.latin.settings.SettingsValues;
-import org.futo.inputmethod.latin.settings.SettingsValuesForSuggestion;
-import org.futo.inputmethod.latin.settings.SpacingAndPunctuations;
-import org.futo.inputmethod.latin.suggestions.SuggestionStripViewAccessor;
-import org.futo.inputmethod.latin.uix.actions.BugViewerKt;
-import org.futo.inputmethod.latin.utils.InputTypeUtils;
-import org.futo.inputmethod.latin.utils.RecapitalizeStatus;
-import org.futo.inputmethod.latin.utils.StatsUtils;
-import org.futo.inputmethod.latin.utils.TextRange;
+import org.luxtype.inputmethod.accessibility.AccessibilityUtils;
+import org.luxtype.inputmethod.compat.SuggestionSpanUtils;
+import org.luxtype.inputmethod.engine.IMEHelper;
+import org.luxtype.inputmethod.engine.general.GeneralIME;
+import org.luxtype.inputmethod.event.Event;
+import org.luxtype.inputmethod.event.InputTransaction;
+import org.luxtype.inputmethod.keyboard.Keyboard;
+import org.luxtype.inputmethod.keyboard.KeyboardSwitcher;
+import org.luxtype.inputmethod.latin.DictionaryFacilitator;
+import org.luxtype.inputmethod.latin.LastComposedWord;
+import org.luxtype.inputmethod.latin.NgramContext;
+import org.luxtype.inputmethod.latin.RichInputConnection;
+import org.luxtype.inputmethod.latin.Suggest;
+import org.luxtype.inputmethod.latin.Suggest.OnGetSuggestedWordsCallback;
+import org.luxtype.inputmethod.latin.SuggestedWords;
+import org.luxtype.inputmethod.latin.SuggestedWords.SuggestedWordInfo;
+import org.luxtype.inputmethod.latin.WordComposer;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.common.InputPointers;
+import org.luxtype.inputmethod.latin.common.StringUtils;
+import org.luxtype.inputmethod.latin.define.DebugFlags;
+import org.luxtype.inputmethod.latin.settings.Settings;
+import org.luxtype.inputmethod.latin.settings.SettingsValues;
+import org.luxtype.inputmethod.latin.settings.SettingsValuesForSuggestion;
+import org.luxtype.inputmethod.latin.settings.SpacingAndPunctuations;
+import org.luxtype.inputmethod.latin.suggestions.SuggestionStripViewAccessor;
+import org.luxtype.inputmethod.latin.uix.actions.BugViewerKt;
+import org.luxtype.inputmethod.latin.utils.InputTypeUtils;
+import org.luxtype.inputmethod.latin.utils.RecapitalizeStatus;
+import org.luxtype.inputmethod.latin.utils.StatsUtils;
+import org.luxtype.inputmethod.latin.utils.TextRange;
 
 import java.text.BreakIterator;
 import java.util.ArrayList;

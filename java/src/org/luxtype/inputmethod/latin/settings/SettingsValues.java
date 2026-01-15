@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.settings;
+package org.luxtype.inputmethod.latin.settings;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -26,14 +26,14 @@ import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 
-import org.futo.inputmethod.compat.AppWorkaroundsUtils;
-import org.futo.inputmethod.latin.InputAttributes;
-import org.futo.inputmethod.latin.R;
-import org.futo.inputmethod.latin.uix.actions.ActionRegistry;
-import org.futo.inputmethod.latin.uix.actions.RegistryKt;
-import org.futo.inputmethod.latin.utils.AsyncResultHolder;
-import org.futo.inputmethod.latin.utils.ResourceUtils;
-import org.futo.inputmethod.latin.utils.TargetPackageInfoGetterTask;
+import org.luxtype.inputmethod.compat.AppWorkaroundsUtils;
+import org.luxtype.inputmethod.latin.InputAttributes;
+import org.luxtype.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.uix.actions.ActionRegistry;
+import org.luxtype.inputmethod.latin.uix.actions.RegistryKt;
+import org.luxtype.inputmethod.latin.utils.AsyncResultHolder;
+import org.luxtype.inputmethod.latin.utils.ResourceUtils;
+import org.luxtype.inputmethod.latin.utils.TargetPackageInfoGetterTask;
 
 import java.util.Arrays;
 import java.util.Locale;

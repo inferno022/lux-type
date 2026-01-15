@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.event;
+package org.luxtype.inputmethod.event;
 
-import org.futo.inputmethod.annotations.ExternallyReferenced;
-import org.futo.inputmethod.latin.SuggestedWords.SuggestedWordInfo;
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.common.StringUtils;
+import org.luxtype.inputmethod.annotations.ExternallyReferenced;
+import org.luxtype.inputmethod.latin.SuggestedWords.SuggestedWordInfo;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.common.StringUtils;
 
 import javax.annotation.Nonnull;
 

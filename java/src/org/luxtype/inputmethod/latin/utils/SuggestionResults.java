@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.utils;
+package org.luxtype.inputmethod.latin.utils;
 
-import org.futo.inputmethod.latin.SuggestedWords.SuggestedWordInfo;
-import org.futo.inputmethod.latin.define.ProductionFlags;
+import org.luxtype.inputmethod.latin.SuggestedWords.SuggestedWordInfo;
+import org.luxtype.inputmethod.latin.define.ProductionFlags;
 
 import java.util.ArrayList;
 import java.util.Collection;

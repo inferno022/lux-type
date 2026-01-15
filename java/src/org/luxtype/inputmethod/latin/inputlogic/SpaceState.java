@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.inputlogic;
+package org.luxtype.inputmethod.latin.inputlogic;
 
 /**
  * Class for managing space states.

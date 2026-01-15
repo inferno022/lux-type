@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.touchinputconsumer;
+package org.luxtype.inputmethod.latin.touchinputconsumer;
 
 import android.view.inputmethod.EditorInfo;
 
-import org.futo.inputmethod.keyboard.Keyboard;
-import org.futo.inputmethod.latin.DictionaryFacilitator;
-import org.futo.inputmethod.latin.SuggestedWords;
-import org.futo.inputmethod.latin.common.InputPointers;
-import org.futo.inputmethod.latin.inputlogic.PrivateCommandPerformer;
+import org.luxtype.inputmethod.keyboard.Keyboard;
+import org.luxtype.inputmethod.latin.DictionaryFacilitator;
+import org.luxtype.inputmethod.latin.SuggestedWords;
+import org.luxtype.inputmethod.latin.common.InputPointers;
+import org.luxtype.inputmethod.latin.inputlogic.PrivateCommandPerformer;
 
 import java.util.Locale;
 

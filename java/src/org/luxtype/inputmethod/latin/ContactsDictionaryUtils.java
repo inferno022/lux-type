@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin;
+package org.luxtype.inputmethod.latin;
 
-import org.futo.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.common.Constants;
 
 import java.util.Locale;
 

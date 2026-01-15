@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard;
+package org.luxtype.inputmethod.keyboard;
 
 import android.graphics.Rect;
 import android.util.Log;
 
-import org.futo.inputmethod.keyboard.internal.TouchPositionCorrection;
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.utils.JniUtils;
+import org.luxtype.inputmethod.keyboard.internal.TouchPositionCorrection;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.utils.JniUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;

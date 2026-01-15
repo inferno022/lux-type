@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.utils;
+package org.luxtype.inputmethod.latin.utils;
 
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -24,7 +24,7 @@ import android.text.TextUtils;
 import android.text.style.SuggestionSpan;
 import android.text.style.URLSpan;
 
-import org.futo.inputmethod.annotations.UsedForTesting;
+import org.luxtype.inputmethod.annotations.UsedForTesting;
 
 import java.util.ArrayList;
 import java.util.regex.Matcher;

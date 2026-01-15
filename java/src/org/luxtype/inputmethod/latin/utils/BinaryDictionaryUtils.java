@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.utils;
+package org.luxtype.inputmethod.latin.utils;
 
-import org.futo.inputmethod.annotations.UsedForTesting;
-import org.futo.inputmethod.latin.BinaryDictionary;
-import org.futo.inputmethod.latin.common.StringUtils;
-import org.futo.inputmethod.latin.makedict.DictionaryHeader;
-import org.futo.inputmethod.latin.makedict.UnsupportedFormatException;
+import org.luxtype.inputmethod.annotations.UsedForTesting;
+import org.luxtype.inputmethod.latin.BinaryDictionary;
+import org.luxtype.inputmethod.latin.common.StringUtils;
+import org.luxtype.inputmethod.latin.makedict.DictionaryHeader;
+import org.luxtype.inputmethod.latin.makedict.UnsupportedFormatException;
 
 import java.io.File;
 import java.io.IOException;

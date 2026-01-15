@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.accessibility;
+package org.luxtype.inputmethod.accessibility;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -33,13 +33,13 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.customview.widget.ExploreByTouchHelper;
 
-import org.futo.inputmethod.keyboard.Key;
-import org.futo.inputmethod.keyboard.KeyDetector;
-import org.futo.inputmethod.keyboard.Keyboard;
-import org.futo.inputmethod.keyboard.KeyboardView;
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.settings.Settings;
-import org.futo.inputmethod.latin.settings.SettingsValues;
+import org.luxtype.inputmethod.keyboard.Key;
+import org.luxtype.inputmethod.keyboard.KeyDetector;
+import org.luxtype.inputmethod.keyboard.Keyboard;
+import org.luxtype.inputmethod.keyboard.KeyboardView;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.settings.Settings;
+import org.luxtype.inputmethod.latin.settings.SettingsValues;
 
 import java.util.List;
 

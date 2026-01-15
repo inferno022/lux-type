@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.utils;
+package org.luxtype.inputmethod.latin.utils;
 
 import static org.futo.inputmethod.latin.common.Constants.Subtype.KEYBOARD_MODE;
 import static org.futo.inputmethod.latin.common.Constants.Subtype.ExtraValue.ASCII_CAPABLE;
@@ -28,10 +28,10 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.inputmethod.InputMethodSubtype;
 
-import org.futo.inputmethod.annotations.UsedForTesting;
-import org.futo.inputmethod.compat.InputMethodSubtypeCompatUtils;
-import org.futo.inputmethod.latin.R;
-import org.futo.inputmethod.latin.common.StringUtils;
+import org.luxtype.inputmethod.annotations.UsedForTesting;
+import org.luxtype.inputmethod.compat.InputMethodSubtypeCompatUtils;
+import org.luxtype.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.common.StringUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;

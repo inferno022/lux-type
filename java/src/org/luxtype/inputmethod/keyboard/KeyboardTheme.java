@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard;
+package org.luxtype.inputmethod.keyboard;
 
 import android.content.Context;
 import android.os.Build;
 
-import org.futo.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.R;
 
 // Actual theming is handled in DynamicThemeProvider/BasicThemeProvider these days.
 // This class is left as a stub since some code still depends on it.

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin;
+package org.luxtype.inputmethod.latin;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -24,8 +24,8 @@ import android.provider.ContactsContract.Contacts;
 import android.text.TextUtils;
 import android.util.Log;
 
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.common.StringUtils;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.common.StringUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;

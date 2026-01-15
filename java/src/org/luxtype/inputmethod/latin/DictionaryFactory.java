@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin;
+package org.luxtype.inputmethod.latin;
 
 import android.content.Context;
 import android.util.Log;
 
-import org.futo.inputmethod.latin.uix.ResourceHelper;
-import org.futo.inputmethod.latin.utils.Dictionaries;
+import org.luxtype.inputmethod.latin.uix.ResourceHelper;
+import org.luxtype.inputmethod.latin.utils.Dictionaries;
 
 import java.io.File;
 import java.util.ArrayList;

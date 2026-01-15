@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin;
+package org.luxtype.inputmethod.latin;
 
 import androidx.annotation.NonNull;
 
-import org.futo.inputmethod.latin.common.FileUtils;
+import org.luxtype.inputmethod.latin.common.FileUtils;
 
 import java.io.File;
 import java.util.Locale;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.settings;
+package org.luxtype.inputmethod.latin.settings;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -24,15 +24,15 @@ import android.content.res.Resources;
 import android.os.Build;
 import android.util.Log;
 
-import org.futo.inputmethod.compat.BuildCompatUtils;
-import org.futo.inputmethod.latin.AudioAndHapticFeedbackManager;
-import org.futo.inputmethod.latin.InputAttributes;
-import org.futo.inputmethod.latin.R;
-import org.futo.inputmethod.latin.common.StringUtils;
-import org.futo.inputmethod.latin.uix.PreferenceUtils;
-import org.futo.inputmethod.latin.utils.AdditionalSubtypeUtils;
-import org.futo.inputmethod.latin.utils.ResourceUtils;
-import org.futo.inputmethod.latin.utils.RunInLocale;
+import org.luxtype.inputmethod.compat.BuildCompatUtils;
+import org.luxtype.inputmethod.latin.AudioAndHapticFeedbackManager;
+import org.luxtype.inputmethod.latin.InputAttributes;
+import org.luxtype.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.common.StringUtils;
+import org.luxtype.inputmethod.latin.uix.PreferenceUtils;
+import org.luxtype.inputmethod.latin.utils.AdditionalSubtypeUtils;
+import org.luxtype.inputmethod.latin.utils.ResourceUtils;
+import org.luxtype.inputmethod.latin.utils.RunInLocale;
 
 import java.util.Collections;
 import java.util.HashSet;

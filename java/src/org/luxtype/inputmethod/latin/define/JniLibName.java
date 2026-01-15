@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.define;
+package org.luxtype.inputmethod.latin.define;
 
 public final class JniLibName {
     private JniLibName() {

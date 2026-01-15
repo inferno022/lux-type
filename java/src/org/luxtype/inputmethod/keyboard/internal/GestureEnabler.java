@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard.internal;
+package org.luxtype.inputmethod.keyboard.internal;
 
-import org.futo.inputmethod.accessibility.AccessibilityUtils;
+import org.luxtype.inputmethod.accessibility.AccessibilityUtils;
 
 public final class GestureEnabler {
     /** True if we should handle gesture events. */

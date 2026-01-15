@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard;
+package org.luxtype.inputmethod.keyboard;
 
 import android.content.res.Resources;
 import android.content.res.TypedArray;
@@ -22,27 +22,27 @@ import android.os.SystemClock;
 import android.util.Log;
 import android.view.MotionEvent;
 
-import org.futo.inputmethod.keyboard.internal.BatchInputArbiter;
-import org.futo.inputmethod.keyboard.internal.BatchInputArbiter.BatchInputArbiterListener;
-import org.futo.inputmethod.keyboard.internal.BogusMoveEventDetector;
-import org.futo.inputmethod.keyboard.internal.DrawingProxy;
-import org.futo.inputmethod.keyboard.internal.GestureEnabler;
-import org.futo.inputmethod.keyboard.internal.GestureStrokeDrawingParams;
-import org.futo.inputmethod.keyboard.internal.GestureStrokeDrawingPoints;
-import org.futo.inputmethod.keyboard.internal.GestureStrokeRecognitionParams;
-import org.futo.inputmethod.keyboard.internal.KeyboardState;
-import org.futo.inputmethod.keyboard.internal.PointerTrackerQueue;
-import org.futo.inputmethod.keyboard.internal.TimerProxy;
-import org.futo.inputmethod.keyboard.internal.TypingTimeRecorder;
-import org.futo.inputmethod.latin.R;
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.common.CoordinateUtils;
-import org.futo.inputmethod.latin.common.InputPointers;
-import org.futo.inputmethod.latin.define.DebugFlags;
-import org.futo.inputmethod.latin.settings.Settings;
-import org.futo.inputmethod.latin.settings.SettingsValues;
-import org.futo.inputmethod.latin.utils.ResourceUtils;
-import org.futo.inputmethod.v2keyboard.Direction;
+import org.luxtype.inputmethod.keyboard.internal.BatchInputArbiter;
+import org.luxtype.inputmethod.keyboard.internal.BatchInputArbiter.BatchInputArbiterListener;
+import org.luxtype.inputmethod.keyboard.internal.BogusMoveEventDetector;
+import org.luxtype.inputmethod.keyboard.internal.DrawingProxy;
+import org.luxtype.inputmethod.keyboard.internal.GestureEnabler;
+import org.luxtype.inputmethod.keyboard.internal.GestureStrokeDrawingParams;
+import org.luxtype.inputmethod.keyboard.internal.GestureStrokeDrawingPoints;
+import org.luxtype.inputmethod.keyboard.internal.GestureStrokeRecognitionParams;
+import org.luxtype.inputmethod.keyboard.internal.KeyboardState;
+import org.luxtype.inputmethod.keyboard.internal.PointerTrackerQueue;
+import org.luxtype.inputmethod.keyboard.internal.TimerProxy;
+import org.luxtype.inputmethod.keyboard.internal.TypingTimeRecorder;
+import org.luxtype.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.common.CoordinateUtils;
+import org.luxtype.inputmethod.latin.common.InputPointers;
+import org.luxtype.inputmethod.latin.define.DebugFlags;
+import org.luxtype.inputmethod.latin.settings.Settings;
+import org.luxtype.inputmethod.latin.settings.SettingsValues;
+import org.luxtype.inputmethod.latin.utils.ResourceUtils;
+import org.luxtype.inputmethod.v2keyboard.Direction;
 
 import java.util.ArrayList;
 

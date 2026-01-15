@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.personalization;
+package org.luxtype.inputmethod.latin.personalization;
 
 import android.content.Context;
 import android.util.Log;
 
-import org.futo.inputmethod.latin.common.FileUtils;
+import org.luxtype.inputmethod.latin.common.FileUtils;
 
 import java.io.File;
 import java.io.FilenameFilter;

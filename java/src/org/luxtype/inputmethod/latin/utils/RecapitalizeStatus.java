@@ -14,9 +14,9 @@
  * the License.
  */
 
-package org.futo.inputmethod.latin.utils;
+package org.luxtype.inputmethod.latin.utils;
 
-import org.futo.inputmethod.latin.common.StringUtils;
+import org.luxtype.inputmethod.latin.common.StringUtils;
 
 import java.util.Locale;
 

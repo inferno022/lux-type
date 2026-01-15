@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.utils;
+package org.luxtype.inputmethod.latin.utils;
 
 import android.content.Context;
 
-import org.futo.inputmethod.annotations.UsedForTesting;
+import org.luxtype.inputmethod.annotations.UsedForTesting;
 
 public class ManagedProfileUtils {
     private static ManagedProfileUtils INSTANCE = new ManagedProfileUtils();

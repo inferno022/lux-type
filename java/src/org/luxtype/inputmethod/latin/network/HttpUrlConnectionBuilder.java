@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.network;
+package org.luxtype.inputmethod.latin.network;
 
 import android.text.TextUtils;
 
-import org.futo.inputmethod.annotations.UsedForTesting;
+import org.luxtype.inputmethod.annotations.UsedForTesting;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;

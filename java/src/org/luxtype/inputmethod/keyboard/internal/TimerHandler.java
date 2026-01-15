@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard.internal;
+package org.luxtype.inputmethod.keyboard.internal;
 
 import android.os.Message;
 import android.os.SystemClock;
 import android.view.ViewConfiguration;
 
-import org.futo.inputmethod.keyboard.Key;
-import org.futo.inputmethod.keyboard.PointerTracker;
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.utils.LeakGuardHandlerWrapper;
+import org.luxtype.inputmethod.keyboard.Key;
+import org.luxtype.inputmethod.keyboard.PointerTracker;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.utils.LeakGuardHandlerWrapper;
 
 import javax.annotation.Nonnull;
 

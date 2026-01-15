@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard;
+package org.luxtype.inputmethod.keyboard;
 
 import android.animation.AnimatorInflater;
 import android.animation.ObjectAnimator;
@@ -35,31 +35,31 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.futo.inputmethod.accessibility.AccessibilityUtils;
-import org.futo.inputmethod.accessibility.MainKeyboardAccessibilityDelegate;
-import org.futo.inputmethod.annotations.ExternallyReferenced;
-import org.futo.inputmethod.keyboard.internal.DrawingPreviewPlacerView;
-import org.futo.inputmethod.keyboard.internal.DrawingProxy;
-import org.futo.inputmethod.keyboard.internal.GestureFloatingTextDrawingPreview;
-import org.futo.inputmethod.keyboard.internal.GestureTrailsDrawingPreview;
-import org.futo.inputmethod.keyboard.internal.KeyDrawParams;
-import org.futo.inputmethod.keyboard.internal.KeyPreviewChoreographer;
-import org.futo.inputmethod.keyboard.internal.KeyPreviewDrawParams;
-import org.futo.inputmethod.keyboard.internal.KeyPreviewView;
-import org.futo.inputmethod.keyboard.internal.MoreKeySpec;
-import org.futo.inputmethod.keyboard.internal.NonDistinctMultitouchHelper;
-import org.futo.inputmethod.keyboard.internal.SlidingKeyInputDrawingPreview;
-import org.futo.inputmethod.keyboard.internal.TimerHandler;
-import org.futo.inputmethod.latin.uix.DynamicThemeProvider;
-import org.futo.inputmethod.latin.R;
-import org.futo.inputmethod.latin.SuggestedWords;
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.common.CoordinateUtils;
-import org.futo.inputmethod.latin.uix.theme.KeyDrawingConfiguration;
-import org.futo.inputmethod.latin.utils.LanguageOnSpacebarUtils;
-import org.futo.inputmethod.latin.utils.SubtypeLocaleUtils;
-import org.futo.inputmethod.latin.utils.TypefaceUtils;
-import org.futo.inputmethod.v2keyboard.LayoutManager;
+import org.luxtype.inputmethod.accessibility.AccessibilityUtils;
+import org.luxtype.inputmethod.accessibility.MainKeyboardAccessibilityDelegate;
+import org.luxtype.inputmethod.annotations.ExternallyReferenced;
+import org.luxtype.inputmethod.keyboard.internal.DrawingPreviewPlacerView;
+import org.luxtype.inputmethod.keyboard.internal.DrawingProxy;
+import org.luxtype.inputmethod.keyboard.internal.GestureFloatingTextDrawingPreview;
+import org.luxtype.inputmethod.keyboard.internal.GestureTrailsDrawingPreview;
+import org.luxtype.inputmethod.keyboard.internal.KeyDrawParams;
+import org.luxtype.inputmethod.keyboard.internal.KeyPreviewChoreographer;
+import org.luxtype.inputmethod.keyboard.internal.KeyPreviewDrawParams;
+import org.luxtype.inputmethod.keyboard.internal.KeyPreviewView;
+import org.luxtype.inputmethod.keyboard.internal.MoreKeySpec;
+import org.luxtype.inputmethod.keyboard.internal.NonDistinctMultitouchHelper;
+import org.luxtype.inputmethod.keyboard.internal.SlidingKeyInputDrawingPreview;
+import org.luxtype.inputmethod.keyboard.internal.TimerHandler;
+import org.luxtype.inputmethod.latin.uix.DynamicThemeProvider;
+import org.luxtype.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.SuggestedWords;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.common.CoordinateUtils;
+import org.luxtype.inputmethod.latin.uix.theme.KeyDrawingConfiguration;
+import org.luxtype.inputmethod.latin.utils.LanguageOnSpacebarUtils;
+import org.luxtype.inputmethod.latin.utils.SubtypeLocaleUtils;
+import org.luxtype.inputmethod.latin.utils.TypefaceUtils;
+import org.luxtype.inputmethod.v2keyboard.LayoutManager;
 
 import java.util.List;
 import java.util.Locale;

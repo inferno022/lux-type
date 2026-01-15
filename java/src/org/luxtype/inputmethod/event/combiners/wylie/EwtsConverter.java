@@ -18,7 +18,7 @@
  * limitations under the License.
  ******************************************************************************/
 
-package org.futo.inputmethod.event.combiners.wylie;
+package org.luxtype.inputmethod.event.combiners.wylie;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard.internal;
+package org.luxtype.inputmethod.keyboard.internal;
 
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
@@ -27,8 +27,8 @@ import android.graphics.Rect;
 import android.os.Handler;
 import android.util.SparseArray;
 
-import org.futo.inputmethod.keyboard.PointerTracker;
-import org.futo.inputmethod.latin.uix.DynamicThemeProvider;
+import org.luxtype.inputmethod.keyboard.PointerTracker;
+import org.luxtype.inputmethod.latin.uix.DynamicThemeProvider;
 
 /**
  * Draw preview graphics of multiple gesture trails during gesture input.

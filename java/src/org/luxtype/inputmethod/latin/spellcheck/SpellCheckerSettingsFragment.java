@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.spellcheck;
+package org.luxtype.inputmethod.latin.spellcheck;
 
 import android.Manifest;
 import android.content.SharedPreferences;
@@ -23,11 +23,11 @@ import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
 import android.text.TextUtils;
 
-import org.futo.inputmethod.latin.R;
-import org.futo.inputmethod.latin.permissions.PermissionsManager;
-import org.futo.inputmethod.latin.permissions.PermissionsUtil;
-import org.futo.inputmethod.latin.settings.SubScreenFragment;
-import org.futo.inputmethod.latin.utils.ApplicationUtils;
+import org.luxtype.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.permissions.PermissionsManager;
+import org.luxtype.inputmethod.latin.permissions.PermissionsUtil;
+import org.luxtype.inputmethod.latin.settings.SubScreenFragment;
+import org.luxtype.inputmethod.latin.utils.ApplicationUtils;
 
 import static org.futo.inputmethod.latin.permissions.PermissionsManager.get;
 

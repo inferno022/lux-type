@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.utils;
+package org.luxtype.inputmethod.latin.utils;
 
 import android.content.res.Resources;
 import android.content.res.TypedArray;
@@ -28,9 +28,9 @@ import android.view.Window;
 import android.view.WindowInsets;
 import android.view.WindowMetrics;
 
-import org.futo.inputmethod.annotations.UsedForTesting;
-import org.futo.inputmethod.latin.R;
-import org.futo.inputmethod.latin.settings.SettingsValues;
+import org.luxtype.inputmethod.annotations.UsedForTesting;
+import org.luxtype.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.settings.SettingsValues;
 
 import java.util.ArrayList;
 import java.util.HashMap;

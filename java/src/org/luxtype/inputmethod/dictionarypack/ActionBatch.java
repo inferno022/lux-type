@@ -14,11 +14,11 @@
  * the License.
  */
 
-package org.futo.inputmethod.dictionarypack;
+package org.luxtype.inputmethod.dictionarypack;
 
 import android.content.Context;
 
-import org.futo.inputmethod.latin.utils.DebugLogUtils;
+import org.luxtype.inputmethod.latin.utils.DebugLogUtils;
 
 import java.util.LinkedList;
 import java.util.Queue;

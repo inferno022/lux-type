@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin;
+package org.luxtype.inputmethod.latin;
 
 import android.Manifest;
 import android.content.ContentResolver;
@@ -24,10 +24,10 @@ import android.os.SystemClock;
 import android.provider.ContactsContract.Contacts;
 import android.util.Log;
 
-import org.futo.inputmethod.latin.ContactsManager.ContactsChangedListener;
-import org.futo.inputmethod.latin.define.DebugFlags;
-import org.futo.inputmethod.latin.permissions.PermissionsUtil;
-import org.futo.inputmethod.latin.utils.ExecutorUtils;
+import org.luxtype.inputmethod.latin.ContactsManager.ContactsChangedListener;
+import org.luxtype.inputmethod.latin.define.DebugFlags;
+import org.luxtype.inputmethod.latin.permissions.PermissionsUtil;
+import org.luxtype.inputmethod.latin.utils.ExecutorUtils;
 
 import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicBoolean;

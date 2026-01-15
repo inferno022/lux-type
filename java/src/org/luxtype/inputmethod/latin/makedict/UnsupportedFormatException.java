@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.makedict;
+package org.luxtype.inputmethod.latin.makedict;
 
 /**
  * Simple exception thrown when a file format is not recognized.

@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.utils;
+package org.luxtype.inputmethod.latin.utils;
 
 import android.text.InputType;
 import android.text.TextUtils;
 
-import org.futo.inputmethod.latin.WordComposer;
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.common.StringUtils;
-import org.futo.inputmethod.latin.settings.SpacingAndPunctuations;
+import org.luxtype.inputmethod.latin.WordComposer;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.common.StringUtils;
+import org.luxtype.inputmethod.latin.settings.SpacingAndPunctuations;
 
 import java.util.ArrayList;
 import java.util.Locale;

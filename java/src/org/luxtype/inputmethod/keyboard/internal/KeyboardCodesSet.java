@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard.internal;
+package org.luxtype.inputmethod.keyboard.internal;
 
 import static org.futo.inputmethod.latin.common.Constants.CODE_ACTION_0;
 import static org.futo.inputmethod.latin.common.Constants.CODE_UNSPECIFIED;
 
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.uix.actions.ActionRegistry;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.uix.actions.ActionRegistry;
 
 import java.util.HashMap;
 

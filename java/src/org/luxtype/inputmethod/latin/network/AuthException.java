@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.network;
+package org.luxtype.inputmethod.latin.network;
 
 /**
  * Authentication exception. When this exception is thrown, the client may

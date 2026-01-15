@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.network;
+package org.luxtype.inputmethod.latin.network;
 
 import android.util.Log;
 

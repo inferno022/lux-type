@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard.internal;
+package org.luxtype.inputmethod.keyboard.internal;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -24,10 +24,10 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.futo.inputmethod.keyboard.Key;
-import org.futo.inputmethod.latin.common.CoordinateUtils;
-import org.futo.inputmethod.latin.uix.theme.KeyBackground;
-import org.futo.inputmethod.latin.utils.ViewLayoutUtils;
+import org.luxtype.inputmethod.keyboard.Key;
+import org.luxtype.inputmethod.latin.common.CoordinateUtils;
+import org.luxtype.inputmethod.latin.uix.theme.KeyBackground;
+import org.luxtype.inputmethod.latin.utils.ViewLayoutUtils;
 
 import java.util.ArrayDeque;
 import java.util.HashMap;

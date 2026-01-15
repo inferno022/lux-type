@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard.internal;
+package org.luxtype.inputmethod.keyboard.internal;
 
 import android.graphics.Canvas;
 import android.view.View;
 
-import org.futo.inputmethod.keyboard.MainKeyboardView;
-import org.futo.inputmethod.keyboard.PointerTracker;
+import org.luxtype.inputmethod.keyboard.MainKeyboardView;
+import org.luxtype.inputmethod.keyboard.PointerTracker;
 
 import javax.annotation.Nonnull;
 

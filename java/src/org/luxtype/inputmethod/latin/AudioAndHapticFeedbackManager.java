@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin;
+package org.luxtype.inputmethod.latin;
 
 import android.content.Context;
 import android.media.AudioManager;
@@ -22,8 +22,8 @@ import android.os.Vibrator;
 import android.view.HapticFeedbackConstants;
 import android.view.View;
 
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.settings.SettingsValues;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.settings.SettingsValues;
 
 /**
  * This class gathers audio feedback and haptic feedback functions.

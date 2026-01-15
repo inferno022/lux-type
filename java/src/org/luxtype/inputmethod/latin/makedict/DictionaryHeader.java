@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.makedict;
+package org.luxtype.inputmethod.latin.makedict;
 
-import org.futo.inputmethod.latin.makedict.FormatSpec.DictionaryOptions;
-import org.futo.inputmethod.latin.makedict.FormatSpec.FormatOptions;
+import org.luxtype.inputmethod.latin.makedict.FormatSpec.DictionaryOptions;
+import org.luxtype.inputmethod.latin.makedict.FormatSpec.FormatOptions;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;

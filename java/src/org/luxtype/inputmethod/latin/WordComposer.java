@@ -14,22 +14,22 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin;
+package org.luxtype.inputmethod.latin;
 
 import android.util.Log;
 
-import org.futo.inputmethod.annotations.UsedForTesting;
-import org.futo.inputmethod.event.CombinerChain;
-import org.futo.inputmethod.event.Event;
-import org.futo.inputmethod.latin.SuggestedWords.SuggestedWordInfo;
-import org.futo.inputmethod.latin.common.ComposedData;
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.common.CoordinateUtils;
-import org.futo.inputmethod.latin.common.InputPointers;
-import org.futo.inputmethod.latin.common.StringUtils;
-import org.futo.inputmethod.latin.define.DebugFlags;
-import org.futo.inputmethod.latin.define.DecoderSpecificConstants;
-import org.futo.inputmethod.v2keyboard.CombinerKind;
+import org.luxtype.inputmethod.annotations.UsedForTesting;
+import org.luxtype.inputmethod.event.CombinerChain;
+import org.luxtype.inputmethod.event.Event;
+import org.luxtype.inputmethod.latin.SuggestedWords.SuggestedWordInfo;
+import org.luxtype.inputmethod.latin.common.ComposedData;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.common.CoordinateUtils;
+import org.luxtype.inputmethod.latin.common.InputPointers;
+import org.luxtype.inputmethod.latin.common.StringUtils;
+import org.luxtype.inputmethod.latin.define.DebugFlags;
+import org.luxtype.inputmethod.latin.define.DecoderSpecificConstants;
+import org.luxtype.inputmethod.v2keyboard.CombinerKind;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;

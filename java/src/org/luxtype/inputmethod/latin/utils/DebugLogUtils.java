@@ -14,11 +14,11 @@
  * the License.
  */
 
-package org.futo.inputmethod.latin.utils;
+package org.luxtype.inputmethod.latin.utils;
 
 import android.util.Log;
 
-import org.futo.inputmethod.latin.define.DebugFlags;
+import org.luxtype.inputmethod.latin.define.DebugFlags;
 
 /**
  * A class for logging and debugging utility methods.

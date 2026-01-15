@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard.internal;
+package org.luxtype.inputmethod.keyboard.internal;
 
 import android.content.res.TypedArray;
 
-import org.futo.inputmethod.latin.R;
-import org.futo.inputmethod.latin.uix.DynamicThemeProvider;
+import org.luxtype.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.uix.DynamicThemeProvider;
 
 /**
  * This class holds parameters to control how a gesture trail is drawn and animated on the screen.

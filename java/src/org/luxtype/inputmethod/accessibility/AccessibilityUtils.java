@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.accessibility;
+package org.luxtype.inputmethod.accessibility;
 
 import android.content.Context;
 import android.media.AudioManager;
@@ -32,10 +32,10 @@ import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityManager;
 import android.view.inputmethod.EditorInfo;
 
-import org.futo.inputmethod.compat.SettingsSecureCompatUtils;
-import org.futo.inputmethod.latin.R;
-import org.futo.inputmethod.latin.SuggestedWords;
-import org.futo.inputmethod.latin.utils.InputTypeUtils;
+import org.luxtype.inputmethod.compat.SettingsSecureCompatUtils;
+import org.luxtype.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.SuggestedWords;
+import org.luxtype.inputmethod.latin.utils.InputTypeUtils;
 
 public final class AccessibilityUtils {
     private static final String TAG = AccessibilityUtils.class.getSimpleName();

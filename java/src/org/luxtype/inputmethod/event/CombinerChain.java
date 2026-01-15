@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.event;
+package org.luxtype.inputmethod.event;
 
 import android.text.SpannableStringBuilder;
 import android.text.TextUtils;
 
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.v2keyboard.CombinerKind;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.v2keyboard.CombinerKind;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;

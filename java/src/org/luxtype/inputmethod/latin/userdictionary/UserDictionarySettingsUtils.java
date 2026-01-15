@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.userdictionary;
+package org.luxtype.inputmethod.latin.userdictionary;
 
-import org.futo.inputmethod.latin.R;
-import org.futo.inputmethod.latin.common.LocaleUtils;
+import org.luxtype.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.common.LocaleUtils;
 
 import android.content.Context;
 import android.text.TextUtils;

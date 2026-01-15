@@ -1,4 +1,4 @@
-package org.futo.inputmethod.keyboard.internal;
+package org.luxtype.inputmethod.keyboard.internal;
 
 import android.content.Context;
 import android.content.res.Resources;

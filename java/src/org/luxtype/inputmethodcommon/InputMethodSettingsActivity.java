@@ -14,7 +14,7 @@
  * limitations under the License
  */
 
-package org.futo.inputmethodcommon;
+package org.luxtype.inputmethodcommon;
 
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard.internal;
+package org.luxtype.inputmethod.keyboard.internal;
 
-import org.futo.inputmethod.latin.common.ResizableIntArray;
+import org.luxtype.inputmethod.latin.common.ResizableIntArray;
 
 /**
  * This class holds drawing points to represent a gesture stroke on the screen.

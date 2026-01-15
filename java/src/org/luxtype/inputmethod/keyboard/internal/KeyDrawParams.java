@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard.internal;
+package org.luxtype.inputmethod.keyboard.internal;
 
 import android.graphics.Typeface;
 
-import org.futo.inputmethod.latin.utils.ResourceUtils;
+import org.luxtype.inputmethod.latin.utils.ResourceUtils;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;

@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.userdictionary;
+package org.luxtype.inputmethod.latin.userdictionary;
 
-import org.futo.inputmethod.latin.R;
-import org.futo.inputmethod.latin.userdictionary.UserDictionaryAddWordContents.LocaleRenderer;
-import org.futo.inputmethod.latin.userdictionary.UserDictionaryLocalePicker.LocationChangedListener;
+import org.luxtype.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.userdictionary.UserDictionaryAddWordContents.LocaleRenderer;
+import org.luxtype.inputmethod.latin.userdictionary.UserDictionaryLocalePicker.LocationChangedListener;
 
 import android.app.Fragment;
 import android.os.Bundle;

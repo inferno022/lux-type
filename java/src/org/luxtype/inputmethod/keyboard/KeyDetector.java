@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard;
+package org.luxtype.inputmethod.keyboard;
 
-import org.futo.inputmethod.latin.settings.Settings;
-import org.futo.inputmethod.latin.settings.SettingsValues;
+import org.luxtype.inputmethod.latin.settings.Settings;
+import org.luxtype.inputmethod.latin.settings.SettingsValues;
 
 import java.util.Set;
 

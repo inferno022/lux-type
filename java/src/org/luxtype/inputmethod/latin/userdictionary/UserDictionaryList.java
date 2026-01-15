@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.userdictionary;
+package org.luxtype.inputmethod.latin.userdictionary;
 
 import android.app.Activity;
 import android.content.Context;
@@ -30,8 +30,8 @@ import android.view.inputmethod.InputMethodInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.view.inputmethod.InputMethodSubtype;
 
-import org.futo.inputmethod.latin.R;
-import org.futo.inputmethod.latin.common.LocaleUtils;
+import org.luxtype.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.common.LocaleUtils;
 
 import java.util.List;
 import java.util.Locale;

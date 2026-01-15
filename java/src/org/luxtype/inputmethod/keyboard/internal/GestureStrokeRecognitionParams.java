@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard.internal;
+package org.luxtype.inputmethod.keyboard.internal;
 
 import android.content.res.TypedArray;
 
-import org.futo.inputmethod.latin.R;
-import org.futo.inputmethod.latin.utils.ResourceUtils;
+import org.luxtype.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.utils.ResourceUtils;
 
 /**
  * This class holds parameters to control how a gesture stroke is sampled and recognized.

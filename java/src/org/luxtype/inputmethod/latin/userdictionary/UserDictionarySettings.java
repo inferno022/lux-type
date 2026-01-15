@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.userdictionary;
+package org.luxtype.inputmethod.latin.userdictionary;
 
-import org.futo.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.R;
 
 import android.app.ListFragment;
 import android.content.ContentResolver;

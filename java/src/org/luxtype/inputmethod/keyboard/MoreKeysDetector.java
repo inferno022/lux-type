@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard;
+package org.luxtype.inputmethod.keyboard;
 
 public final class MoreKeysDetector extends KeyDetector {
     private final float mSlideAllowance;

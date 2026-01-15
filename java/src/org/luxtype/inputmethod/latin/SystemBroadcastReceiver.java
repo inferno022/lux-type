@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin;
+package org.luxtype.inputmethod.latin;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -23,8 +23,8 @@ import android.os.Process;
 import android.util.Log;
 import android.view.inputmethod.InputMethodManager;
 
-import org.futo.inputmethod.latin.utils.UncachedInputMethodManagerUtils;
-import org.futo.inputmethod.v2keyboard.KeyboardLayoutSetV2;
+import org.luxtype.inputmethod.latin.utils.UncachedInputMethodManagerUtils;
+import org.luxtype.inputmethod.v2keyboard.KeyboardLayoutSetV2;
 
 /**
  * This class detects the {@link Intent#ACTION_MY_PACKAGE_REPLACED} broadcast intent when this IME

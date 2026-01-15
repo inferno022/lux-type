@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.spellcheck;
+package org.luxtype.inputmethod.latin.spellcheck;
 
 import android.annotation.TargetApi;
 import android.content.res.Resources;
@@ -26,9 +26,9 @@ import android.view.textservice.SentenceSuggestionsInfo;
 import android.view.textservice.SuggestionsInfo;
 import android.view.textservice.TextInfo;
 
-import org.futo.inputmethod.compat.TextInfoCompatUtils;
-import org.futo.inputmethod.latin.NgramContext;
-import org.futo.inputmethod.latin.utils.SpannableStringUtils;
+import org.luxtype.inputmethod.compat.TextInfoCompatUtils;
+import org.luxtype.inputmethod.latin.NgramContext;
+import org.luxtype.inputmethod.latin.utils.SpannableStringUtils;
 
 import java.util.ArrayList;
 import java.util.Locale;

@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard.internal;
+package org.luxtype.inputmethod.keyboard.internal;
 
 import android.util.Log;
 import android.view.MotionEvent;
 
-import org.futo.inputmethod.keyboard.Key;
-import org.futo.inputmethod.keyboard.KeyDetector;
-import org.futo.inputmethod.keyboard.PointerTracker;
-import org.futo.inputmethod.latin.common.CoordinateUtils;
+import org.luxtype.inputmethod.keyboard.Key;
+import org.luxtype.inputmethod.keyboard.KeyDetector;
+import org.luxtype.inputmethod.keyboard.PointerTracker;
+import org.luxtype.inputmethod.latin.common.CoordinateUtils;
 
 public final class NonDistinctMultitouchHelper {
     private static final String TAG = NonDistinctMultitouchHelper.class.getSimpleName();

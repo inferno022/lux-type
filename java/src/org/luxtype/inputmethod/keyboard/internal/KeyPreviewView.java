@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard.internal;
+package org.luxtype.inputmethod.keyboard.internal;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -29,11 +29,11 @@ import android.view.Gravity;
 
 import androidx.annotation.Nullable;
 
-import org.futo.inputmethod.keyboard.Key;
-import org.futo.inputmethod.latin.R;
-import org.futo.inputmethod.latin.uix.DynamicThemeProvider;
-import org.futo.inputmethod.v2keyboard.Direction;
-import org.futo.inputmethod.v2keyboard.KeyDataKt;
+import org.luxtype.inputmethod.keyboard.Key;
+import org.luxtype.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.uix.DynamicThemeProvider;
+import org.luxtype.inputmethod.v2keyboard.Direction;
+import org.luxtype.inputmethod.v2keyboard.KeyDataKt;
 
 import java.util.HashSet;
 import java.util.Map;

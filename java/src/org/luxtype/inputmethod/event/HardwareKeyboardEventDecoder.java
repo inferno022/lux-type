@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.event;
+package org.luxtype.inputmethod.event;
 
 import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 
-import org.futo.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.common.Constants;
 
 /**
  * A hardware event decoder for a hardware qwerty-ish keyboard.

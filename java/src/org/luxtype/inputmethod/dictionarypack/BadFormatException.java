@@ -14,7 +14,7 @@
  * the License.
  */
 
-package org.futo.inputmethod.dictionarypack;
+package org.luxtype.inputmethod.dictionarypack;
 
 /**
  * Exception thrown when the metadata for the dictionary does not comply to a known format.

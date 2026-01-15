@@ -14,25 +14,25 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin;
+package org.luxtype.inputmethod.latin;
 
 import android.content.Context;
 import android.util.Log;
 
-import org.futo.inputmethod.annotations.UsedForTesting;
-import org.futo.inputmethod.latin.SuggestedWords.SuggestedWordInfo;
-import org.futo.inputmethod.latin.common.ComposedData;
-import org.futo.inputmethod.latin.common.FileUtils;
-import org.futo.inputmethod.latin.define.DecoderSpecificConstants;
-import org.futo.inputmethod.latin.makedict.DictionaryHeader;
-import org.futo.inputmethod.latin.makedict.FormatSpec;
-import org.futo.inputmethod.latin.makedict.UnsupportedFormatException;
-import org.futo.inputmethod.latin.makedict.WordProperty;
-import org.futo.inputmethod.latin.settings.SettingsValuesForSuggestion;
-import org.futo.inputmethod.latin.utils.AsyncResultHolder;
-import org.futo.inputmethod.latin.utils.CombinedFormatUtils;
-import org.futo.inputmethod.latin.utils.ExecutorUtils;
-import org.futo.inputmethod.latin.utils.WordInputEventForPersonalization;
+import org.luxtype.inputmethod.annotations.UsedForTesting;
+import org.luxtype.inputmethod.latin.SuggestedWords.SuggestedWordInfo;
+import org.luxtype.inputmethod.latin.common.ComposedData;
+import org.luxtype.inputmethod.latin.common.FileUtils;
+import org.luxtype.inputmethod.latin.define.DecoderSpecificConstants;
+import org.luxtype.inputmethod.latin.makedict.DictionaryHeader;
+import org.luxtype.inputmethod.latin.makedict.FormatSpec;
+import org.luxtype.inputmethod.latin.makedict.UnsupportedFormatException;
+import org.luxtype.inputmethod.latin.makedict.WordProperty;
+import org.luxtype.inputmethod.latin.settings.SettingsValuesForSuggestion;
+import org.luxtype.inputmethod.latin.utils.AsyncResultHolder;
+import org.luxtype.inputmethod.latin.utils.CombinedFormatUtils;
+import org.luxtype.inputmethod.latin.utils.ExecutorUtils;
+import org.luxtype.inputmethod.latin.utils.WordInputEventForPersonalization;
 
 import java.io.File;
 import java.util.ArrayList;

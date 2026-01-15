@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.utils;
+package org.luxtype.inputmethod.latin.utils;
 
 import android.view.inputmethod.InputMethodSubtype;
 
-import org.futo.inputmethod.latin.RichInputMethodSubtype;
+import org.luxtype.inputmethod.latin.RichInputMethodSubtype;
 
 import java.util.Collections;
 import java.util.List;

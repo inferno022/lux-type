@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard.internal;
+package org.luxtype.inputmethod.keyboard.internal;
 
-import org.futo.inputmethod.keyboard.Key;
-import org.futo.inputmethod.keyboard.PointerTracker;
+import org.luxtype.inputmethod.keyboard.Key;
+import org.luxtype.inputmethod.keyboard.PointerTracker;
 
 import javax.annotation.Nonnull;
 

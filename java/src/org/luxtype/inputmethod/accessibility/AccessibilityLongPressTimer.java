@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.accessibility;
+package org.luxtype.inputmethod.accessibility;
 
 import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
 
-import org.futo.inputmethod.keyboard.Key;
-import org.futo.inputmethod.latin.R;
+import org.luxtype.inputmethod.keyboard.Key;
+import org.luxtype.inputmethod.latin.R;
 
 // Handling long press timer to show a more keys keyboard.
 final class AccessibilityLongPressTimer extends Handler {

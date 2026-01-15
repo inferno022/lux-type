@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.spellcheck;
+package org.luxtype.inputmethod.latin.spellcheck;
 
 import android.content.ContentResolver;
 import android.database.ContentObserver;
@@ -27,19 +27,19 @@ import android.util.LruCache;
 import android.view.textservice.SuggestionsInfo;
 import android.view.textservice.TextInfo;
 
-import org.futo.inputmethod.compat.SuggestionsInfoCompatUtils;
-import org.futo.inputmethod.keyboard.Keyboard;
-import org.futo.inputmethod.latin.NgramContext;
-import org.futo.inputmethod.latin.SuggestedWords.SuggestedWordInfo;
-import org.futo.inputmethod.latin.WordComposer;
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.common.LocaleUtils;
-import org.futo.inputmethod.latin.common.StringUtils;
-import org.futo.inputmethod.latin.define.DebugFlags;
-import org.futo.inputmethod.latin.utils.BinaryDictionaryUtils;
-import org.futo.inputmethod.latin.utils.ScriptUtils;
-import org.futo.inputmethod.latin.utils.StatsUtils;
-import org.futo.inputmethod.latin.utils.SuggestionResults;
+import org.luxtype.inputmethod.compat.SuggestionsInfoCompatUtils;
+import org.luxtype.inputmethod.keyboard.Keyboard;
+import org.luxtype.inputmethod.latin.NgramContext;
+import org.luxtype.inputmethod.latin.SuggestedWords.SuggestedWordInfo;
+import org.luxtype.inputmethod.latin.WordComposer;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.common.LocaleUtils;
+import org.luxtype.inputmethod.latin.common.StringUtils;
+import org.luxtype.inputmethod.latin.define.DebugFlags;
+import org.luxtype.inputmethod.latin.utils.BinaryDictionaryUtils;
+import org.luxtype.inputmethod.latin.utils.ScriptUtils;
+import org.luxtype.inputmethod.latin.utils.StatsUtils;
+import org.luxtype.inputmethod.latin.utils.SuggestionResults;
 
 import java.util.ArrayList;
 import java.util.List;

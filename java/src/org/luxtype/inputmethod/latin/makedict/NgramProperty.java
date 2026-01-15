@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.makedict;
+package org.luxtype.inputmethod.latin.makedict;
 
-import org.futo.inputmethod.latin.NgramContext;
+import org.luxtype.inputmethod.latin.NgramContext;
 
 public class NgramProperty {
     public final WeightedString mTargetWord;

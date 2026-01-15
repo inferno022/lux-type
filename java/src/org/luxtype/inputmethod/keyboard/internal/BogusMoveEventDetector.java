@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard.internal;
+package org.luxtype.inputmethod.keyboard.internal;
 
 import android.content.res.Resources;
 import android.util.DisplayMetrics;
 import android.util.Log;
 
-import org.futo.inputmethod.latin.R;
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.define.DebugFlags;
+import org.luxtype.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.define.DebugFlags;
 
 // This hack is applied to certain classes of tablets.
 public final class BogusMoveEventDetector {

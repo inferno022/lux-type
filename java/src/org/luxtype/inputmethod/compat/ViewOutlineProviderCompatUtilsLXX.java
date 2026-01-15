@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.compat;
+package org.luxtype.inputmethod.compat;
 
 import android.annotation.TargetApi;
 import android.graphics.Outline;
@@ -23,7 +23,7 @@ import android.os.Build;
 import android.view.View;
 import android.view.ViewOutlineProvider;
 
-import org.futo.inputmethod.compat.ViewOutlineProviderCompatUtils.InsetsUpdater;
+import org.luxtype.inputmethod.compat.ViewOutlineProviderCompatUtils.InsetsUpdater;
 
 @TargetApi(Build.VERSION_CODES.LOLLIPOP)
 class ViewOutlineProviderCompatUtilsLXX {

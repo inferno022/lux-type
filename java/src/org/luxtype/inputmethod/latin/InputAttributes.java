@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin;
+package org.luxtype.inputmethod.latin;
 
 import static org.futo.inputmethod.latin.common.Constants.ImeOption.NO_FLOATING_GESTURE_PREVIEW;
 import static org.futo.inputmethod.latin.common.Constants.ImeOption.NO_MICROPHONE;
@@ -26,8 +26,8 @@ import android.view.inputmethod.EditorInfo;
 
 import androidx.annotation.Nullable;
 
-import org.futo.inputmethod.latin.common.StringUtils;
-import org.futo.inputmethod.latin.utils.InputTypeUtils;
+import org.luxtype.inputmethod.latin.common.StringUtils;
+import org.luxtype.inputmethod.latin.utils.InputTypeUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.utils;
+package org.luxtype.inputmethod.latin.utils;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.text.TextUtils;
 
-import org.futo.inputmethod.annotations.UsedForTesting;
-import org.futo.inputmethod.latin.BinaryDictionaryGetter;
-import org.futo.inputmethod.latin.R;
-import org.futo.inputmethod.latin.define.DecoderSpecificConstants;
-import org.futo.inputmethod.latin.makedict.DictionaryHeader;
-import org.futo.inputmethod.latin.makedict.UnsupportedFormatException;
-import org.futo.inputmethod.latin.settings.SpacingAndPunctuations;
+import org.luxtype.inputmethod.annotations.UsedForTesting;
+import org.luxtype.inputmethod.latin.BinaryDictionaryGetter;
+import org.luxtype.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.define.DecoderSpecificConstants;
+import org.luxtype.inputmethod.latin.makedict.DictionaryHeader;
+import org.luxtype.inputmethod.latin.makedict.UnsupportedFormatException;
+import org.luxtype.inputmethod.latin.settings.SpacingAndPunctuations;
 
 import java.io.File;
 import java.io.IOException;

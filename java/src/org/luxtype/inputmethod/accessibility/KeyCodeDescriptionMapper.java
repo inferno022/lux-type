@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.accessibility;
+package org.luxtype.inputmethod.accessibility;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -23,13 +23,13 @@ import android.util.Log;
 import android.util.SparseIntArray;
 import android.view.inputmethod.EditorInfo;
 
-import org.futo.inputmethod.keyboard.Key;
-import org.futo.inputmethod.keyboard.Keyboard;
-import org.futo.inputmethod.keyboard.KeyboardId;
-import org.futo.inputmethod.latin.R;
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.common.StringUtils;
-import org.futo.inputmethod.latin.uix.actions.ActionRegistry;
+import org.luxtype.inputmethod.keyboard.Key;
+import org.luxtype.inputmethod.keyboard.Keyboard;
+import org.luxtype.inputmethod.keyboard.KeyboardId;
+import org.luxtype.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.common.StringUtils;
+import org.luxtype.inputmethod.latin.uix.actions.ActionRegistry;
 
 import java.util.Locale;
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.utils;
+package org.luxtype.inputmethod.latin.utils;
 
 import android.annotation.TargetApi;
 import android.graphics.Matrix;
@@ -30,8 +30,8 @@ import android.view.ViewParent;
 import android.view.inputmethod.CursorAnchorInfo;
 import android.widget.TextView;
 
-import org.futo.inputmethod.compat.BuildCompatUtils;
-import org.futo.inputmethod.compat.CursorAnchorInfoCompatWrapper;
+import org.luxtype.inputmethod.compat.BuildCompatUtils;
+import org.luxtype.inputmethod.compat.CursorAnchorInfoCompatWrapper;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;

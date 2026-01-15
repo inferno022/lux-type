@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin;
+package org.luxtype.inputmethod.latin;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -23,8 +23,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import org.futo.inputmethod.accessibility.AccessibilityUtils;
-import org.futo.inputmethod.keyboard.MainKeyboardView;
+import org.luxtype.inputmethod.accessibility.AccessibilityUtils;
+import org.luxtype.inputmethod.keyboard.MainKeyboardView;
 
 public final class InputView extends FrameLayout {
     private final Rect mInputViewRect = new Rect();

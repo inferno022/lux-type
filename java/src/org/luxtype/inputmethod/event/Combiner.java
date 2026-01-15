@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.event;
+package org.luxtype.inputmethod.event;
 
 import java.util.ArrayList;
 

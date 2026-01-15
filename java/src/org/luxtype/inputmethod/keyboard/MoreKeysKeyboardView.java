@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard;
+package org.luxtype.inputmethod.keyboard;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -31,13 +31,13 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 
-import org.futo.inputmethod.accessibility.AccessibilityUtils;
-import org.futo.inputmethod.accessibility.MoreKeysKeyboardAccessibilityDelegate;
-import org.futo.inputmethod.keyboard.internal.KeyDrawParams;
-import org.futo.inputmethod.latin.R;
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.common.CoordinateUtils;
-import org.futo.inputmethod.latin.uix.theme.KeyDrawingConfiguration;
+import org.luxtype.inputmethod.accessibility.AccessibilityUtils;
+import org.luxtype.inputmethod.accessibility.MoreKeysKeyboardAccessibilityDelegate;
+import org.luxtype.inputmethod.keyboard.internal.KeyDrawParams;
+import org.luxtype.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.common.CoordinateUtils;
+import org.luxtype.inputmethod.latin.uix.theme.KeyDrawingConfiguration;
 
 /**
  * A view that renders a virtual {@link MoreKeysKeyboard}. It handles rendering of keys and

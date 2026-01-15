@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.compat;
+package org.luxtype.inputmethod.compat;
 
 import android.content.pm.PackageInfo;
 import android.os.Build.VERSION_CODES;

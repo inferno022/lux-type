@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.accessibility;
+package org.luxtype.inputmethod.accessibility;
 
 import android.content.Context;
 import android.graphics.Rect;
 import android.util.Log;
 import android.util.SparseIntArray;
 
-import org.futo.inputmethod.keyboard.Key;
-import org.futo.inputmethod.keyboard.KeyDetector;
-import org.futo.inputmethod.keyboard.Keyboard;
-import org.futo.inputmethod.keyboard.KeyboardId;
-import org.futo.inputmethod.keyboard.MainKeyboardView;
-import org.futo.inputmethod.keyboard.PointerTracker;
-import org.futo.inputmethod.latin.R;
+import org.luxtype.inputmethod.keyboard.Key;
+import org.luxtype.inputmethod.keyboard.KeyDetector;
+import org.luxtype.inputmethod.keyboard.Keyboard;
+import org.luxtype.inputmethod.keyboard.KeyboardId;
+import org.luxtype.inputmethod.keyboard.MainKeyboardView;
+import org.luxtype.inputmethod.keyboard.PointerTracker;
+import org.luxtype.inputmethod.latin.R;
 
 /**
  * This class represents a delegate that can be registered in {@link MainKeyboardView} to enhance

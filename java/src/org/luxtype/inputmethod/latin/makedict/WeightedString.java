@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.makedict;
+package org.luxtype.inputmethod.latin.makedict;
 
-import org.futo.inputmethod.annotations.UsedForTesting;
+import org.luxtype.inputmethod.annotations.UsedForTesting;
 
 import java.util.Arrays;
 

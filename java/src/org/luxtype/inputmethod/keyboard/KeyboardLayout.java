@@ -14,9 +14,9 @@
  * limitations under the License
  */
 
-package org.futo.inputmethod.keyboard;
+package org.luxtype.inputmethod.keyboard;
 
-import org.futo.inputmethod.annotations.UsedForTesting;
+import org.luxtype.inputmethod.annotations.UsedForTesting;
 
 import java.util.ArrayList;
 import java.util.List;

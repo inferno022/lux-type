@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.settings;
+package org.luxtype.inputmethod.latin.settings;
 
 /**
  * Debug settings for the application.

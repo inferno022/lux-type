@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.accessibility;
+package org.luxtype.inputmethod.accessibility;
 
 import android.graphics.Rect;
 import android.view.HapticFeedbackConstants;
@@ -24,9 +24,9 @@ import android.view.accessibility.AccessibilityEvent;
 import androidx.core.view.accessibility.AccessibilityEventCompat;
 import androidx.core.view.accessibility.AccessibilityRecordCompat;
 
-import org.futo.inputmethod.keyboard.Key;
-import org.futo.inputmethod.keyboard.KeyDetector;
-import org.futo.inputmethod.keyboard.MoreKeysKeyboardView;
+import org.luxtype.inputmethod.keyboard.Key;
+import org.luxtype.inputmethod.keyboard.KeyDetector;
+import org.luxtype.inputmethod.keyboard.MoreKeysKeyboardView;
 
 /**
  * This class represents a delegate that can be registered in {@link MoreKeysKeyboardView} to

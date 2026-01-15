@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethodcommon;
+package org.luxtype.inputmethodcommon;
 
 import android.content.Context;
 import android.content.Intent;

@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin;
+package org.luxtype.inputmethod.latin;
 
 import android.text.TextUtils;
 
-import org.futo.inputmethod.event.Event;
-import org.futo.inputmethod.latin.common.InputPointers;
-import org.futo.inputmethod.latin.define.DecoderSpecificConstants;
+import org.luxtype.inputmethod.event.Event;
+import org.luxtype.inputmethod.latin.common.InputPointers;
+import org.luxtype.inputmethod.latin.define.DecoderSpecificConstants;
 
 import java.util.ArrayList;
 

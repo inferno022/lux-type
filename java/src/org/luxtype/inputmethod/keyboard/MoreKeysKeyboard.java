@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard;
+package org.luxtype.inputmethod.keyboard;
 
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Paint;
 
-import org.futo.inputmethod.annotations.UsedForTesting;
-import org.futo.inputmethod.keyboard.internal.KeyboardParams;
-import org.futo.inputmethod.keyboard.internal.MoreKeySpec;
-import org.futo.inputmethod.latin.R;
-import org.futo.inputmethod.latin.common.StringUtils;
-import org.futo.inputmethod.latin.uix.DynamicThemeProvider;
-import org.futo.inputmethod.latin.utils.TypefaceUtils;
+import org.luxtype.inputmethod.annotations.UsedForTesting;
+import org.luxtype.inputmethod.keyboard.internal.KeyboardParams;
+import org.luxtype.inputmethod.keyboard.internal.MoreKeySpec;
+import org.luxtype.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.common.StringUtils;
+import org.luxtype.inputmethod.latin.uix.DynamicThemeProvider;
+import org.luxtype.inputmethod.latin.utils.TypefaceUtils;
 
 import java.util.List;
 

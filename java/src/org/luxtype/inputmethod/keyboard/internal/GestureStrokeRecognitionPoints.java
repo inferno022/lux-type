@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard.internal;
+package org.luxtype.inputmethod.keyboard.internal;
 
 import android.util.Log;
 
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.common.InputPointers;
-import org.futo.inputmethod.latin.common.ResizableIntArray;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.common.InputPointers;
+import org.luxtype.inputmethod.latin.common.ResizableIntArray;
 
 /**
  * This class holds event points to recognize a gesture stroke.

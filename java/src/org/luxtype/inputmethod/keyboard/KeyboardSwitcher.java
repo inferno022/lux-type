@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard;
+package org.luxtype.inputmethod.keyboard;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -26,30 +26,30 @@ import android.view.inputmethod.EditorInfo;
 
 import androidx.annotation.NonNull;
 
-import org.futo.inputmethod.event.Event;
-import org.futo.inputmethod.keyboard.internal.KeyboardLayoutElement;
-import org.futo.inputmethod.keyboard.internal.KeyboardState;
-import org.futo.inputmethod.keyboard.internal.KeyboardTextsSet;
-import org.futo.inputmethod.keyboard.internal.SwitchActions;
-import org.futo.inputmethod.latin.InputView;
-import org.futo.inputmethod.latin.LatinIME;
-import org.futo.inputmethod.latin.LatinIMELegacy;
-import org.futo.inputmethod.latin.R;
-import org.futo.inputmethod.latin.RichInputMethodManager;
-import org.futo.inputmethod.latin.RichInputMethodSubtype;
-import org.futo.inputmethod.latin.Subtypes;
-import org.futo.inputmethod.latin.WordComposer;
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.settings.LongPressKeySettings;
-import org.futo.inputmethod.latin.settings.Settings;
-import org.futo.inputmethod.latin.settings.SettingsValues;
-import org.futo.inputmethod.latin.utils.LanguageOnSpacebarUtils;
-import org.futo.inputmethod.latin.utils.ScriptUtils;
-import org.futo.inputmethod.v2keyboard.ComputedKeyboardSize;
-import org.futo.inputmethod.v2keyboard.KeyboardLayoutSetKt;
-import org.futo.inputmethod.v2keyboard.KeyboardLayoutSetV2;
-import org.futo.inputmethod.v2keyboard.KeyboardLayoutSetV2Params;
-import org.futo.inputmethod.v2keyboard.KeyboardSizingCalculator;
+import org.luxtype.inputmethod.event.Event;
+import org.luxtype.inputmethod.keyboard.internal.KeyboardLayoutElement;
+import org.luxtype.inputmethod.keyboard.internal.KeyboardState;
+import org.luxtype.inputmethod.keyboard.internal.KeyboardTextsSet;
+import org.luxtype.inputmethod.keyboard.internal.SwitchActions;
+import org.luxtype.inputmethod.latin.InputView;
+import org.luxtype.inputmethod.latin.LatinIME;
+import org.luxtype.inputmethod.latin.LatinIMELegacy;
+import org.luxtype.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.RichInputMethodManager;
+import org.luxtype.inputmethod.latin.RichInputMethodSubtype;
+import org.luxtype.inputmethod.latin.Subtypes;
+import org.luxtype.inputmethod.latin.WordComposer;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.settings.LongPressKeySettings;
+import org.luxtype.inputmethod.latin.settings.Settings;
+import org.luxtype.inputmethod.latin.settings.SettingsValues;
+import org.luxtype.inputmethod.latin.utils.LanguageOnSpacebarUtils;
+import org.luxtype.inputmethod.latin.utils.ScriptUtils;
+import org.luxtype.inputmethod.v2keyboard.ComputedKeyboardSize;
+import org.luxtype.inputmethod.v2keyboard.KeyboardLayoutSetKt;
+import org.luxtype.inputmethod.v2keyboard.KeyboardLayoutSetV2;
+import org.luxtype.inputmethod.v2keyboard.KeyboardLayoutSetV2Params;
+import org.luxtype.inputmethod.v2keyboard.KeyboardSizingCalculator;
 
 import java.util.List;
 import java.util.Locale;

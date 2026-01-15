@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin;
+package org.luxtype.inputmethod.latin;
 
 import static org.futo.inputmethod.latin.common.Constants.Subtype.KEYBOARD_MODE;
 
@@ -23,11 +23,11 @@ import android.os.Build;
 import android.util.Log;
 import android.view.inputmethod.InputMethodSubtype;
 
-import org.futo.inputmethod.compat.BuildCompatUtils;
-import org.futo.inputmethod.compat.InputMethodSubtypeCompatUtils;
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.common.LocaleUtils;
-import org.futo.inputmethod.latin.utils.SubtypeLocaleUtils;
+import org.luxtype.inputmethod.compat.BuildCompatUtils;
+import org.luxtype.inputmethod.compat.InputMethodSubtypeCompatUtils;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.common.LocaleUtils;
+import org.luxtype.inputmethod.latin.utils.SubtypeLocaleUtils;
 
 import java.util.HashMap;
 import java.util.List;

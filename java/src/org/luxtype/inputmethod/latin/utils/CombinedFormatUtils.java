@@ -14,12 +14,12 @@
  * the License.
  */
 
-package org.futo.inputmethod.latin.utils;
+package org.luxtype.inputmethod.latin.utils;
 
-import org.futo.inputmethod.latin.makedict.DictionaryHeader;
-import org.futo.inputmethod.latin.makedict.NgramProperty;
-import org.futo.inputmethod.latin.makedict.ProbabilityInfo;
-import org.futo.inputmethod.latin.makedict.WordProperty;
+import org.luxtype.inputmethod.latin.makedict.DictionaryHeader;
+import org.luxtype.inputmethod.latin.makedict.NgramProperty;
+import org.luxtype.inputmethod.latin.makedict.ProbabilityInfo;
+import org.luxtype.inputmethod.latin.makedict.WordProperty;
 
 import java.util.HashMap;
 

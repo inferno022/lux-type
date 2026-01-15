@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.network;
+package org.luxtype.inputmethod.latin.network;
 
-import org.futo.inputmethod.annotations.UsedForTesting;
+import org.luxtype.inputmethod.annotations.UsedForTesting;
 
 /**
  * The HttpException exception represents a XML/HTTP fault with a HTTP status code.

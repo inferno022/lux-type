@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.event;
+package org.luxtype.inputmethod.event;
 
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -22,7 +22,7 @@ import android.text.TextUtils;
 import android.text.style.BackgroundColorSpan;
 import android.util.SparseIntArray;
 
-import org.futo.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.common.Constants;
 
 import java.text.Normalizer;
 import java.util.ArrayList;

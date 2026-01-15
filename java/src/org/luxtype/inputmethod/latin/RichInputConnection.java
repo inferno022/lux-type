@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin;
+package org.luxtype.inputmethod.latin;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -31,22 +31,22 @@ import android.view.inputmethod.ExtractedTextRequest;
 import android.view.inputmethod.InputConnection;
 import android.view.inputmethod.InputMethodManager;
 
-import org.futo.inputmethod.compat.InputConnectionCompatUtils;
-import org.futo.inputmethod.engine.InputMethodConnectionProvider;
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.common.UnicodeSurrogate;
-import org.futo.inputmethod.latin.common.StringUtils;
-import org.futo.inputmethod.latin.inputlogic.InputLogic;
-import org.futo.inputmethod.latin.inputlogic.PrivateCommandPerformer;
-import org.futo.inputmethod.latin.settings.Settings;
-import org.futo.inputmethod.latin.settings.SpacingAndPunctuations;
-import org.futo.inputmethod.latin.utils.CapsModeUtils;
-import org.futo.inputmethod.latin.utils.DebugLogUtils;
-import org.futo.inputmethod.latin.utils.NgramContextUtils;
-import org.futo.inputmethod.latin.utils.ScriptUtils;
-import org.futo.inputmethod.latin.utils.SpannableStringUtils;
-import org.futo.inputmethod.latin.utils.StatsUtils;
-import org.futo.inputmethod.latin.utils.TextRange;
+import org.luxtype.inputmethod.compat.InputConnectionCompatUtils;
+import org.luxtype.inputmethod.engine.InputMethodConnectionProvider;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.common.UnicodeSurrogate;
+import org.luxtype.inputmethod.latin.common.StringUtils;
+import org.luxtype.inputmethod.latin.inputlogic.InputLogic;
+import org.luxtype.inputmethod.latin.inputlogic.PrivateCommandPerformer;
+import org.luxtype.inputmethod.latin.settings.Settings;
+import org.luxtype.inputmethod.latin.settings.SpacingAndPunctuations;
+import org.luxtype.inputmethod.latin.utils.CapsModeUtils;
+import org.luxtype.inputmethod.latin.utils.DebugLogUtils;
+import org.luxtype.inputmethod.latin.utils.NgramContextUtils;
+import org.luxtype.inputmethod.latin.utils.ScriptUtils;
+import org.luxtype.inputmethod.latin.utils.SpannableStringUtils;
+import org.luxtype.inputmethod.latin.utils.StatsUtils;
+import org.luxtype.inputmethod.latin.utils.TextRange;
 
 import java.util.concurrent.TimeUnit;
 

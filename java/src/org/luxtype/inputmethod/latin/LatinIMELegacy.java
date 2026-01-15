@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin;
+package org.luxtype.inputmethod.latin;
 
 import static org.futo.inputmethod.latin.common.Constants.ImeOption.FORCE_ASCII;
 import static org.futo.inputmethod.latin.common.Constants.ImeOption.NO_MICROPHONE;
@@ -52,37 +52,37 @@ import android.view.inputmethod.InputMethodSubtype;
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 
-import org.futo.inputmethod.accessibility.AccessibilityUtils;
-import org.futo.inputmethod.annotations.UsedForTesting;
-import org.futo.inputmethod.compat.ViewOutlineProviderCompatUtils;
-import org.futo.inputmethod.compat.ViewOutlineProviderCompatUtils.InsetsUpdater;
-import org.futo.inputmethod.engine.IMEInterface;
-import org.futo.inputmethod.engine.IMEManager;
-import org.futo.inputmethod.event.Event;
-import org.futo.inputmethod.event.HardwareEventDecoder;
-import org.futo.inputmethod.event.HardwareKeyboardEventDecoder;
-import org.futo.inputmethod.event.InputTransaction;
-import org.futo.inputmethod.keyboard.Keyboard;
-import org.futo.inputmethod.keyboard.KeyboardActionListener;
-import org.futo.inputmethod.keyboard.KeyboardSwitcher;
-import org.futo.inputmethod.keyboard.MainKeyboardView;
-import org.futo.inputmethod.latin.SuggestedWords.SuggestedWordInfo;
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.common.CoordinateUtils;
-import org.futo.inputmethod.latin.common.InputPointers;
-import org.futo.inputmethod.latin.define.DebugFlags;
-import org.futo.inputmethod.latin.define.ProductionFlags;
-import org.futo.inputmethod.latin.permissions.PermissionsManager;
-import org.futo.inputmethod.latin.personalization.PersonalizationHelper;
-import org.futo.inputmethod.latin.settings.Settings;
-import org.futo.inputmethod.latin.settings.SettingsValues;
-import org.futo.inputmethod.latin.suggestions.SuggestionStripViewAccessor;
-import org.futo.inputmethod.latin.suggestions.SuggestionStripViewListener;
-import org.futo.inputmethod.latin.utils.ApplicationUtils;
-import org.futo.inputmethod.latin.utils.JniUtils;
-import org.futo.inputmethod.latin.utils.StatsUtils;
-import org.futo.inputmethod.latin.utils.ViewLayoutUtils;
-import org.futo.inputmethod.v2keyboard.KeyboardLayoutSetV2;
+import org.luxtype.inputmethod.accessibility.AccessibilityUtils;
+import org.luxtype.inputmethod.annotations.UsedForTesting;
+import org.luxtype.inputmethod.compat.ViewOutlineProviderCompatUtils;
+import org.luxtype.inputmethod.compat.ViewOutlineProviderCompatUtils.InsetsUpdater;
+import org.luxtype.inputmethod.engine.IMEInterface;
+import org.luxtype.inputmethod.engine.IMEManager;
+import org.luxtype.inputmethod.event.Event;
+import org.luxtype.inputmethod.event.HardwareEventDecoder;
+import org.luxtype.inputmethod.event.HardwareKeyboardEventDecoder;
+import org.luxtype.inputmethod.event.InputTransaction;
+import org.luxtype.inputmethod.keyboard.Keyboard;
+import org.luxtype.inputmethod.keyboard.KeyboardActionListener;
+import org.luxtype.inputmethod.keyboard.KeyboardSwitcher;
+import org.luxtype.inputmethod.keyboard.MainKeyboardView;
+import org.luxtype.inputmethod.latin.SuggestedWords.SuggestedWordInfo;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.common.CoordinateUtils;
+import org.luxtype.inputmethod.latin.common.InputPointers;
+import org.luxtype.inputmethod.latin.define.DebugFlags;
+import org.luxtype.inputmethod.latin.define.ProductionFlags;
+import org.luxtype.inputmethod.latin.permissions.PermissionsManager;
+import org.luxtype.inputmethod.latin.personalization.PersonalizationHelper;
+import org.luxtype.inputmethod.latin.settings.Settings;
+import org.luxtype.inputmethod.latin.settings.SettingsValues;
+import org.luxtype.inputmethod.latin.suggestions.SuggestionStripViewAccessor;
+import org.luxtype.inputmethod.latin.suggestions.SuggestionStripViewListener;
+import org.luxtype.inputmethod.latin.utils.ApplicationUtils;
+import org.luxtype.inputmethod.latin.utils.JniUtils;
+import org.luxtype.inputmethod.latin.utils.StatsUtils;
+import org.luxtype.inputmethod.latin.utils.ViewLayoutUtils;
+import org.luxtype.inputmethod.v2keyboard.KeyboardLayoutSetV2;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.FileDescriptor;

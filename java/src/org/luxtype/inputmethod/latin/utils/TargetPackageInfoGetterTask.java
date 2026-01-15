@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.utils;
+package org.luxtype.inputmethod.latin.utils;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;
@@ -22,7 +22,7 @@ import android.content.pm.PackageManager;
 import android.os.AsyncTask;
 import android.util.LruCache;
 
-import org.futo.inputmethod.compat.AppWorkaroundsUtils;
+import org.luxtype.inputmethod.compat.AppWorkaroundsUtils;
 
 public final class TargetPackageInfoGetterTask extends
         AsyncTask<String, Void, PackageInfo> {

@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard;
+package org.luxtype.inputmethod.keyboard;
 
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.common.InputPointers;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.common.InputPointers;
 
 public interface KeyboardActionListener {
     /**

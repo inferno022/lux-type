@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.event;
+package org.luxtype.inputmethod.event;
 
-import org.futo.inputmethod.latin.settings.SettingsValues;
+import org.luxtype.inputmethod.latin.settings.SettingsValues;
 
 /**
  * An object encapsulating a single transaction for input.

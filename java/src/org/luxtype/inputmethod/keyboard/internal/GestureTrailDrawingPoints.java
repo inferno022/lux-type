@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard.internal;
+package org.luxtype.inputmethod.keyboard.internal;
 
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -23,8 +23,8 @@ import android.graphics.Path;
 import android.graphics.Rect;
 import android.os.SystemClock;
 
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.common.ResizableIntArray;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.common.ResizableIntArray;
 
 /**
  * This class holds drawing points to represent a gesture trail. The gesture trail may contain

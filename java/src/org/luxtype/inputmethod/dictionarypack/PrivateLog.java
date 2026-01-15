@@ -14,7 +14,7 @@
  * the License.
  */
 
-package org.futo.inputmethod.dictionarypack;
+package org.luxtype.inputmethod.dictionarypack;
 
 import android.content.ContentValues;
 import android.content.Context;

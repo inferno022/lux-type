@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.compat;
+package org.luxtype.inputmethod.compat;
 
 import android.view.textservice.TextInfo;
 
-import org.futo.inputmethod.annotations.UsedForTesting;
+import org.luxtype.inputmethod.annotations.UsedForTesting;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;

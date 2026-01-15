@@ -14,7 +14,7 @@
  * limitations under the License
  */
 
-package org.futo.inputmethod.latin.permissions;
+package org.luxtype.inputmethod.latin.permissions;
 
 import android.app.Activity;
 import android.content.Context;

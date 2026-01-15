@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.spellcheck;
+package org.luxtype.inputmethod.latin.spellcheck;
 
-import org.futo.inputmethod.latin.permissions.PermissionsManager;
+import org.luxtype.inputmethod.latin.permissions.PermissionsManager;
 
 import android.annotation.TargetApi;
 import android.content.Intent;

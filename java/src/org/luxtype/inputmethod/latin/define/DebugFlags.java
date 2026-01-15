@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.define;
+package org.luxtype.inputmethod.latin.define;
 
 import android.content.SharedPreferences;
 
-import org.futo.inputmethod.latin.BuildConfig;
+import org.luxtype.inputmethod.latin.BuildConfig;
 
 public final class DebugFlags {
     public static final boolean DEBUG_ENABLED = BuildConfig.DEBUG;

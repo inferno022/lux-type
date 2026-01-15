@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.settings;
+package org.luxtype.inputmethod.latin.settings;
 
 import android.content.res.Resources;
 
-import org.futo.inputmethod.annotations.UsedForTesting;
-import org.futo.inputmethod.keyboard.internal.MoreKeySpec;
-import org.futo.inputmethod.latin.PunctuationSuggestions;
-import org.futo.inputmethod.latin.R;
-import org.futo.inputmethod.latin.common.Constants;
-import org.futo.inputmethod.latin.common.StringUtils;
+import org.luxtype.inputmethod.annotations.UsedForTesting;
+import org.luxtype.inputmethod.keyboard.internal.MoreKeySpec;
+import org.luxtype.inputmethod.latin.PunctuationSuggestions;
+import org.luxtype.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.common.Constants;
+import org.luxtype.inputmethod.latin.common.StringUtils;
 
 import java.util.Arrays;
 import java.util.Locale;

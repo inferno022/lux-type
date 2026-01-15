@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard.internal;
+package org.luxtype.inputmethod.keyboard.internal;
 
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
 
-import org.futo.inputmethod.keyboard.PointerTracker;
-import org.futo.inputmethod.latin.R;
-import org.futo.inputmethod.latin.common.CoordinateUtils;
-import org.futo.inputmethod.latin.uix.DynamicThemeProvider;
+import org.luxtype.inputmethod.keyboard.PointerTracker;
+import org.luxtype.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.common.CoordinateUtils;
+import org.luxtype.inputmethod.latin.uix.DynamicThemeProvider;
 
 /**
  * Draw rubber band preview graphics during sliding key input.

@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.utils;
+package org.luxtype.inputmethod.latin.utils;
 
 import android.content.Context;
 import android.view.ContextThemeWrapper;
 
-import org.futo.inputmethod.latin.R;
+import org.luxtype.inputmethod.latin.R;
 
 public final class DialogUtils {
     private DialogUtils() {

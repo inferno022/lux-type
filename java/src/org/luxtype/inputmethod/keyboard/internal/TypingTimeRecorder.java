@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.keyboard.internal;
+package org.luxtype.inputmethod.keyboard.internal;
 
 public final class TypingTimeRecorder {
     private final int mStaticTimeThresholdAfterFastTyping; // msec

@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin.makedict;
+package org.luxtype.inputmethod.latin.makedict;
 
-import org.futo.inputmethod.annotations.UsedForTesting;
-import org.futo.inputmethod.latin.BinaryDictionary;
-import org.futo.inputmethod.latin.Dictionary;
-import org.futo.inputmethod.latin.NgramContext;
-import org.futo.inputmethod.latin.NgramContext.WordInfo;
-import org.futo.inputmethod.latin.common.StringUtils;
-import org.futo.inputmethod.latin.utils.CombinedFormatUtils;
+import org.luxtype.inputmethod.annotations.UsedForTesting;
+import org.luxtype.inputmethod.latin.BinaryDictionary;
+import org.luxtype.inputmethod.latin.Dictionary;
+import org.luxtype.inputmethod.latin.NgramContext;
+import org.luxtype.inputmethod.latin.NgramContext.WordInfo;
+import org.luxtype.inputmethod.latin.common.StringUtils;
+import org.luxtype.inputmethod.latin.utils.CombinedFormatUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;

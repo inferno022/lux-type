@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.futo.inputmethod.latin;
+package org.luxtype.inputmethod.latin;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -27,12 +27,12 @@ import android.view.inputmethod.InputMethodInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.view.inputmethod.InputMethodSubtype;
 
-import org.futo.inputmethod.annotations.UsedForTesting;
-import org.futo.inputmethod.compat.InputMethodManagerCompatWrapper;
-import org.futo.inputmethod.latin.settings.Settings;
-import org.futo.inputmethod.latin.uix.PreferenceUtils;
-import org.futo.inputmethod.latin.utils.AdditionalSubtypeUtils;
-import org.futo.inputmethod.latin.utils.SubtypeLocaleUtils;
+import org.luxtype.inputmethod.annotations.UsedForTesting;
+import org.luxtype.inputmethod.compat.InputMethodManagerCompatWrapper;
+import org.luxtype.inputmethod.latin.settings.Settings;
+import org.luxtype.inputmethod.latin.uix.PreferenceUtils;
+import org.luxtype.inputmethod.latin.utils.AdditionalSubtypeUtils;
+import org.luxtype.inputmethod.latin.utils.SubtypeLocaleUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
