@@ -10,3 +10,10 @@ keystore.properties
 key.jks
 java/res/raw/mozc.data
 .cxx
+
+florisboard-main/
+nth-kbd-main/
+HexaKey-master/
+*.zip
+*.7z
+*.rar
