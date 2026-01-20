@@ -68,8 +68,8 @@ val TemplateAlphabetKey = BaseKey(
 )
 
 val TemplateNumberKey = BaseKey(
-    spec = "!icon/numpad|!code/key_to_number_layout",
-    attributes = KeyAttributes(
+    spec = "1234|!code/key_to_number_layout",
+    attributes = FunctionalAttributes.copy(
         showPopup = false
     )
 )

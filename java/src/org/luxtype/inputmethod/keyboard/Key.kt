@@ -314,7 +314,7 @@ data class Key(
 
     val isShift: Boolean = code == Constants.CODE_SHIFT
 
-    val isModifier: Boolean = code == Constants.CODE_SHIFT || code == Constants.CODE_SWITCH_ALPHA_SYMBOL
+    val isModifier: Boolean = code == Constants.CODE_SHIFT
 
     val isRepeatable: Boolean = (actionFlags and KeyConsts.ACTION_FLAGS_IS_REPEATABLE) != 0
 

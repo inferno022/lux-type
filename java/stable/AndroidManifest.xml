@@ -2,12 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application>
-        <service
-            android:name="org.luxtype.inputmethod.updates.UpdateCheckingService"
-            android:label="@string/autoupdater_service_title"
-            android:permission="android.permission.BIND_JOB_SERVICE" >
-        </service>
-
         <receiver android:name="org.luxtype.inputmethod.updates.InstallReceiver" />
 
     </application>

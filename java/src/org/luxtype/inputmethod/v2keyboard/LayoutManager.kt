@@ -39,7 +39,9 @@ object LayoutManager {
 
     private fun getAllLayoutPaths(assetManager: AssetManager): List<String> {
         return listFilesRecursively(assetManager, "layouts").filter {
-            (it.endsWith(".yml") || it.endsWith(".yaml")) && it != "layouts/mapping.yaml"
+            (it.endsWith(".yml") || it.endsWith(".yaml"))
+                    && it != "layouts/mapping.yaml"
+                    && it != "layouts/Special/error.yaml"
         }
     }
 
@@ -48,13 +50,23 @@ object LayoutManager {
 
         initialized = true
 
-        localeToLayoutsMappings = parseMappings(context, "layouts/mapping.yaml").languages.mapKeys {
-            localeFromString(it.key)
+        try {
+            localeToLayoutsMappings = parseMappings(context, "layouts/mapping.yaml").languages.mapKeys {
+                localeFromString(it.key)
+            }
+        } catch (e: Exception) {
+            Log.e("LayoutManager", "Failed to parse mappings, using empty map", e)
+            localeToLayoutsMappings = emptyMap()
         }
 
-        localeNames = parseNames(context, "layouts/names.yaml").mapKeys {
-            localeFromString(it.key)
-        }.mapValues { it.value.mapKeys { localeFromString(it.key) }}
+        try {
+            localeNames = parseNames(context, "layouts/names.yaml").mapKeys {
+                localeFromString(it.key)
+            }.mapValues { it.value.mapKeys { localeFromString(it.key) }}
+        } catch (e: Exception) {
+            Log.e("LayoutManager", "Failed to parse names, using empty map", e)
+            localeNames = emptyMap()
+        }
 
         val assetManager = context.assets
 
@@ -74,7 +86,15 @@ object LayoutManager {
         ensureInitialized()
         if(name.startsWith("custom")) return CustomLayout.getCustomLayout(context, name)
 
-        return layoutsById?.get(name)?.get(context) ?: throw IllegalArgumentException("Failed to find keyboard layout $name. Available layouts: ${layoutsById?.keys}")
+        val layout = layoutsById?.get(name)?.get(context)
+        if (layout != null) return layout
+
+        BugViewerState.pushBug(BugInfo(
+            "LayoutManager",
+            "Failed to find keyboard layout $name. Available layouts: ${layoutsById?.keys}"
+        ))
+
+        return buildFallbackKeyboard(name).apply { id = name }
     }
 
     fun getLayoutOrNull(context: Context, name: String): Keyboard? {
@@ -90,7 +110,7 @@ object LayoutManager {
 
     fun getLayoutMapping(context: Context): Map<Locale, List<String>> {
         ensureInitialized()
-        return localeToLayoutsMappings!!
+        return localeToLayoutsMappings ?: emptyMap()
     }
 
     fun getAllLayoutNames(context: Context): List<String> {
@@ -134,6 +154,27 @@ object LayoutManager {
 
         return translatedEntry
     }
+}
+
+private fun buildFallbackKeyboard(requestedId: String): Keyboard {
+    val row1 = Row(letters = listOf(
+        BaseKey("q"), BaseKey("w"), BaseKey("e"), BaseKey("r"), BaseKey("t"),
+        BaseKey("y"), BaseKey("u"), BaseKey("i"), BaseKey("o"), BaseKey("p")
+    ))
+    val row2 = Row(letters = listOf(
+        BaseKey("a"), BaseKey("s"), BaseKey("d"), BaseKey("f"), BaseKey("g"),
+        BaseKey("h"), BaseKey("j"), BaseKey("k"), BaseKey("l")
+    ))
+    val row3 = Row(letters = listOf(
+        BaseKey("z"), BaseKey("x"), BaseKey("c"), BaseKey("v"), BaseKey("b"),
+        BaseKey("n"), BaseKey("m")
+    ))
+
+    return Keyboard(
+        name = "Fallback ($requestedId)",
+        rows = listOf(row1, row2, row3),
+        languages = listOf("en")
+    )
 }
 
 private fun parseMappings(context: Context, mappingsPath: String): Mappings {
@@ -183,7 +224,7 @@ internal class LazyKeyboard(
 
         e.printStackTrace()
 
-        parseKeyboardYaml(context, "layouts/Special/error.yaml").apply { id = filename }
+        buildFallbackKeyboard(filename).apply { id = filename }
     }
 
     fun get(context: Context): Keyboard {

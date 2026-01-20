@@ -146,6 +146,10 @@
     <string name="theme_catppuccin_mocha">Catppuccin Mocha</string>
     <string name="theme_classic_dark">AOSP Material Dark</string>
     <string name="theme_classic_light">AOSP Material Light</string>
+    <string name="theme_floris_day">Floris Day</string>
+    <string name="theme_floris_night">Floris Night</string>
+    <string name="theme_floris_day_borderless">Floris Day (Borderless)</string>
+    <string name="theme_floris_night_borderless">Floris Night (Borderless)</string>
     <string name="theme_vi">Lux Type VI Theme</string>
     <string name="theme_deepsea_dark">Deep Sea Dark</string>
     <string name="theme_deepsea_light">Deep Sea Light</string>
@@ -292,7 +296,7 @@
     <string name="misc_settings_title">Miscellaneous</string>
 
     <!-- When adding a new language -->
-    <string name="language_settings_title">Languages &amp; Models</string>
+    <string name="language_settings_title">Languages</string>
     <string name="language_settings_add_language_button">Add language</string>
     <string name="language_settings_select_language">Select language to add</string>
     <string name="language_settings_search">Search</string>
@@ -536,7 +540,7 @@
     <string name="voice_input_settings_autostop_vad">Auto-stop on silence</string>
     <string name="voice_input_settings_autostop_vad_subtitle">Automatically stop when silence is detected. You may need to manually stop regardless if there\'s too much background noise.</string>
     <string name="voice_input_settings_change_models">Models</string>
-    <string name="voice_input_settings_change_models_subtitle">To change the models, visit Languages &amp; Models menu</string>
+    <string name="voice_input_settings_change_models_subtitle">To change the models, visit Languages menu</string>
 
     <!-- Prediction menu -->
     <string name="prediction_settings_title">Text Prediction</string>

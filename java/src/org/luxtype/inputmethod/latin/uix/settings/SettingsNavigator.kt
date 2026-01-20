@@ -23,8 +23,6 @@ import org.luxtype.inputmethod.latin.uix.settings.pages.ActionsScreen
 import org.luxtype.inputmethod.latin.uix.settings.pages.AdvancedParametersScreen
 import org.luxtype.inputmethod.latin.uix.settings.pages.BlacklistScreen
 import org.luxtype.inputmethod.latin.uix.settings.pages.BlacklistScreenLite
-import org.luxtype.inputmethod.latin.uix.settings.pages.CreditsScreen
-import org.luxtype.inputmethod.latin.uix.settings.pages.CreditsScreenLite
 import org.luxtype.inputmethod.latin.uix.settings.pages.themes.CustomThemeScreen
 import org.luxtype.inputmethod.latin.uix.settings.pages.DevEditTextVariationsScreen
 import org.luxtype.inputmethod.latin.uix.settings.pages.DevKeyboardScreen
@@ -44,7 +42,6 @@ import org.luxtype.inputmethod.latin.uix.settings.pages.LongPressMenu
 import org.luxtype.inputmethod.latin.uix.settings.pages.MiscMenu
 import org.luxtype.inputmethod.latin.uix.settings.pages.NumberRowSettingMenu
 import org.luxtype.inputmethod.latin.uix.settings.pages.PredictiveTextMenu
-import org.luxtype.inputmethod.latin.uix.settings.pages.ProjectInfoView
 import org.luxtype.inputmethod.latin.uix.settings.pages.ResizeMenuLite
 import org.luxtype.inputmethod.latin.uix.settings.pages.ResizeScreen
 import org.luxtype.inputmethod.latin.uix.settings.pages.SearchScreen
@@ -86,7 +83,6 @@ val SettingsMenus = listOf(
     ActionsScreen,
     HelpMenu,
     MiscMenu,
-    CreditsScreenLite,
     IMESettingsMenu
 ) + AllActions.mapNotNull { it.settingsMenu } + SettingsByLanguage.values
 
@@ -156,16 +152,9 @@ fun SettingsNavigator(
                 )
             }
             composable("blacklist") { BlacklistScreen(navController) }
-            composable("credits") { CreditsScreen(navController) }
             composable("exportingcfg") { ExportingMenu(navController) }
             dialog("deleteTheme/{name}") {
                 DeleteCustomThemeDialog(it.arguments?.getString("name")?.urlDecode() ?: "", navController)
-            }
-            composable("credits/thirdparty/{idx}") {
-                ProjectInfoView(
-                    it.arguments?.getString("idx")?.toIntOrNull() ?: 0,
-                    navController
-                )
             }
             dialog("error/{title}/{body}") {
                 ErrorDialog(

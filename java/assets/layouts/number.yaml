@@ -1,0 +1,5 @@
+name: Number
+rows:
+  - letters: "- / : ; ( ) ₹ & @ \""
+  - letters: "$shift . , ? ! ' + = $delete"
+  - bottom: $alphabet $number $contextual $action $space $period $enter

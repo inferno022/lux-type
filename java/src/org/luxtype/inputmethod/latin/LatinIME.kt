@@ -87,7 +87,7 @@ import org.luxtype.inputmethod.latin.uix.theme.getThemeOption
 import org.luxtype.inputmethod.latin.uix.theme.orDefault
 import org.luxtype.inputmethod.latin.uix.theme.presets.DefaultDarkScheme
 import org.luxtype.inputmethod.latin.utils.JniUtils
-import org.luxtype.inputmethod.updates.scheduleUpdateCheckingJob
+import org.luxtype.inputmethod.updates.cancelUpdateCheckingJob
 import org.luxtype.inputmethod.v2keyboard.ComputedKeyboardSize
 import org.luxtype.inputmethod.v2keyboard.FloatingKeyboardSize
 import org.luxtype.inputmethod.v2keyboard.KeyboardSettings
@@ -287,9 +287,10 @@ class LatinIME : InputMethodServiceCompose(), LatinIMELegacy.SuggestionStripCont
     }
 
     private fun updateColorsIfDynamicChanged() {
-        if(activeThemeOption?.dynamic == true) {
+        val themeOption = activeThemeOption
+        if(themeOption?.dynamic == true) {
             val currColors = colorScheme
-            val nextColors = activeThemeOption!!.obtainColors(this)
+            val nextColors = themeOption.obtainColors(this)
 
             if(currColors.differsFrom(nextColors)) {
                 updateDrawableProvider(nextColors)
@@ -370,6 +371,8 @@ class LatinIME : InputMethodServiceCompose(), LatinIMELegacy.SuggestionStripCont
 
         JniUtils.loadNativeLibrary()
 
+        cancelUpdateCheckingJob(this)
+
         LayoutManager.init(this)
 
         DataStoreHelper.init(this)
@@ -388,9 +391,6 @@ class LatinIME : InputMethodServiceCompose(), LatinIMELegacy.SuggestionStripCont
 
         imeManager.onCreate()
         latinIMELegacy.onCreate()
-
-        scheduleUpdateCheckingJob(this)
-        launchJob { uixManager.showUpdateNoticeIfNeeded() }
 
         launchJob {
             getSettingFlow(THEME_KEY).collect {
@@ -458,8 +458,10 @@ class LatinIME : InputMethodServiceCompose(), LatinIMELegacy.SuggestionStripCont
 
             dataStore.data.collect { data ->
                 prev.keys.toList().forEach {
-                    if(data[KeyboardSettings[it]!!.key] != prev[it]) {
-                        prev[it] = data[KeyboardSettings[it]!!.key]
+                    val setting = KeyboardSettings[it]
+                    val key = setting?.key
+                    if(key != null && data[key] != prev[it]) {
+                        prev[it] = data[key]
                         onSizeUpdated()
                     }
                 }
@@ -471,6 +473,12 @@ class LatinIME : InputMethodServiceCompose(), LatinIMELegacy.SuggestionStripCont
         Settings.getInstance().settingsChangedListeners.add { oldSettings, newSettings ->
             val differs = (oldSettings.mActionKeyId != newSettings.mActionKeyId)
                     || (oldSettings.mShowsActionKey != newSettings.mShowsActionKey)
+                    || (oldSettings.mIsNumberRowEnabled != newSettings.mIsNumberRowEnabled)
+                    || (oldSettings.mIsNumberRowEnabledByUser != newSettings.mIsNumberRowEnabledByUser)
+                    || (oldSettings.mNumberRowMode != newSettings.mNumberRowMode)
+                    || (oldSettings.mUseLocalNumbers != newSettings.mUseLocalNumbers)
+                    || (oldSettings.mIsArrowRowEnabled != newSettings.mIsArrowRowEnabled)
+                    || (oldSettings.mIsUsingAlternativePeriodKey != newSettings.mIsUsingAlternativePeriodKey)
 
             if (differs) {
                 invalidateKeyboard(refreshSettings = true)
@@ -541,16 +549,18 @@ class LatinIME : InputMethodServiceCompose(), LatinIMELegacy.SuggestionStripCont
             }
         }.safeKeyboardPadding()
 
-        val legacyInputView = legacyInputView.value
+        val legacyInputView = legacyInputView.value ?: return
         key(legacyInputView) {
             AndroidView(factory = {
-                legacyInputView!!.also {
-                    if(it.parent != null) (it.parent as ViewGroup).removeView(it)
+                legacyInputView.also { view ->
+                    val parent = view.parent
+                    if(parent is ViewGroup) parent.removeView(view)
                 }
             }, modifier = modifier, onRelease = {
-                val view = it as InputView
-                view.deallocateMemory()
-                view.removeAllViews()
+                if(it is InputView) {
+                    it.deallocateMemory()
+                    it.removeAllViews()
+                }
             })
         }
     }
@@ -590,7 +600,6 @@ class LatinIME : InputMethodServiceCompose(), LatinIMELegacy.SuggestionStripCont
         super.onStartInputView(info, restarting)
         imeManager.onStartInput()
         latinIMELegacy.onStartInputView(info, restarting)
-        lifecycleScope.launch { uixManager.showUpdateNoticeIfNeeded() }
         updateColorsIfDynamicChanged()
     }
 
@@ -671,13 +680,15 @@ class LatinIME : InputMethodServiceCompose(), LatinIMELegacy.SuggestionStripCont
 
     override fun onComputeInsets(outInsets: Insets?) {
         // This method may be called before {@link #setInputView(View)}.
-        if (legacyInputView.value == null || composeView == null) {
+        val insets = outInsets ?: return
+        val compose = composeView ?: return
+        if (legacyInputView.value == null) {
             return
         }
 
-        val viewHeight = composeView!!.height
+        val viewHeight = compose.height
         val size = size.value ?: return
-        latinIMELegacy.setInsets(outInsets!!.apply {
+        latinIMELegacy.setInsets(insets.apply {
             when(size) {
                 is FloatingKeyboardSize -> {
                     val height = uixManager.touchableHeight
@@ -711,7 +722,7 @@ class LatinIME : InputMethodServiceCompose(), LatinIMELegacy.SuggestionStripCont
 
             if(isInputModal || latinIMELegacy.mKeyboardSwitcher?.isShowingMoreKeysPanel == true) {
                 touchableInsets = Insets.TOUCHABLE_INSETS_REGION
-                touchableRegion.set(0, 0, composeView!!.width, composeView!!.height)
+                touchableRegion.set(0, 0, compose.width, compose.height)
             }
         })
     }

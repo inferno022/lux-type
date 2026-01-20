@@ -18,15 +18,15 @@
 
 #include "jni_common.h"
 
-#include "org_futo_inputmethod_keyboard_ProximityInfo.h"
-#include "org_futo_inputmethod_latin_BinaryDictionary.h"
-#include "org_futo_inputmethod_latin_BinaryDictionaryUtils.h"
-#include "org_futo_inputmethod_latin_DicTraverseSession.h"
-#include "org_futo_inputmethod_latin_xlm_LanguageModel.h"
+#include "org_luxtype_inputmethod_keyboard_ProximityInfo.h"
+#include "org_luxtype_inputmethod_latin_BinaryDictionary.h"
+#include "org_luxtype_inputmethod_latin_BinaryDictionaryUtils.h"
+#include "org_luxtype_inputmethod_latin_DicTraverseSession.h"
+#include "org_luxtype_inputmethod_latin_xlm_LanguageModel.h"
 #include "defines.h"
-#include "org_futo_inputmethod_latin_xlm_AdapterTrainer.h"
-#include "org_futo_voiceinput_WhisperGGML.h"
-#include "org_futo_inputmethod_latin_xlm_ModelInfoLoader.h"
+#include "org_luxtype_inputmethod_latin_xlm_AdapterTrainer.h"
+#include "org_luxtype_voiceinput_WhisperGGML.h"
+#include "org_luxtype_inputmethod_latin_xlm_ModelInfoLoader.h"
 
 /*
  * Returns the JNI version on success, -1 on failure.

@@ -1,0 +1,14 @@
+type: keyboard
+name: Error Layout
+width: 10
+height: 4
+keys:
+  - row:
+    - key: e
+    - key: r
+    - key: r
+    - key: o
+    - key: r
+  - row:
+    - key: space
+      width: 10

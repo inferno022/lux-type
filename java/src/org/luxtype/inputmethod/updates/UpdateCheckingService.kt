@@ -15,6 +15,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
+import org.luxtype.inputmethod.latin.BuildConfig
 import org.luxtype.inputmethod.latin.R
 
 const val CHANNEL_ID = "UPDATES"
@@ -24,45 +25,59 @@ class UpdateCheckingService : JobService() {
     private var job: Job? = null
 
     override fun onStartJob(params: JobParameters?): Boolean {
+        if (params == null) {
+            Log.w("UpdateCheckingService", "onStartJob called with null params; aborting")
+            return false
+        }
+        if(!BuildConfig.UPDATE_CHECKING || !BuildConfig.UPDATE_CHECKING_NETWORK) {
+            jobFinished(params, false)
+            return false
+        }
+
         job = CoroutineScope(Dispatchers.IO).launch {
-            if(checkForUpdateAndSaveToPreferences(applicationContext)) {
-                val updateResult = retrieveSavedLastUpdateCheckResult(applicationContext)
+            try {
+                if(checkForUpdateAndSaveToPreferences(applicationContext)) {
+                    val updateResult = retrieveSavedLastUpdateCheckResult(applicationContext)
 
-                if(updateResult != null && updateResult.isNewer()) {
-                    // Show a notification : "Update available"
-                    val manager = applicationContext.getSystemService(
-                        Context.NOTIFICATION_SERVICE
-                    ) as NotificationManager
+                    if(updateResult != null && updateResult.isNewer()) {
+                        // Show a notification : "Update available"
+                        val manager = applicationContext.getSystemService(
+                            Context.NOTIFICATION_SERVICE
+                        ) as NotificationManager
 
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                        val channel = NotificationChannel(
-                            CHANNEL_ID,
-                            "Update Notifications",
-                            NotificationManager.IMPORTANCE_MIN
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                            val channel = NotificationChannel(
+                                CHANNEL_ID,
+                                "Update Notifications",
+                                NotificationManager.IMPORTANCE_MIN
+                            )
+
+                            manager.createNotificationChannel(channel)
+                        }
+
+                        val contentIntent = PendingIntent.getActivity(
+                            applicationContext,
+                            0,
+                            Intent(Intent.ACTION_VIEW, Uri.parse(updateResult.apkUrl)),
+                            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
                         )
 
-                        manager.createNotificationChannel(channel)
+                        val notification = NotificationCompat.Builder(applicationContext, CHANNEL_ID)
+                            .setContentTitle(getString(R.string.autoupdater_update_available_title))
+                            .setContentText(getString(R.string.autoupdater_update_available_body,"${UpdateResult.currentVersionString()} -> ${updateResult.nextVersionString}"))
+                            .setSmallIcon(R.drawable.ic_launcher_foreground)
+                            .setContentIntent(contentIntent)
+
+                        manager.notify(NOTIFICATION_ID, notification.build())
                     }
-
-                    val contentIntent = PendingIntent.getActivity(
-                        applicationContext,
-                        0,
-                        Intent(Intent.ACTION_VIEW, Uri.parse(updateResult.apkUrl)),
-                        PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
-                    )
-
-                    val notification = NotificationCompat.Builder(applicationContext, CHANNEL_ID)
-                        .setContentTitle(getString(R.string.autoupdater_update_available_title))
-                        .setContentText(getString(R.string.autoupdater_update_available_body,"${UpdateResult.currentVersionString()} -> ${updateResult.nextVersionString}"))
-                        .setSmallIcon(R.drawable.ic_launcher_foreground)
-                        .setContentIntent(contentIntent)
-
-                    manager.notify(NOTIFICATION_ID, notification.build())
+                } else {
+                    Log.i("UpdateCheckingService", "no update available, or failed to check")
                 }
-            } else {
-                Log.i("UpdateCheckingService", "no update available, or failed to check")
+            } catch (t: Throwable) {
+                Log.e("UpdateCheckingService", "Update checking job crashed", t)
+            } finally {
+                jobFinished(params, false)
             }
-            jobFinished(params, false)
         }
         return true
     }

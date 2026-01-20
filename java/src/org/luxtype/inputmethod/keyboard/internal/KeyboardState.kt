@@ -218,21 +218,14 @@ class KeyboardState(private val switchActions: SwitchActions) {
     }
 
     private fun setSymbolLayout() {
-        if(currentLayout.kind == KeyboardLayoutKind.Number || !prefersNumberLayout) {
-            prefersNumberLayout = false
+        prefersNumberLayout = false
 
-            setLayout(
-                KeyboardLayoutElement(
-                    kind = KeyboardLayoutKind.Symbols,
-                    page = KeyboardLayoutPage.Base
-                )
-            )
-        } else {
-            setLayout(KeyboardLayoutElement(
-                kind = KeyboardLayoutKind.Number,
+        setLayout(
+            KeyboardLayoutElement(
+                kind = KeyboardLayoutKind.Symbols,
                 page = KeyboardLayoutPage.Base
-            ))
-        }
+            )
+        )
     }
 
     private fun setPhoneLayout() {
@@ -394,10 +387,19 @@ class KeyboardState(private val switchActions: SwitchActions) {
             Constants.CODE_CAPSLOCK -> {
                 // only in onReleaseKey?
             }
+            Constants.CODE_TO_NUMBER_LAYOUT -> {
+                // Dedicated number-pad key (shown as "1234"). Toggle symbols <-> number pad.
+                if(currentLayout.kind == KeyboardLayoutKind.NumberBasic) {
+                    setSymbolLayout()
+                } else {
+                    setNumberBasicLayout()
+                }
+            }
             Constants.CODE_SWITCH_ALPHA_SYMBOL -> {
                 symbolKeyState.onPress()
                 if(currentLayout.kind == KeyboardLayoutKind.Symbols
-                    || currentLayout.kind == KeyboardLayoutKind.Number) {
+                    || currentLayout.kind == KeyboardLayoutKind.Number
+                    || currentLayout.kind == KeyboardLayoutKind.NumberBasic) {
                     setAlphabetLayout(autoCapsFlags)
                 } else {
                     setSymbolLayout()
@@ -549,13 +551,11 @@ class KeyboardState(private val switchActions: SwitchActions) {
 
         when(code) {
             Constants.CODE_TO_NUMBER_LAYOUT -> {
-                if(currentLayout.kind == KeyboardLayoutKind.Number) {
-                    // Return back to symbol layout
-                    prefersNumberLayout = false
+                // Toggle Symbols <-> Number pad
+                if(currentLayout.kind == KeyboardLayoutKind.NumberBasic) {
                     setSymbolLayout()
                 } else {
-                    // Set number layout
-                    setNumberLayout()
+                    setNumberBasicLayout()
                 }
             }
 

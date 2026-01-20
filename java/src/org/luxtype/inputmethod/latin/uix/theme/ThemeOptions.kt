@@ -19,6 +19,10 @@ import org.luxtype.inputmethod.latin.uix.theme.presets.DynamicDarkTheme
 import org.luxtype.inputmethod.latin.uix.theme.presets.DynamicLightTheme
 import org.luxtype.inputmethod.latin.uix.theme.presets.DynamicSystemTheme
 import org.luxtype.inputmethod.latin.uix.theme.presets.Emerald
+import org.luxtype.inputmethod.latin.uix.theme.presets.FlorisDay
+import org.luxtype.inputmethod.latin.uix.theme.presets.FlorisDayBorderless
+import org.luxtype.inputmethod.latin.uix.theme.presets.FlorisNight
+import org.luxtype.inputmethod.latin.uix.theme.presets.FlorisNightBorderless
 import org.luxtype.inputmethod.latin.uix.theme.presets.Gradient1
 import org.luxtype.inputmethod.latin.uix.theme.presets.HotDog
 import org.luxtype.inputmethod.latin.uix.theme.presets.Snowfall
@@ -63,6 +67,11 @@ val ThemeOptions = mapOf(
     DevTheme.key to DevTheme,
     HighContrastYellow.key to HighContrastYellow,
     CatppuccinMocha.key to CatppuccinMocha,
+
+    FlorisDay.key to FlorisDay,
+    FlorisNight.key to FlorisNight,
+    FlorisDayBorderless.key to FlorisDayBorderless,
+    FlorisNightBorderless.key to FlorisNightBorderless,
 )
 
 val ThemeOptionKeys = ThemeOptions.keys

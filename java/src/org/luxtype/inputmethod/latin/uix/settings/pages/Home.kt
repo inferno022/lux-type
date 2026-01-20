@@ -29,7 +29,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import org.luxtype.inputmethod.latin.BuildConfig
 import org.luxtype.inputmethod.latin.R
 import org.luxtype.inputmethod.latin.uix.LocalNavController
 import org.luxtype.inputmethod.latin.uix.TextEditPopupActivity
@@ -42,19 +41,11 @@ import org.luxtype.inputmethod.latin.uix.settings.render
 import org.luxtype.inputmethod.latin.uix.settings.useDataStoreValue
 import org.luxtype.inputmethod.latin.uix.settings.userSettingNavigationItem
 import org.luxtype.inputmethod.latin.uix.theme.Typography
-import org.luxtype.inputmethod.updates.ConditionalMigrateUpdateNotice
-import org.luxtype.inputmethod.updates.openManualUpdateCheck
 
 val HomeScreenLite = UserSettingsMenu(
     title = R.string.settings_home_title,
     navPath = "home", registerNavPath = false,
     settings = listOf(
-        userSettingNavigationItem(
-            title = R.string.settings_check_for_updates_manually,
-            style = NavigationItemStyle.Misc,
-            navigate = { nav -> nav.context.openManualUpdateCheck() }
-        ),
-
         userSettingNavigationItem(
             title = R.string.language_settings_title,
             style = NavigationItemStyle.HomePrimary,
@@ -127,12 +118,6 @@ val HomeScreenLite = UserSettingsMenu(
             style = NavigationItemStyle.MiscNoArrow,
             navigateTo = "misc",
         ),
-
-        userSettingNavigationItem(
-            title = R.string.credits_menu_title,
-            style = NavigationItemStyle.MiscNoArrow,
-            navigateTo = "credits",
-        ),
     )
 )
 
@@ -167,19 +152,9 @@ fun HomeScreen(navController: NavHostController = rememberNavController()) {
                 }
             }
 
-            ConditionalMigrateUpdateNotice()
-
             HomeScreenLite.render(showTitle = false)
 
 
-            Spacer(modifier = Modifier.height(16.dp))
-
-            Text(
-                "v${BuildConfig.VERSION_NAME}",
-                style = Typography.Small,
-                modifier = Modifier.fillMaxWidth(),
-                textAlign = TextAlign.Center
-            )
             Spacer(modifier = Modifier.height(32.dp))
         }
         TextButton(onClick = {

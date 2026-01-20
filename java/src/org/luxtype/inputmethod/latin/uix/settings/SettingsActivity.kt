@@ -52,7 +52,7 @@ import org.luxtype.inputmethod.latin.uix.theme.getThemeOption
 import org.luxtype.inputmethod.latin.uix.theme.orDefault
 import org.luxtype.inputmethod.latin.uix.theme.presets.DefaultDarkScheme
 import org.luxtype.inputmethod.latin.xlm.ModelPaths
-import org.luxtype.inputmethod.updates.checkForUpdateAndSaveToPreferences
+import org.luxtype.inputmethod.updates.cancelUpdateCheckingJob
 import org.luxtype.inputmethod.v2keyboard.LayoutManager
 import java.io.File
 import kotlin.math.sqrt
@@ -256,6 +256,8 @@ class SettingsActivity : ComponentActivity(), DynamicThemeProviderOwner {
 
         // playStartupSoundIfEligible(savedInstanceState)
 
+        cancelUpdateCheckingJob(this)
+
         try {
             LayoutManager.init(this)
         } catch (e: Throwable) {
@@ -288,12 +290,6 @@ class SettingsActivity : ComponentActivity(), DynamicThemeProviderOwner {
 
         updateSystemState()
         updateContent()
-
-        lifecycleScope.launch {
-            runCatching {
-                checkForUpdateAndSaveToPreferences(applicationContext)
-            }
-        }
 
         lifecycleScope.launch {
             getSettingFlow(THEME_KEY).collect {

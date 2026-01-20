@@ -4,8 +4,6 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 import android.util.Log
-import android.view.inputmethod.InputMethodInfo
-import android.view.inputmethod.InputMethodManager
 import android.view.inputmethod.InputMethodSubtype
 import android.view.inputmethod.InputMethodSubtype.InputMethodSubtypeBuilder
 import android.widget.Toast
@@ -19,7 +17,6 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -318,8 +315,7 @@ object Subtypes {
 @Composable
 @Preview
 fun LanguageSwitcherDialog(
-    onDismiss: () -> Unit = { },
-    switchToIme: (InputMethodInfo) -> Unit = { }
+    onDismiss: () -> Unit = { }
 ) {
     val inspection = LocalInspectionMode.current
     val context = LocalContext.current
@@ -339,22 +335,6 @@ fun LanguageSwitcherDialog(
         "pt_PT:KeyboardLayoutSet=portugues:"
     } else {
         useDataStoreValue(ActiveSubtype)
-    }
-
-    val activeIMEs = if(LocalInspectionMode.current) {
-        listOf(
-            InputMethodInfo("com.example.Keyboard", ".Keyboard", "Joe's Keyboard", ""),
-            InputMethodInfo("com.example.Keyboard", ".Keyboard", "Example Keyboard", ""),
-            InputMethodInfo("com.example.Keyboard", ".Keyboard", "Company's Very Special Keyboard Application", ""),
-            InputMethodInfo("com.example.Keyboard", ".Keyboard", null, ""),
-        )
-    } else {
-        remember {
-            RichInputMethodManager.init(context)
-            RichInputMethodManager.getInstance().enabledInputMethodList.filter {
-                it.packageName != context.packageName
-            }
-        }
     }
 
     Surface(shape = RoundedCornerShape(48.dp), color = MaterialTheme.colorScheme.background) {
@@ -403,45 +383,10 @@ fun LanguageSwitcherDialog(
                         }
                     }
                 }
-
-                item {
-                    if(activeIMEs.isNotEmpty() && keys.isNotEmpty()) {
-                        Spacer(Modifier.height(16.dp))
-                        HorizontalDivider()
-                        Spacer(Modifier.height(16.dp))
-                    }
-                }
-
-                items(activeIMEs) { ime ->
-                    val title = try {
-                        ime.loadLabel(context.packageManager)?.toString()
-                    } catch(_: Exception) {
-                        null
-                    } ?: ime.id
-
-                    NavigationItem(
-                        title = title,
-                        style = NavigationItemStyle.MiscNoArrow,
-                        navigate = {
-                            switchToIme(ime)
-                        },
-                        compact = true,
-                        icon = painterResource(R.drawable.circle)
-                    )
-                }
             }
 
             Row(modifier = Modifier.height(64.dp)) {
                 Spacer(modifier = Modifier.weight(1.0f))
-                TextButton(onClick = {
-                    val inputMethodManager =
-                        context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-                    inputMethodManager.showInputMethodPicker()
-
-                    onDismiss()
-                }) {
-                    Text(stringResource(R.string.keyboard_switch_keyboard))
-                }
                 TextButton(onClick = {
                     val intent = Intent()
                     intent.setClass(context, SettingsActivity::class.java)

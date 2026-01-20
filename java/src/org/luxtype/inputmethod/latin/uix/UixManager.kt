@@ -17,6 +17,7 @@ import android.view.WindowManager
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InlineSuggestionsResponse
 import android.view.inputmethod.InputConnection
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.compose.animation.AnimatedVisibility
@@ -112,6 +113,7 @@ import org.luxtype.inputmethod.latin.LanguageSwitcherDialog
 import org.luxtype.inputmethod.latin.LatinIME
 import org.luxtype.inputmethod.latin.R
 import org.luxtype.inputmethod.latin.RichInputMethodManager
+import org.luxtype.inputmethod.latin.Subtypes
 import org.luxtype.inputmethod.latin.SuggestedWords
 import org.luxtype.inputmethod.latin.SuggestedWords.SuggestedWordInfo
 import org.luxtype.inputmethod.latin.SupportsNavbarExtension
@@ -871,6 +873,13 @@ class UixManager(private val latinIME: LatinIME) {
 
     private var languageSwitcherDialog: DialogComposeView? = null
     fun showLanguageSwitcher() {
+        if(!Subtypes.hasMultipleEnabledSubtypes(latinIME)) {
+            val inputMethodManager =
+                latinIME.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            inputMethodManager.showInputMethodPicker()
+            return
+        }
+
         // Dismiss old dialog
         languageSwitcherDialog?.dismiss()
 
@@ -879,13 +888,7 @@ class UixManager(private val latinIME: LatinIME) {
             DataStoreCacheProvider {
                 UixThemeAuto {
                     LanguageSwitcherDialog(
-                        onDismiss = { dialog.dismiss() },
-                        switchToIme = {
-                            latinIME.lifecycleScope.launch(Dispatchers.Main) {
-                                latinIME.switchInputMethod(it.id)
-                                dialog.dismiss()
-                            }
-                        }
+                        onDismiss = { dialog.dismiss() }
                     )
                 }
             }
@@ -1242,7 +1245,13 @@ class UixManager(private val latinIME: LatinIME) {
                         Spacer(modifier = Modifier.height(gap))
                     }
 
-                    val kbHeight = remember { mutableIntStateOf(latinIME.size.value!!.height) }
+                    val kbHeight = remember { mutableIntStateOf(latinIME.size.value?.height ?: 0) }
+                    LaunchedEffect(latinIME.size.value) {
+                        val currentHeight = latinIME.size.value?.height
+                        if(currentHeight != null && currentHeight > 0 && kbHeight.intValue <= 0) {
+                            kbHeight.intValue = currentHeight
+                        }
+                    }
                     val keyboardViewOffset = remember(needToUseExpandableSuggestionUi) { mutableIntStateOf(0) }
                     Box(Modifier.let {
                         if(needToUseExpandableSuggestionUi) {
@@ -1272,7 +1281,7 @@ class UixManager(private val latinIME: LatinIME) {
                                     if(it > 0) {
                                         it
                                     } else {
-                                        latinIME.size.value!!.height
+                                        latinIME.size.value?.height ?: kbHeight.intValue
                                     }
                                 }
                             }.absoluteOffset { IntOffset(0, keyboardViewOffset.intValue) },

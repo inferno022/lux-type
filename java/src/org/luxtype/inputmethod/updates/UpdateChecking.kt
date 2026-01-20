@@ -103,7 +103,7 @@ suspend fun retrieveSavedLastUpdateCheckResult(context: Context): UpdateResult? 
 
 const val JOB_ID: Int = 15782788
 fun scheduleUpdateCheckingJob(context: Context) {
-    if(!BuildConfig.UPDATE_CHECKING_NETWORK) return
+    if(!BuildConfig.UPDATE_CHECKING || !BuildConfig.UPDATE_CHECKING_NETWORK) return
 
     val jobScheduler = context.getSystemService(Context.JOB_SCHEDULER_SERVICE) as JobScheduler
 
@@ -123,4 +123,9 @@ fun scheduleUpdateCheckingJob(context: Context) {
     }
 
     jobScheduler.schedule(jobInfoBuilder.build())
+}
+
+fun cancelUpdateCheckingJob(context: Context) {
+    val jobScheduler = context.getSystemService(Context.JOB_SCHEDULER_SERVICE) as JobScheduler
+    jobScheduler.cancel(JOB_ID)
 }
