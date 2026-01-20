@@ -1,7 +1,6 @@
 name: Phone Shift
 rows:
-  - letters: 1 2 3
-  - letters: 4 5 6
-  - letters: 7 8 9
-  - letters: + , * / % 0 $delete
-  - bottom: $alphabet $number $contextual $action $space $period $enter
+  - letters: + 1 2 3 /
+  - letters: - 4 5 6 %
+  - letters: * 7 8 9 $delete
+  - bottom: $alphabet $comma $number $0 $space $period $enter

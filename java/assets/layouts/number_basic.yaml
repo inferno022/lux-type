@@ -1,7 +1,0 @@
-name: Number Basic
-numberRowMode: AlwaysDisabled
-rows:
-  - letters: 1 2 3 -
-  - letters: 4 5 6 $space
-  - letters: 7 8 9 $delete
-  - bottom: $alphabet , 0 . $enter

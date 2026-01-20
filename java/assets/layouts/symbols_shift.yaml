@@ -1,6 +1,0 @@
-name: Symbols Shift
-rows:
-  - letters: "~ ` | • √ π ÷ × ¶ ∆"
-  - letters: "£ ¢ € ¥ ^ ° = { } \\"
-  - letters: "$shift _ © ® ™ ✓ [ ] $delete"
-  - bottom: $alphabet $number $contextual $action $space $period $enter
